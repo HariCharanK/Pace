@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What does the article report?",
+      "options": [
+        "Nvidia's board reportedly fired Kimberly Powell after an internal conduct review",
+        "Nvidia reportedly paid a settlement to a former employee who accused Huang",
+        "Huang reportedly had a relationship with executive Kimberly Powell, who reports to him",
+        "Huang, 63, reportedly stepped down as CEO while the board investigation continues"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "Five people said Huang had a relationship with Nvidia health care VP Kimberly Powell."
+    },
+    {
+      "q": "What is Kimberly Powell's role at Nvidia?",
+      "options": [
+        "Head of security",
+        "General counsel",
+        "Chief financial officer",
+        "Vice president of health care"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "She is Nvidia's vice president of health care."
+    },
+    {
+      "q": "Which law firm is leading Nvidia's board investigation?",
+      "options": [
+        "Cravath, Swaine & Moore LLP",
+        "Wachtell, Lipton, Rosen & Katz",
+        "Davis Polk & Wardwell LLP",
+        "Skadden, Arps, Slate, Meagher & Flom"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The board investigation is led by Wachtell, Lipton, Rosen & Katz."
+    },
+    {
+      "q": "What happened to the bystander who filmed Huang and Powell?",
+      "options": [
+        "Was offered a payment by Nvidia lawyers to delete the video from their phone",
+        "Was escorted out of the conference and banned from future Nvidia events",
+        "Was sequestered by security and asked to sign a nondisclosure agreement",
+        "Was detained by hotel staff and handed to local police for questioning"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Huang's security workers sequestered the person and asked them to sign an NDA."
+    },
+    {
+      "q": "Why does the article mention Krzanich and Easterbrook?",
+      "options": [
+        "To argue that Huang's conduct is far worse than anything at other firms",
+        "To show that chip industry executives are rarely investigated by boards",
+        "To show other CEOs have faced consequences for relationships with employees",
+        "To explain why Nvidia adopted its code of conduct on personal relationships"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "It places Huang among CEOs with workplace relationships, two of whom lost their jobs."
+    }
+  ]
+}

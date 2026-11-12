@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main message?",
+      "options": [
+        "Anyone can train their mind to concentrate through daily practice",
+        "Reading should be done only in the evening before bed",
+        "Commuting is the best time to read an encyclopaedia for learning",
+        "Physical exercise matters more than training the mind each morning"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "He says mind control is possible by persevering in concentration, which cures worry."
+    },
+    {
+      "q": "When does the author suggest practicing concentration?",
+      "options": [
+        "During the evening hour before you go to bed",
+        "On the way from your door to your office",
+        "In the quiet minutes just after lunch at work",
+        "At weekends in a quiet room with a good book"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He reserves the time from leaving your door to arriving at your office."
+    },
+    {
+      "q": "Roughly how many times will you bring your mind back before reaching the station?",
+      "options": [
+        "About four",
+        "About fourteen",
+        "About forty",
+        "About four hundred"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Ere you reach the station you will have brought it back about forty times."
+    },
+    {
+      "q": "Whose writings does the author suggest concentrating on?",
+      "options": [
+        "Plato and Socrates",
+        "Shakespeare and Milton",
+        "Homer and Virgil",
+        "Marcus Aurelius or Epictetus"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He suggests a little chapter of Marcus Aurelius or Epictetus."
+    },
+    {
+      "q": "Why does the author recall the morning of the disquieting letter?",
+      "options": [
+        "To show the mind can concentrate when sufficiently roused",
+        "To show that letters of reply should be written at home",
+        "To warn that anxiety ruins any attempt at concentration",
+        "To argue that trains are the worst place for thinking"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "That case shows you can dominate your mind like a tyrant, so lack of concentration is not incapacity."
+    }
+  ]
+}

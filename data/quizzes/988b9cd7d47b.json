@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main finding of the research described?",
+      "options": [
+        "Most people respond to medications identically, so genetic testing adds little to prescribing",
+        "Only people of European ancestry carry gene variants that change drug response, so testing is limited",
+        "Nearly everyone carries gene variants that can affect drug response, so testing may improve prescribing",
+        "Gene variants affect drug response in about 1 in 100 people, so testing is rarely worthwhile"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The team found virtually all participants carried relevant variants, suggesting broader testing may help optimize medications."
+    },
+    {
+      "q": "Why do researchers know less about key gene variants in many groups?",
+      "options": [
+        "Those groups have mostly declined to enroll in large genetic studies",
+        "Most genetic research has involved people of European ancestry",
+        "Their genomes are harder to sequence with standard research equipment",
+        "Health records for those groups are rarely kept in research databases"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The passage says most genetic research was done on people of European ancestry."
+    },
+    {
+      "q": "About what share of participants had taken a drug affected by a genetic variant they carried?",
+      "options": [
+        "About 99.5%",
+        "About 12%",
+        "About 50%",
+        "About 24%"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "About 24% had taken a drug affected by a variant they carried."
+    },
+    {
+      "q": "How many previously unreported variants did the team identify?",
+      "options": [
+        "17,704",
+        "1,000",
+        "100,000",
+        "16"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The team identified 17,704 previously unreported variants in protein-coding regions of the genes."
+    },
+    {
+      "q": "Why does the author say the 24% figure likely underestimates the true rate?",
+      "options": [
+        "Participants hid some of their medications",
+        "Only 16 genes were examined by the models",
+        "Health records can be incomplete",
+        "Computer models were too cautious"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "The passage says because health records can be incomplete, the results likely underestimate actual gene-drug interactions."
+    }
+  ]
+}

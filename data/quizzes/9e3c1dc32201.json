@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main idea of the essay?",
+      "options": [
+        "Meetings are a waste of time and should be abolished entirely",
+        "Founders should keep wearing jeans instead of switching to suits",
+        "Managers and makers use time differently, so meetings cost makers far more",
+        "Investors should hold office hours every morning to meet founders"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The author contrasts the manager's hourly schedule with the maker's half-day units, where a meeting is a disaster."
+    },
+    {
+      "q": "How does the author say a manager's schedule is divided by default?",
+      "options": [
+        "Into half-day units",
+        "Into one-hour intervals",
+        "Into fifteen-minute slots",
+        "Into week-long projects"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The appointment book cuts each day into one hour intervals, and you change what you do every hour by default."
+    },
+    {
+      "q": "How does the author keep office hours from interrupting his workday?",
+      "options": [
+        "He holds them only on Fridays, when no programming is planned",
+        "He lets founders book any slot they like, mixing them into his day",
+        "He cancels them whenever a coding project hits a busy stretch",
+        "He clusters them at the end of his day using a signup program"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He sets office hours at the end of the day and wrote a signup program to cluster appointments there."
+    },
+    {
+      "q": "What are the two options when someone proposes a speculative meeting to a maker?",
+      "options": [
+        "Meet and lose half a day, or decline and probably offend them",
+        "Meet by phone briefly, or meet over lunch to save time",
+        "Delegate it to Jessica, or postpone it for a whole year",
+        "Hold it as office hours, or answer with a short email"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The author says they can meet and lose half a day's work, or avoid meeting and probably offend them."
+    },
+    {
+      "q": "Why does the author describe a meeting as 'throwing an exception' for a maker?",
+      "options": [
+        "It makes the maker forget which task was meant to come next",
+        "It forces a change in the mode of work, not just a switch of tasks",
+        "It signals an error caused by poor planning on the maker's part",
+        "It permanently ends the project the maker was working on that day"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "The passage says a meeting does not merely switch tasks; it changes the mode in which you work."
+    }
+  ]
+}

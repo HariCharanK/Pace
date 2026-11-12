@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "Darwin's theory of how the islands' tortoises evolved into separate species",
+        "The long history of buccaneers and whalers who raided the Pacific coast",
+        "The political history of the Republic of the Equator and its penal colonies",
+        "The Galapagos' volcanic geology, climate, vegetation and settlement as the Beagle found them"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "The author describes the islands' volcanic craters, climate, vegetation, tortoises and the small colony on Charles Island."
+    },
+    {
+      "q": "What did the author notice about the twenty-eight tuff-craters examined?",
+      "options": [
+        "Their northern sides were lower or broken down",
+        "Their southern sides were lower or broken down",
+        "Every one contained a small lake of fresh water",
+        "They were all active and had erupted recently"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Every one of the twenty-eight tuff-craters had a much lower or broken southern side, attributed to waves."
+    },
+    {
+      "q": "On Chatham Island, how many truncated cones did he count from one small eminence?",
+      "options": [
+        "Twenty-eight",
+        "Two thousand",
+        "Sixty",
+        "Seven hundred"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "From one small eminence he counted sixty black truncated cones, each with a crater."
+    },
+    {
+      "q": "How do the people of Charles Island get their main animal food?",
+      "options": [
+        "From tortoises",
+        "From wild pigs",
+        "From whaling ships",
+        "From goats kept at the coast"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The staple article of animal food is supplied by the tortoises, with two days' hunting feeding them for the week."
+    },
+    {
+      "q": "Why are the upper parts of the islands greener than the lower parts?",
+      "options": [
+        "Settlers channel mountain streams to water the upper slopes",
+        "Volcanic soil near the summits is far richer in minerals",
+        "Low clouds bring moisture, giving the heights a damp climate",
+        "Tortoises fertilize the high ground with their droppings"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "Little rain falls and clouds hang low, so the upper parts, which condense the moisture, are damp and luxuriant while the lower are sterile."
+    }
+  ]
+}

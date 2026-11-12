@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The restaurants and food scene of Sai Ying Pun's High Street",
+        "The history and haunted reputation of Hong Kong's old mental hospital",
+        "Baroque architecture in Hong Kong's colonial-era public buildings",
+        "Japanese occupation of Hong Kong and its wartime execution sites"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It recounts the building's history, preservation and its haunted reputation."
+    },
+    {
+      "q": "What was the building originally used for when completed in 1892?",
+      "options": [
+        "Officers' barracks for the colonial Hong Kong garrison",
+        "Medical Staff Quarters of the Government Civil Hospital",
+        "Female wards of the Government Civil Hospital annex",
+        "Quarters for the Sai Ying Pun police and prison staff"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "It first served as the Medical Staff Quarters of the Government Civil Hospital."
+    },
+    {
+      "q": "What was preserved in the redevelopment?",
+      "options": [
+        "The whole original building, restored in full",
+        "Only the L-shaped granite facade and verandas",
+        "The roof and the female patient wards intact",
+        "The original gardens and the interior staircases"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Only the L-shaped granite facade and verandas on the High Street side were preserved intact."
+    },
+    {
+      "q": "Which bus passes directly in front of the Old Mental Hospital?",
+      "options": [
+        "The 12 green minibus",
+        "The 10 green minibus",
+        "The 103 bus",
+        "The 31 green minibus"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The 12 green minibus passes right in front, on a circular route."
+    },
+    {
+      "q": "What does the passage suggest about the wartime execution stories?",
+      "options": [
+        "They are well documented in colonial-era records",
+        "They are rumours rather than established fact",
+        "They were disproved by archaeologists' excavations",
+        "They concern only the neighbouring memorial park"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "It says the site was 'purportedly' used for executions and the mass grave was 'rumoured'."
+    }
+  ]
+}

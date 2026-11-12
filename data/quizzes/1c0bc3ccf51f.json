@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main point of the passage?",
+      "options": [
+        "Experts agree that prostate screening should be dropped for most men over fifty",
+        "The task force now backs annual rectal exams for all men starting at age forty-five",
+        "The cancer society now urges routine blood tests for men 50 to 69, which experts debate",
+        "Prostate cancer screening was found to raise deaths in a large European study"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The passage reports the A.C.S. reversal toward routine P.S.A. screening and experts' concerns about harms."
+    },
+    {
+      "q": "How often do the new guidelines recommend screening for men ages 50 to 69?",
+      "options": [
+        "Every year",
+        "Every five years",
+        "Every three years",
+        "Every two years"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The guidelines recommend a blood test every two years for men 50 to 69."
+    },
+    {
+      "q": "In the European trial after 23 years, how much lower was the risk of prostate cancer death among screened men?",
+      "options": [
+        "13 percent",
+        "40 percent",
+        "2.5 percent",
+        "65 percent"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The risk of death was 13 percent lower among men screened regularly, about two deaths averted per 1,000."
+    },
+    {
+      "q": "According to Dr. Brawley, what is the primary reason Black men have worse outcomes?",
+      "options": [
+        "Their cancers are far more aggressive in biology",
+        "They have less access to high quality care",
+        "They are diagnosed at a much younger age by law",
+        "They are screened less often than white men"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Dr. Brawley said the primary reason is less access to high quality care, since outcomes match when care is the same."
+    },
+    {
+      "q": "Why does Dr. Krist doubt the new guidelines will work as hoped?",
+      "options": [
+        "He expects doctors to order the test for everyone by default",
+        "He thinks every two years is too infrequent to catch tumors",
+        "He believes the European trial data was badly flawed",
+        "He fears men will refuse blood tests and skip all follow-up"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "Krist said most physicians will just get the test on everyone, so harms remain and benefits may not come."
+    }
+  ]
+}

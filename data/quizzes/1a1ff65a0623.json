@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article mainly about?",
+      "options": [
+        "How insurers are raising premiums on beachfront homes across Orange County",
+        "How a strong El Niño and warming are bringing flooding and fire to California",
+        "How the Santa Ana winds have shaped wildfire policy in Southern California",
+        "How a state budget fight is delaying disaster relief for coastal towns"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It describes flooding in Dana Point and a fire in San Juan Capistrano tied to El Niño and climate change."
+    },
+    {
+      "q": "How many acres did the Norte fire consume?",
+      "options": [
+        "5,700",
+        "57,000",
+        "570",
+        "57"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The Norte fire consumed 570 acres and burned at least seven houses."
+    },
+    {
+      "q": "How much emergency funding did the Orange County Transportation Authority secure for the coastal tracks?",
+      "options": [
+        "$308 million",
+        "$30 million",
+        "$100 million",
+        "$1 billion"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "It secured $308 million in emergency funding to protect the coastal tracks."
+    },
+    {
+      "q": "Why doesn't Lori Torres' insurance cover her damage?",
+      "options": [
+        "Her policy excludes homes built directly on the coastline",
+        "The damage was classified as a pre-existing foundation defect",
+        "The water has not flooded the interior of the house",
+        "She had not renewed the flood rider since buying in 2019"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Because the water hasn't flooded the interior, insurance doesn't cover the damage."
+    },
+    {
+      "q": "What does Representative Levin's 'new normal' comment suggest?",
+      "options": [
+        "California is safer than before",
+        "The disasters were freak events",
+        "Such combined threats will keep recurring",
+        "Climate change is still theoretical"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "He said climate change is not theoretical and Californians face more threats than ever."
+    }
+  ]
+}

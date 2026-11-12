@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The causes and course of the German hyperinflation of 1921-1923",
+        "How the gold standard collapsed across Europe after World War I",
+        "How the Dawes Plan was negotiated between Germany and the Allies",
+        "The economic recovery of France after the Ruhr occupation"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "It traces how war debt, reparations and money printing led to Weimar hyperinflation."
+    },
+    {
+      "q": "How did Germany fund World War I, unlike France?",
+      "options": [
+        "By introducing the country's first income tax",
+        "By selling overseas colonies to the Allied powers",
+        "By shipping its gold reserves to neutral banks",
+        "Entirely by borrowing, avoiding new taxes"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The Emperor and Reichstag chose to borrow rather than risk angering the public with taxes."
+    },
+    {
+      "q": "What happened in January 1923?",
+      "options": [
+        "French and Belgian troops occupied the Ruhr",
+        "The Rentenmark replaced the Papiermark nationwide",
+        "Walther Rathenau was assassinated in Berlin",
+        "The Dawes Plan restarted reparations payments"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "After missed coal payments, French and Belgian troops occupied the Ruhr valley."
+    },
+    {
+      "q": "What was the mark's value by November 1923?",
+      "options": [
+        "About 4.2 trillion per dollar",
+        "About 7.4 billion per dollar",
+        "About 320 million per dollar",
+        "About 48 billion per dollar"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "One US dollar was worth 4,210,500,000,000 marks by November 1923."
+    },
+    {
+      "q": "Why might hyperinflation have benefited the German government?",
+      "options": [
+        "It reduced domestic debts relative to revenues",
+        "It raised tax receipts measured in gold marks",
+        "It cancelled the reparations owed to the Allies",
+        "It improved German exports of coal and timber"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "Domestic war debts were in paper currency, so inflation greatly reduced them, though reparations were not."
+    }
+  ]
+}

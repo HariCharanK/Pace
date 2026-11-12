@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's central claim?",
+      "options": [
+        "Superintelligence is plausible within years, but the labs' safeguards are strong enough",
+        "Superintelligence is a fantasy, but the labs' pursuit of it causes real harm that is avoidable",
+        "Superintelligence is coming soon, so the labs must be broken up before it arrives",
+        "LLM progress is stalling, so the labs' investors cause harm by overhyping demand"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "He says labs can't build superintelligence but their obsession leads to reckless, avoidable harm."
+    },
+    {
+      "q": "What example of harm does the author give?",
+      "options": [
+        "A data breach at Anthropic that exposed user chat histories",
+        "Layoffs at OpenAI after a failed chatbot product launch",
+        "The HuggingFace hacking attacks from OpenAI experiments",
+        "A deepfake scandal tied to a Google image generator"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He cites OpenAI's reckless agent experiments that led to HuggingFace hacking attacks."
+    },
+    {
+      "q": "What analogy does he use for the reckless experiments?",
+      "options": [
+        "A fleet of untested delivery drones released over a crowded city center",
+        "A group of prototype airplanes allowed to take off without any pilots",
+        "A batch of unvetted medical devices shipped to hospitals without trials",
+        "A fleet of experimental self-driving cars released onto the interstate"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He compares it to deploying experimental self-driving cars onto the interstate."
+    },
+    {
+      "q": "According to Point #3, which AI systems have little to do with LLMs?",
+      "options": [
+        "Chatbots, search engines, and the coding assistants used by developers",
+        "Image generators, translation tools, and voice assistants in phones",
+        "Customer-service bots, email summarizers, and document-writing tools",
+        "Those beating humans at games, studying proteins, and self-driving cars"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He lists game-playing, protein-studying and self-driving systems as largely unrelated to LLMs."
+    },
+    {
+      "q": "What does the author imply about slowing OpenAI and Anthropic?",
+      "options": [
+        "It would affect only hyper-scaled LLM research, not AI in general",
+        "It would halt progress in game-playing and protein-folding AI too",
+        "It would hand the lead in AI research to China within a few years",
+        "It would be impossible because the labs control all major AI research"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "He says slowing them would only affect the subset of AI research centered on hyper-scaled LLMs."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is an index fund, per the passage?",
+      "options": [
+        "A fund run by the stock exchange to beat the averages by trading",
+        "A fund that mirrors an index's holdings instead of picking stocks",
+        "A fund that picks the best stocks in order to outperform the market",
+        "A fund that holds only bonds and avoids stock-market exposure"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It replicates an index's performance using passive management, not stock picking."
+    },
+    {
+      "q": "What was the first open-end index mutual fund for retail investors?",
+      "options": [
+        "First Index Investment Trust",
+        "Samsonite pension fund",
+        "Qualidex Fund",
+        "Dimensional Fund Advisors"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The Qualidex Fund, started in 1970, tracked the Dow Jones Industrial Average."
+    },
+    {
+      "q": "What nickname did competitors give Bogle's first fund?",
+      "options": [
+        "Bogle's gamble",
+        "Bogle's folly",
+        "Un-American trust",
+        "The loser's fund"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "It was derided as 'un-American' and nicknamed 'Bogle's folly'."
+    },
+    {
+      "q": "What is 'index front running'?",
+      "options": [
+        "Arbitrageurs trading ahead of known index rebalancing",
+        "Fund managers tipping off favored clients before trades",
+        "Index providers charging fees before new stocks are added",
+        "Funds buying a stock ahead of its addition to the index"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Because index trades are announced in advance, algorithmic traders siphon value, which shows up as tracking error."
+    },
+    {
+      "q": "Why did the Dow-based and equally weighted early funds struggle?",
+      "options": [
+        "They were closed to all investors outside the institutions",
+        "They charged heavy sales loads that wiped out any gains",
+        "Regulators banned them after the 1973 market downturn",
+        "They were not market-cap weighted, making them costly or impractical"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "The passage says the price-weighted Dow needed costly rebalancing and the equal-weighted Samsonite fund proved impractical."
+    }
+  ]
+}

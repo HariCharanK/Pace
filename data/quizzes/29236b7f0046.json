@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The development, launch and early reception of the original Macintosh",
+        "How the Xerox Alto's custom processor was built and marketed",
+        "Microsoft's rivalry with Apple over graphical operating systems",
+        "The history of the Apple II line and its eventual discontinuation"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "It covers the Mac's development, 1984 debut and hardware."
+    },
+    {
+      "q": "Who directed the \"1984\" commercial that introduced the Macintosh?",
+      "options": [
+        "Steve Jobs",
+        "John Sculley",
+        "Ridley Scott",
+        "Regis McKenna"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "It was a US$1.5 million Ridley Scott commercial."
+    },
+    {
+      "q": "Which two applications were bundled with the Macintosh at launch?",
+      "options": [
+        "MultiPlan and Word",
+        "MacWrite and MacPaint",
+        "Lisa Write and Lisa Draw",
+        "QuickDraw and Alto"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "It came bundled with MacWrite and MacPaint to show off its interface."
+    },
+    {
+      "q": "What happened with the \"Test Drive a Macintosh\" promotion?",
+      "options": [
+        "Only 20,000 people took part, and dealers praised it as a sales driver",
+        "It was cancelled before launch after Apple lacked enough demo machines",
+        "Returned machines were refurbished and resold at a profit to schools nationwide",
+        "200,000 took part, but dealers disliked it and returned units were unsellable"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Dealers disliked it, supply was short and many returns were in bad condition."
+    },
+    {
+      "q": "Why did the Mac initially lack software?",
+      "options": [
+        "Apple barred outside developers from writing programs for it until 1985, a year after launch",
+        "Text-mode applications had to be rewritten for the GUI, which many developers declined to do",
+        "Its small ROM left no room for any programs beyond the two bundled applications",
+        "Microsoft refused to support the platform and withheld its office software for years"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "The OS was designed largely for the GUI, so existing apps needed time-consuming rewrites."
+    }
+  ]
+}

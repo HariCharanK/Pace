@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main argument?",
+      "options": [
+        "The religious left is a new political force born in this election",
+        "Black Christian women have long been the left's steadiest supporters",
+        "White evangelical voters are shifting steadily toward Democrats",
+        "Black churches should stop reserving senior leadership for men"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The author says the religious left is not new and that Black Christian women have long been the staunchest supporters."
+    },
+    {
+      "q": "What share of Black women voted for Democrats in the 2026 exit polls?",
+      "options": [
+        "86%",
+        "59%",
+        "82%",
+        "93%"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Black women voted Democratic at 93%, compared with 59% of women overall and 86% of Black men."
+    },
+    {
+      "q": "What did Keisha Lance Bottoms say about her decision to run for governor?",
+      "options": [
+        "She prayed on it, and said God told her to go",
+        "Her pastor urged her to run after a Sunday service",
+        "Her billionaire opponent was a friend of the church",
+        "She decided after a Civil Rights anniversary march"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "She recalled praying about running and said 'God told me to go.'"
+    },
+    {
+      "q": "What did Nannie Helen Burroughs say in 1958 that African American Christians wanted?",
+      "options": [
+        "Votes, schools and safety",
+        "Peace, bread and land",
+        "Jesus, jobs and justice",
+        "Faith, family and freedom"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Burroughs said African American Christians wanted 'Jesus, jobs and justice.'"
+    },
+    {
+      "q": "What does the author imply about the post-election coverage of the religious left?",
+      "options": [
+        "It correctly credited Black women for powering the Blue Wave",
+        "It overstated how many Muslims and Jews voted Democratic",
+        "It treated religious Democrats as new and overlooked Black women",
+        "It ignored progressive Christians in favor of white evangelicals"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "The author says calling religious Democrats a new bauble implies they had been off the ballot, which is not true, especially for Black women."
+    }
+  ]
+}

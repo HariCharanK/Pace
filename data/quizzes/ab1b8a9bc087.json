@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the post mainly about?",
+      "options": [
+        "Humorous observations from living with a two-year-old",
+        "A guide to choosing the best toddler books to read aloud",
+        "Advice on managing sleep and feeding with a newborn",
+        "Why raising a second child is easier than the first"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "The author reports discoveries about toddlers, such as that they are both boring and brilliant."
+    },
+    {
+      "q": "What did the toddler say that hinted her father should leave her alone while she played with Legos?",
+      "options": [
+        "\"Daddy is 43 years old now, right?\"",
+        "\"Daddy needs to work in his office?\"",
+        "\"Can you get out of space?\"",
+        "\"I am so perfectly sad, Daddy\""
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "She said 'Daddy needs to work in his office?' as an unsubtle hint."
+    },
+    {
+      "q": "Why does the daughter say \"would you like a strawberry?\" when she wants one?",
+      "options": [
+        "She is copying her mother's way of asking",
+        "She is trying to be polite when she asks",
+        "She thinks \"you\" is another word for her name",
+        "She cannot yet pronounce the word strawberry"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Because adults say 'you' to her, she thinks it is a synonym for her name."
+    },
+    {
+      "q": "What phrase did the parents teach the toddler to say when she falls over?",
+      "options": [
+        "Oh no",
+        "Kerplunk",
+        "I am so perfectly sad",
+        "Mamma mia"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "They taught her to say 'mamma mia' whenever she falls over."
+    },
+    {
+      "q": "What does the author suggest about parenting near the end?",
+      "options": [
+        "Strict rules matter most in shaping a toddler's character",
+        "Parenting matters less than we think, so help kids be themselves",
+        "Parents should avoid reading the same books to toddlers",
+        "Most strong parenting opinions are correct and should be followed"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He says parenting probably matters less than we think and we should guide kids toward their best selves."
+    }
+  ]
+}

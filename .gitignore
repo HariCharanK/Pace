@@ -1,0 +1,6 @@
+data/*
+!data/quizzes/
+.env
+.venv/
+__pycache__/
+.DS_Store

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What are Witkoff and Kushner trying to do in Moscow?",
+      "options": [
+        "Convince Putin to accept a cease-fire before the winter",
+        "Persuade Putin to let Europe join Ukraine peace talks",
+        "Ask Putin to restore Starshield access for Ukraine's forces",
+        "Press Putin to meet Zelensky directly in Dublin this week"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "They seek Putin's agreement to bring Europe into the talks."
+    },
+    {
+      "q": "Where did Russian and Ukrainian representatives talk directly the day before?",
+      "options": [
+        "Istanbul",
+        "Geneva",
+        "Abu Dhabi",
+        "Dublin"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The envoys mediated talks in Abu Dhabi, the first direct talks in nine months."
+    },
+    {
+      "q": "What humanitarian mission did Putin offer?",
+      "options": [
+        "In Kramatorsk city",
+        "In Kherson region",
+        "In Zaporizhzhia city",
+        "In Kostiantynivka"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Putin offered a humanitarian mission in Kostiantynivka similar to the Oleshky cease-fire."
+    },
+    {
+      "q": "Who brokered the cease-fire around Oleshky?",
+      "options": [
+        "Jared Kushner",
+        "Melania Trump",
+        "Antonio Costa",
+        "Alexander Stubb"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The U.S. first lady, Melania Trump, brokered it."
+    },
+    {
+      "q": "What does Tatiana Stanovaya imply about Europe joining the talks?",
+      "options": [
+        "Putin might see it as proof that waiting out Europe works",
+        "Russia would drop its demands to redraw European security",
+        "It would push Putin to accept a cease-fire within weeks",
+        "It would weaken U.S. influence over the talks in Abu Dhabi"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "She says Putin could interpret it as a sign his tactic of waiting out the Europeans is working."
+    }
+  ]
+}

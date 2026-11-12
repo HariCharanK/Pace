@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's central argument?",
+      "options": [
+        "Slashing federal spending is the only realistic path to cutting the debt",
+        "Repeated tax cuts and high debt will limit what Democrats can afford to do",
+        "Democrats should raise taxes sharply to repay World War II era borrowing",
+        "A debt-to-GDP ratio of 100% is too low to worry anyone at home or abroad"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The passage says debt has grown through repeated tax cuts and that Democrats will face hard choices because new borrowing now costs much more."
+    },
+    {
+      "q": "How much did the series of tax cuts since 2001 add to the debt, per the Center for American Progress analysis?",
+      "options": [
+        "Over $3.4 trillion",
+        "Over $1.5 trillion",
+        "Over $32 trillion",
+        "Over $10 trillion"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The passage says the tax cuts since 2001 added over $10 trillion to the debt."
+    },
+    {
+      "q": "Which tax cuts were the most expensive in history as a share of GDP?",
+      "options": [
+        "Reagan's 1981 cuts",
+        "Obama's 2012 legislation",
+        "Trump's 2025 legislation",
+        "Johnson's 1964 cuts"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Reagan's 1981 tax cuts were the most expensive, reducing annual revenue by an average 2.9% of GDP."
+    },
+    {
+      "q": "What did the CBO project for debt by the end of 2034 under the 2025 bill?",
+      "options": [
+        "97.1% of GDP",
+        "100% of GDP",
+        "116% of GDP",
+        "91.2% of GDP"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The CBO projected increasing deficits would push debt to 116% of GDP by the end of 2034."
+    },
+    {
+      "q": "Why did Trump's cuts, though small as a share of GDP, affect the debt so much?",
+      "options": [
+        "They were paired with large new stimulus spending",
+        "Congress let most of the provisions expire after 2025",
+        "Borrowing costs were higher than in earlier eras",
+        "They cut revenue by more than Reagan's 1981 cuts did"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "The passage says the cuts had a larger debt effect partly because of the higher cost of borrowing."
+    }
+  ]
+}

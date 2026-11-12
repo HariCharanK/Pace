@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main point of the opening stories of Grace Groner and Richard Fuscone?",
+      "options": [
+        "Investing success depends more on behavior than on knowledge or credentials",
+        "Bankers should avoid heavy borrowing and illiquid investments always",
+        "Charitable giving is the best possible use of accumulated wealth",
+        "A formal education has no value for anyone working in finance"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "The author says investing is the study of how people behave with money, not of finance."
+    },
+    {
+      "q": "How much did Grace Groner leave to charity?",
+      "options": [
+        "$1 million",
+        "$7 million",
+        "$20 million",
+        "$66 million"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "She left $7 million to charity after dying in 2010 at age 100."
+    },
+    {
+      "q": "Which economist answered that he most wanted to know the exact role of luck in successful outcomes?",
+      "options": [
+        "Warren Buffett",
+        "Scott Adams",
+        "Robert Shiller",
+        "Richard Fuscone"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The author asked economist Robert Shiller, who gave that answer."
+    },
+    {
+      "q": "What does the author say people born in 1970 versus 1950 experienced in their teens and 20s?",
+      "options": [
+        "Stocks rose 10-fold for 1950 births but went nowhere for 1970 births",
+        "Stocks rose 10-fold for 1970 births but went nowhere for 1950 births",
+        "Stocks fell sharply for both groups, as inflation ate the gains",
+        "Stocks tracked inflation closely for both generations of investors"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The market went up 10-fold for those born in 1970; for 1950 it went nowhere."
+    },
+    {
+      "q": "What would the author most likely say about someone who tries to earn high returns while avoiding volatility?",
+      "options": [
+        "They are being prudent and will likely succeed in the long run",
+        "They are like a car thief trying to take a reward without paying its price",
+        "They have found a free lunch that the Money Gods allow",
+        "They should simply use more leverage to improve their returns"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He compares trades, hedges and leverage to grand theft auto: taking returns without paying the price of volatility."
+    }
+  ]
+}

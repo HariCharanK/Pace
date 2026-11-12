@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "How Charles Mackay's 1841 book on crowd behavior shaped modern views of speculative manias",
+        "The Dutch tulip price bubble of the 1630s, how the tulip trade arose, and how historians view it",
+        "The Ottoman origins of the tulip and its spread through European gardens and royal courts",
+        "How a mosaic virus created the tulip's prized streaks, and how growers learned to control it"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It covers tulip mania, the Dutch tulip business, and debate over how serious the bubble was."
+    },
+    {
+      "q": "Who is largely responsible for spreading tulip bulbs in the late 16th century?",
+      "options": [
+        "Ogier de Busbecq",
+        "Nicolas van Wassenaer",
+        "Philipp Blom",
+        "Carolus Clusius"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Botanist Carolus Clusius is largely responsible for the spread of tulip bulbs in the final years of the 16th century."
+    },
+    {
+      "q": "During which months could bulbs be moved and bought on the spot market?",
+      "options": [
+        "June to September",
+        "April and May",
+        "October to December",
+        "January to March"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "During the dormant phase from June to September bulbs could be uprooted, so spot purchases occurred then."
+    },
+    {
+      "q": "What caused the colorful flame-like streaks on prized tulips?",
+      "options": [
+        "A cold climate during the Little Ice Age",
+        "A mosaic virus that breaks the petal colour",
+        "Careful crossbreeding by Dutch growers",
+        "Soil rich in minerals in Leiden"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The effect is produced when bulbs are infected with the tulip breaking virus."
+    },
+    {
+      "q": "Why might traders have been willing to pay high forward prices, according to the passage?",
+      "options": [
+        "The Dutch government guaranteed all forward contracts against default by buyers",
+        "Edicts encouraged short selling, which lowered the cost of buying bulbs",
+        "Buyers expected bulbs to be scarce over winter, which raised resale value",
+        "Contracts could be voided for a small cost, which lowered buyers' risk"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "The passage says high prices may reflect expectations that contracts could be voided cheaply, and forward contracts were unenforceable."
+    }
+  ]
+}

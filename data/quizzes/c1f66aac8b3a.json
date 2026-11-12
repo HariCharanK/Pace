@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article mainly about?",
+      "options": [
+        "Ukraine opening its battlefield data to allies to train A.I. weapons",
+        "Russian efforts to build drone factories for autonomous weapons",
+        "How ChatGPT and other chatbots are trained on human writing",
+        "A new treaty banning fully autonomous weapons worldwide"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "Ukraine's Avenger Labs shares war data with allied firms to develop A.I. weapons."
+    },
+    {
+      "q": "What must companies give Ukraine in return for the free data?",
+      "options": [
+        "Licenses to any software they develop",
+        "Cash royalties on each drone they sell",
+        "Shared access to their own battlefield data",
+        "Equity stakes in their companies"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Data is free but companies must give the Ukrainian military licenses to the software."
+    },
+    {
+      "q": "How many British defense companies gain access under the first agreement?",
+      "options": [
+        "30",
+        "12",
+        "3",
+        "50"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Under the first agreement, 12 British defense companies will gain access."
+    },
+    {
+      "q": "How many drone surveillance and strike videos does Avenger Labs hold?",
+      "options": [
+        "Over five million",
+        "About 500,000",
+        "Over fifty million",
+        "Around 50,000"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "It holds more than five million drone surveillance and strike videos."
+    },
+    {
+      "q": "What limitation does Kateryna Bondar raise?",
+      "options": [
+        "Licensing fees make the data too expensive for smaller allies",
+        "Many of the videos are staged simulations, not real combat",
+        "The cloud platform is not encrypted and could be hacked",
+        "Data on Russian assets may not transfer to other conflicts"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "She asks what use training on Russian assets is away from Ukraine, e.g. in a Middle East war."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main argument?",
+      "options": [
+        "Politics and religion should never be discussed in any forum",
+        "Identity-driven topics ruin discussion, so keep your identity small",
+        "Only experts should be allowed to post opinions on online forums",
+        "Programming languages cannot be compared because all are equally good"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "Discussions fail when they engage identity, so one should let as few things as possible into one's identity."
+    },
+    {
+      "q": "Why does the author say religion threads grow faster than Javascript threads?",
+      "options": [
+        "Religion threads attract more experts who argue about doctrine",
+        "Forum moderators ban Javascript talk but allow religious topics",
+        "People feel no expertise is needed to have opinions on religion",
+        "Javascript is less interesting to most people who use forums"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "On religion, all you need is strongly held beliefs, so there is no expertise threshold."
+    },
+    {
+      "q": "Which example does the author use to show identity depends on people, not topic?",
+      "options": [
+        "A baking contest versus a Javascript tutorial",
+        "A Bronze Age battle versus a modern battle",
+        "A tax policy debate versus a cost estimate",
+        "A chess match between two famous grandmasters"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "A modern battle with citizens involved turns political, while a Bronze Age battle wouldn't."
+    },
+    {
+      "q": "What harmless-seeming topic does he say can't safely be discussed with some people?",
+      "options": [
+        "Apple versus Android phones",
+        "Coke versus Pepsi soft drinks",
+        "Ford versus Chevy pickup trucks",
+        "Yankees versus Red Sox baseball"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He notes the relative merits of Ford and Chevy pickups can't be safely discussed with others."
+    },
+    {
+      "q": "What would the author likely say about the debate over programming languages?",
+      "options": [
+        "It is unanswerable because all languages are equally good",
+        "It can be fruitful if identity-driven responders are excluded",
+        "It should be avoided entirely, as it always becomes a war",
+        "Only expert programmers should join in any such discussion"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He says you can have a fruitful discussion about languages if you exclude people who respond from identity."
+    }
+  ]
+}

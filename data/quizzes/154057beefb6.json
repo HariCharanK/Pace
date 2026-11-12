@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "Carnegie's steel empire and its rivalry with Standard Oil",
+        "The rise of kerosene and gasoline as household fuels",
+        "Rockefeller's oil empire and his later philanthropy",
+        "The Baptist church's role in building Cleveland's industry"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "It covers Standard Oil, its breakup, and Rockefeller's philanthropy."
+    },
+    {
+      "q": "How many entities was Standard Oil broken into in 1911?",
+      "options": [
+        "12",
+        "34",
+        "90",
+        "7"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The Supreme Court ordered it dismantled into 34 separate entities."
+    },
+    {
+      "q": "On what date did Rockefeller become the first billionaire?",
+      "options": [
+        "1 January 1913",
+        "23 May 1937",
+        "28 September 1916",
+        "8 July 1839"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He became the country's first billionaire on 28 September 1916."
+    },
+    {
+      "q": "What share of the nation's oil production did Standard Oil control by 1900?",
+      "options": [
+        "About 70%",
+        "About 50%",
+        "About 99%",
+        "About 90%"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "By 1900 Standard Oil controlled about 90% of national oil production."
+    },
+    {
+      "q": "What does the passage suggest about Rockefeller's view of business?",
+      "options": [
+        "Large trusts should be broken up for the public good",
+        "Competition among oil firms keeps business healthy",
+        "Large business growth reflects survival of the fittest",
+        "Charity work should be left to churches, not business"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "He was quoted as saying growth of a large business is merely survival of the fittest."
+    }
+  ]
+}

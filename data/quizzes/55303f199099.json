@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The founding and financing of the Liverpool and Manchester Railway",
+        "How stationary steam engines were built to haul coal and freight",
+        "The history, trial win, and preservation of the Rocket locomotive",
+        "The life and engineering career of George Stephenson"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "It covers Rocket's design, Rainhill win, later use and museum preservation."
+    },
+    {
+      "q": "Who is credited with the multi-tube boiler suggestion?",
+      "options": [
+        "Joseph Locke",
+        "George Stephenson",
+        "Henry Booth",
+        "Thomas Cochrane"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Henry Booth, treasurer of the L&MR, is believed to have suggested a multi-tube boiler."
+    },
+    {
+      "q": "What was the prize at the Rainhill Trials?",
+      "options": [
+        "£500",
+        "£1,000",
+        "£300",
+        "£80"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "A prize of £500 was offered and shared by Booth and the Stephensons."
+    },
+    {
+      "q": "Who was killed by Rocket at the 1830 opening ceremony?",
+      "options": [
+        "Robert Stephenson",
+        "The Duke of Wellington",
+        "William Huskisson",
+        "Joseph Locke"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "William Huskisson, MP for Liverpool, was struck and killed at Parkside."
+    },
+    {
+      "q": "Why was Rocket designed light and fast with moderate hauling power?",
+      "options": [
+        "Its builder had run short of iron and copper for the boiler",
+        "Passengers disliked riding behind heavy and slow engines",
+        "The trial's weight limits and emphasis on speed favored that",
+        "It was meant to haul long freight trains between mines"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "Stephenson realised the contest rules would favour a fast, light locomotive of only moderate hauling power."
+    }
+  ]
+}

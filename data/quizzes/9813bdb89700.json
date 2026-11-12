@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "How does the passage portray Brunel's career overall?",
+      "options": [
+        "As brilliant and visionary but marked by frequent setbacks",
+        "As a steady run of commercial triumphs that made him wealthy",
+        "As confined to railways and rarely noticed outside Britain",
+        "As overshadowed throughout life by his famous father Marc"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "He was a great figure of the Industrial Revolution but his career was marred by continual setbacks."
+    },
+    {
+      "q": "What gauge did Brunel choose for the GWR?",
+      "options": [
+        "An atmospheric gauge",
+        "7 ft 1/4 in broad gauge",
+        "A narrow gauge",
+        "Standard gauge"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He chose broad gauge of 7 ft 1/4 in, which became problematic."
+    },
+    {
+      "q": "Why was Brunel sent to study under Breguet in Paris?",
+      "options": [
+        "Breguet was his mother's cousin and offered a paid apprenticeship",
+        "Foreigners were barred from École Polytechnique, and Britain had no degrees",
+        "He failed the entrance examination for the Henri Quatre College in Caen",
+        "His father was held in a Paris debtors' prison and needed his help"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He was deemed ineligible for École Polytechnique and chose to study under the clockmaker Breguet."
+    },
+    {
+      "q": "What happened to Marc Brunel in 1821?",
+      "options": [
+        "He fled to Russia to work for Alexander I after losing his fortune",
+        "He was knighted by the Duke of Wellington for his block-making machinery",
+        "He was jailed for debt, then freed when the Chancellor paid it on condition he stay in Britain",
+        "His sawmill burned down and the government refused to pay for his army boot order"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He was jailed in King's Bench Prison, then released after Wellington's warning led to £5,000 being issued."
+    },
+    {
+      "q": "What does the passage imply about Brunel's ships?",
+      "options": [
+        "They were designed by John Scott Russell",
+        "They were often too far ahead of their time to succeed commercially",
+        "They all sank",
+        "They were commercially the most profitable of the era"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "His maritime works were remembered as too far ahead of their time to see success."
+    }
+  ]
+}

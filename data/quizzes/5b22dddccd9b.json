@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "A critique of Bhutan's monarchy and its handling of tourism during Covid",
+        "A guide to the top hotels and restaurants for first-time visitors to Bhutan",
+        "A detailed history of how Bhutan resisted annexation by China and India",
+        "The author's impressions of Bhutan, a long-wished-for destination with unusual customs"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "The author describes visiting Bhutan, a country at the top of his list, and what makes it special."
+    },
+    {
+      "q": "How did the author and his wife plan to travel before Covid and the babies?",
+      "options": [
+        "Visit one new continent each year",
+        "Visit two new countries every year",
+        "Take one long trip every other year",
+        "Visit a country from The List each month"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Early on they pledged to visit two new countries every year."
+    },
+    {
+      "q": "How much did the king give each tourism family during Covid?",
+      "options": [
+        "$50 a month",
+        "$200 a month",
+        "$120 a month",
+        "$500 a month"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The king gave tourism-industry families $120 per month, paid from his own pocket."
+    },
+    {
+      "q": "What is the purpose of Gelephu Mindfulness City?",
+      "options": [
+        "An economic hub around innovation that preserves tradition and may keep young people home",
+        "A new capital designed to relocate the king's government to the southern border",
+        "A luxury resort district meant to draw foreign tourists to Bhutan's temples",
+        "A pilgrimage center that would double the number of Buddhist monks in the country"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The king plans it as an innovation hub preserving tradition, because young people are leaving to find opportunity."
+    },
+    {
+      "q": "Why does the author mostly believe what he heard about Bhutan's king?",
+      "options": [
+        "The king personally told him the stories",
+        "He considers the situation unlike North Korea's",
+        "The tour guide showed him official records",
+        "The UN had confirmed the stories"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He contrasts North Korean claims, saying the situations are wildly different and he is inclined to mostly believe Bhutan's."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The axolotl: a tropical lizard bred mainly as a pet in home aquariums",
+        "How the Aztecs drained Lake Texcoco and built the city of Tenochtitlan",
+        "The axolotl: a neotenic, regenerating, critically endangered salamander",
+        "Why tilapia and carp are raised commercially in the lakes of Xochimilco"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "It describes the axolotl's biology, endangered status, and remarkable regeneration."
+    },
+    {
+      "q": "Which invasive species have driven wild axolotls near extinction?",
+      "options": [
+        "Catfish and bass",
+        "Crayfish and eels",
+        "Bullfrogs and trout",
+        "Tilapia and carp"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Wild axolotls have been driven near extinction by introduced tilapia and carp."
+    },
+    {
+      "q": "How large is the axolotl genome, as published in 2018?",
+      "options": [
+        "100 billion base pairs",
+        "32 billion base pairs",
+        "3 billion base pairs",
+        "10 billion base pairs"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The 32 billion base pair genome was the largest animal genome completed at that time."
+    },
+    {
+      "q": "What colour are albinistic axolotls' eyes?",
+      "options": [
+        "Gold",
+        "Pink",
+        "Black",
+        "Red"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Albinistic axolotls have a pale pink or white body with red eyes."
+    },
+    {
+      "q": "What does the passage imply about axolotl regeneration and age?",
+      "options": [
+        "It disappears entirely once the animal reaches sexual maturity",
+        "It declines with age but does not completely disappear",
+        "It is limited to the tail and the outer layers of skin",
+        "It stays constant throughout life, unaffected by age"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "The regenerative ability declines with age but does not completely disappear, and drops after metamorphosis."
+    }
+  ]
+}

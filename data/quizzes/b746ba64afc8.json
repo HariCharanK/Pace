@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the central idea of the article?",
+      "options": [
+        "Venus definitely harbors microbial life in its thick sulfuric clouds",
+        "Sulfuric acid destroys every organic molecule, so acid-based life is impossible",
+        "Life might exist in sulfuric acid, not just water, per the Seagers' work",
+        "Carbon is unnecessary because silicon can build the molecules of life"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The Seagers' studies suggest organic molecules are stable in sulfuric acid, which could serve as a solvent for a different biology."
+    },
+    {
+      "q": "Why did the rhododendron leaf survive in the sulfuric acid?",
+      "options": [
+        "It was kept at a low temperature",
+        "Its waxy coating protected it",
+        "The acid was diluted",
+        "It was submerged for only seconds"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The leaf's waxy coating kept it from breaking down."
+    },
+    {
+      "q": "What did Dr. Seager's team find could replace sugar in the backbone of a DNA alternative?",
+      "options": [
+        "Phosphate chains",
+        "Fatty acids",
+        "Silicon strands",
+        "Chains of peptides"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "An alternative to DNA stayed intact using chains of amino acids called peptides instead of sugars."
+    },
+    {
+      "q": "With which company is Dr. Seager planning Venus missions?",
+      "options": [
+        "Rocket Lab",
+        "SpaceX",
+        "Blue Origin",
+        "Boeing"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "She is planning a series of Venus missions in partnership with Rocket Lab."
+    },
+    {
+      "q": "Why would photosynthesis be a problem on an acid-based world?",
+      "options": [
+        "There is no sunlight reaching the acid clouds of such planets",
+        "Sugar falls apart in sulfuric acid, so it could not work as on Earth",
+        "Plants could not grow in acid at any temperature below boiling",
+        "Oxygen cannot exist near sulfuric acid, so none could be released"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "The article says sugar falls apart in the acid, so photosynthesis can't occur or must work very differently."
+    }
+  ]
+}

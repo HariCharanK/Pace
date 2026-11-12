@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article's main argument?",
+      "options": [
+        "The 2001 anthrax attacks led to a fully modernized national biosecurity network",
+        "Post-2001 biodefense systems have stagnated, leaving the U.S. vulnerable",
+        "BioWatch has been upgraded repeatedly and now detects threats within hours",
+        "Federal agencies coordinated well after 2001, but funding cuts ended the plan"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "Experts say systems built after 2001 are outdated and the federal response underfunded and uncoordinated."
+    },
+    {
+      "q": "How many people developed anthrax in the 2001 attacks, and how many died?",
+      "options": [
+        "5 sickened, 22 died",
+        "22 sickened, 5 died",
+        "22 sickened, 2 died",
+        "12 sickened, 3 died"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Stevens was the first of 22 to develop anthrax and the first of five who died."
+    },
+    {
+      "q": "How long is the delay between sample collection and identification with BioWatch?",
+      "options": [
+        "About one week",
+        "12 to 36 hours",
+        "3 to 5 days",
+        "1 to 2 hours"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Workers must manually collect samples and bring them to a lab, causing a 12 to 36 hour delay."
+    },
+    {
+      "q": "When did the government adopt a single cross-government biodefense strategy?",
+      "options": [
+        "2014",
+        "2003",
+        "2018",
+        "2008"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "A single cross-government biodefense strategy was not adopted until 2018."
+    },
+    {
+      "q": "Why do experts say an intentional attack may be more likely now?",
+      "options": [
+        "Anthrax spores are now sold openly through commercial laboratories",
+        "Federal agencies have stopped sharing intelligence about bioterror",
+        "AI and gene-editing make it easier to engineer pathogens",
+        "Detection systems have been scaled back at airports and ports"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "Advances in AI, synthetic biology and gene-editing make it easier for bad actors to engineer pathogens."
+    }
+  ]
+}

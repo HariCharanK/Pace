@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The War of the Spanish Succession and its effect on trade",
+        "The South Sea Company and its stock bubble and collapse",
+        "The Bank of England's rise as Britain's central bank",
+        "British slave law and the abolition of the Asiento trade"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It describes the company's founding, its stock bubble in 1720 and the collapse."
+    },
+    {
+      "q": "What monopoly was granted to the company in 1713?",
+      "options": [
+        "The Asiento de Plata to mine silver in Spanish Peru",
+        "The Asiento de Vino to ship Spanish wine into Britain",
+        "The Asiento de Negros to supply enslaved Africans",
+        "The Asiento de Té to import tea from East India ports"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "It got the Asiento de Negros monopoly."
+    },
+    {
+      "q": "What did the Bubble Act 1720 forbid?",
+      "options": [
+        "Trading in enslaved Africans without a royal licence",
+        "Creating joint-stock companies without a royal charter",
+        "Insider trading by directors of public companies",
+        "Issuing government debt without parliamentary approval"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "It forbade joint-stock companies without royal charter, promoted by the company itself."
+    },
+    {
+      "q": "What happened to those found to have profited unlawfully?",
+      "options": [
+        "They were imprisoned in the Tower of London for years",
+        "Their assets were confiscated in proportion to their gains",
+        "They were exiled to the colonies and stripped of titles",
+        "They were fined a flat sum paid to the Bank of England"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Personal assets were confiscated proportionate to their gains."
+    },
+    {
+      "q": "What does the passage suggest about the share price?",
+      "options": [
+        "It reflected strong profits from South American trade",
+        "It was driven by hype rather than actual trade profits",
+        "It was set by Parliament",
+        "It was stable"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "Expectations of profits were talked up and bubble prices exceeded what the business could justify."
+    }
+  ]
+}

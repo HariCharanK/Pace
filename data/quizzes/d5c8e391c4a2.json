@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "How Fleming single-handedly turned penicillin into a mass-produced drug",
+        "The discovery and development of penicillin, from early clues to mass production",
+        "The rise of antibiotic resistance after penicillin entered widespread use",
+        "How botanists classified Penicillium moulds throughout the 20th century"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It traces penicillin from early mould observations through Fleming, the Oxford team and wartime production."
+    },
+    {
+      "q": "Which bacterium was NOT killed by Fleming's mould?",
+      "options": [
+        "Staphylococcus",
+        "Streptococcus",
+        "Diphtheria bacillus",
+        "Typhoid bacterium"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Typhoid bacterium and H. influenzae were unaffected."
+    },
+    {
+      "q": "Who determined penicillin's chemical structure?",
+      "options": [
+        "Ernst Chain",
+        "Dorothy Hodgkin",
+        "Mary Ethel Florey",
+        "Norman Heatley"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Dorothy Hodgkin determined its structure, earning the 1964 Nobel Prize in Chemistry."
+    },
+    {
+      "q": "Where did consensus say the contaminating mould spores came from?",
+      "options": [
+        "The open window facing Praed Street",
+        "Fleming's own vacation home",
+        "A research student's culture",
+        "La Touche's laboratory a floor below"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "A consensus developed that the mould came from La Touche's laboratory, a floor below Fleming's."
+    },
+    {
+      "q": "What does the passage imply about Fleming's discovery?",
+      "options": [
+        "It depended partly on fortunate laboratory temperatures",
+        "It was immediately recognized and hailed by the scientific community",
+        "It was the first ever observation of a mould killing bacteria",
+        "It required deliberately seeding the plate with a Penicillium mould"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "It notes fortuitously cool then warmer August temperatures favoured first the mould and then the bacteria."
+    }
+  ]
+}

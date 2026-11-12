@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main claim of the essay?",
+      "options": [
+        "Founders should hire professional managers and step back from details",
+        "Scaling founders should use a distinct 'founder mode', not manager mode",
+        "Venture investors should take over daily management of startups",
+        "Airbnb's growth proves that Silicon Valley's hiring methods work"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The essay says conventional advice amounts to manager mode, which hurt founders."
+    },
+    {
+      "q": "What advice did Chesky receive that led to disastrous results?",
+      "options": [
+        "Hire good people and give them room to do their jobs",
+        "Replace most of the founding team with experienced executives",
+        "Run the company like Google, with autonomous product teams",
+        "Delegate hiring entirely to the board and outside recruiters"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The advice was 'hire good people and give them room to do their jobs.'"
+    },
+    {
+      "q": "Whose practices did Chesky partly study to find a better way?",
+      "options": [
+        "Jeff Bezos at Amazon",
+        "John Sculley at Apple",
+        "Bill Gates at Microsoft",
+        "Steve Jobs at Apple"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He studied how Steve Jobs ran Apple."
+    },
+    {
+      "q": "What did Steve Jobs do that the author cites as unusual?",
+      "options": [
+        "Ran an annual retreat only for the executives highest on the org chart",
+        "Hired only founders and let them run each product line independently",
+        "Banned all meetings with direct reports to keep the company startup-like",
+        "Ran an annual retreat for the 100 most important people, not the top of the org chart"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The retreat included the 100 most important people, not the highest on the org chart."
+    },
+    {
+      "q": "What does the author suggest about founders' bad experiences?",
+      "options": [
+        "Advice fits professional managers, so founders feel gaslit",
+        "Managers are always right, so founders should defer to executives",
+        "Founder mode is already well documented in business school books",
+        "Founders were mistaken, since everyone around them disagreed"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "Advice assumed professional management, and founders felt gaslit by VCs and execs."
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "_comment": "Your corpora. Edit freely or use the 'Add content' page in the app. categories: health, technology, biology, finance, productivity, history, geopolitics, biography. kind: news | blog | essay | book | knowledge. ua: 'googlebot' fetches full text from NYT-style paywalls (personal use only).",
+  "feeds": [
+    {
+      "id": "nyt-health",
+      "name": "NYT · Health",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
+      "kind": "news",
+      "categories": [
+        "health"
+      ],
+      "max_items": 4,
+      "ua": "googlebot"
+    },
+    {
+      "id": "nyt-well",
+      "name": "NYT · Well",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Well.xml",
+      "kind": "news",
+      "categories": [
+        "health",
+        "productivity"
+      ],
+      "max_items": 4,
+      "ua": "googlebot"
+    },
+    {
+      "id": "nyt-tech",
+      "name": "NYT · Technology",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+      "kind": "news",
+      "categories": [
+        "technology"
+      ],
+      "max_items": 4,
+      "ua": "googlebot"
+    },
+    {
+      "id": "nyt-science",
+      "name": "NYT · Science",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+      "kind": "news",
+      "categories": [
+        "biology"
+      ],
+      "max_items": 4,
+      "ua": "googlebot"
+    },
+    {
+      "id": "nyt-money",
+      "name": "NYT · Your Money",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/YourMoney.xml",
+      "kind": "news",
+      "categories": [
+        "finance"
+      ],
+      "max_items": 3,
+      "ua": "googlebot"
+    },
+    {
+      "id": "nyt-business",
+      "name": "NYT · Business",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+      "kind": "news",
+      "categories": [
+        "finance"
+      ],
+      "max_items": 3,
+      "ua": "googlebot"
+    },
+    {
+      "id": "nyt-world",
+      "name": "NYT · World",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "kind": "news",
+      "categories": [
+        "geopolitics"
+      ],
+      "max_items": 4,
+      "ua": "googlebot"
+    },
+    {
+      "id": "conv-health",
+      "name": "The Conversation · Health",
+      "url": "https://theconversation.com/us/health/articles.atom",
+      "kind": "news",
+      "categories": [
+        "health"
+      ],
+      "max_items": 3
+    },
+    {
+      "id": "conv-tech",
+      "name": "The Conversation · Technology",
+      "url": "https://theconversation.com/us/technology/articles.atom",
+      "kind": "news",
+      "categories": [
+        "technology"
+      ],
+      "max_items": 3
+    },
+    {
+      "id": "conv-business",
+      "name": "The Conversation · Business",
+      "url": "https://theconversation.com/us/business/articles.atom",
+      "kind": "news",
+      "categories": [
+        "finance"
+      ],
+      "max_items": 3
+    },
+    {
+      "id": "conv-politics",
+      "name": "The Conversation · Politics",
+      "url": "https://theconversation.com/us/politics/articles.atom",
+      "kind": "news",
+      "categories": [
+        "geopolitics"
+      ],
+      "max_items": 2
+    },
+    {
+      "id": "housel",
+      "name": "Morgan Housel · Collab Fund",
+      "url": "https://collabfund.com/feed.xml",
+      "kind": "blog",
+      "categories": [
+        "finance",
+        "productivity"
+      ],
+      "max_items": 4,
+      "exclude": "conversations|welcoming|investing in|apply|associate program"
+    },
+    {
+      "id": "fs",
+      "name": "Farnam Street",
+      "url": "https://fs.blog/feed/",
+      "kind": "blog",
+      "categories": [
+        "productivity"
+      ],
+      "max_items": 3,
+      "exclude": "^\\[outliers\\]|:|\\|"
+    },
+    {
+      "id": "jamesclear",
+      "name": "James Clear",
+      "url": "https://jamesclear.com/feed",
+      "kind": "blog",
+      "categories": [
+        "productivity"
+      ],
+      "max_items": 3,
+      "exclude": "annual review|birthday"
+    },
+    {
+      "id": "newport",
+      "name": "Cal Newport",
+      "url": "https://calnewport.com/feed/",
+      "kind": "blog",
+      "categories": [
+        "productivity",
+        "technology"
+      ],
+      "max_items": 3
+    },
+    {
+      "id": "noahpinion",
+      "name": "Noahpinion",
+      "url": "https://www.noahpinion.blog/feed",
+      "kind": "blog",
+      "categories": [
+        "finance",
+        "geopolitics"
+      ],
+      "max_items": 3,
+      "exclude": "discuss|podcast|hexapodia|interview"
+    },
+    {
+      "id": "exphistory",
+      "name": "Experimental History",
+      "url": "https://www.experimental-history.com/feed",
+      "kind": "blog",
+      "categories": [
+        "productivity",
+        "biology"
+      ],
+      "max_items": 2,
+      "exclude": "links|update|preorder"
+    },
+    {
+      "id": "waitbutwhy",
+      "name": "Wait But Why",
+      "url": "https://waitbutwhy.com/feed",
+      "kind": "blog",
+      "categories": [
+        "technology",
+        "productivity"
+      ],
+      "max_items": 2
+    },
+    {
+      "id": "atlasobscura",
+      "name": "Atlas Obscura",
+      "url": "https://www.atlasobscura.com/feeds/latest",
+      "kind": "blog",
+      "categories": [
+        "history"
+      ],
+      "max_items": 3
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://paulgraham.com/makersschedule.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/ds.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "technology",
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/procrastination.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/identity.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/cities.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/genius.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "productivity",
+        "biography"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/superlinear.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "finance",
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/foundermode.html",
+      "name": "Paul Graham",
+      "kind": "essay",
+      "categories": [
+        "technology",
+        "biography"
+      ]
+    },
+    {
+      "url": "https://collabfund.com/blog/the-psychology-of-money/",
+      "name": "Morgan Housel · Collab Fund",
+      "kind": "blog",
+      "categories": [
+        "finance"
+      ]
+    },
+    {
+      "url": "https://jamesclear.com/marginal-gains",
+      "name": "James Clear",
+      "kind": "blog",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://fs.blog/first-principles/",
+      "name": "Farnam Street",
+      "kind": "blog",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+      "name": "Steve Jobs · Stanford 2005",
+      "kind": "essay",
+      "categories": [
+        "biography",
+        "technology"
+      ],
+      "title": "Steve Jobs' 2005 Stanford Commencement Address"
+    },
+    {
+      "url": "https://collabfund.com/blog/getting-wealthy-vs-staying-wealthy/",
+      "name": "Morgan Housel · Collab Fund",
+      "kind": "blog",
+      "categories": [
+        "finance"
+      ]
+    },
+    {
+      "url": "https://collabfund.com/blog/the-three-sides-of-risk/",
+      "name": "Morgan Housel · Collab Fund",
+      "kind": "blog",
+      "categories": [
+        "finance"
+      ]
+    },
+    {
+      "url": "https://paulgraham.com/hwh.html",
+      "name": "",
+      "kind": "essay",
+      "categories": [
+        "productivity"
+      ]
+    }
+  ],
+  "wikipedia": [
+    {
+      "title": "Steve Jobs",
+      "categories": [
+        "biography",
+        "technology"
+      ],
+      "sections": [
+        "Early life",
+        "Apple (1976–1985)"
+      ]
+    },
+    {
+      "title": "Elon Musk",
+      "categories": [
+        "biography",
+        "technology"
+      ],
+      "sections": [
+        "Early life and education",
+        "Business career"
+      ]
+    },
+    {
+      "title": "Macintosh 128K",
+      "categories": [
+        "technology",
+        "history"
+      ]
+    },
+    {
+      "title": "Xerox Alto",
+      "categories": [
+        "technology",
+        "history"
+      ]
+    },
+    {
+      "title": "Traitorous eight",
+      "categories": [
+        "technology",
+        "biography",
+        "history"
+      ]
+    },
+    {
+      "title": "James Watt",
+      "categories": [
+        "biography",
+        "history"
+      ]
+    },
+    {
+      "title": "Richard Arkwright",
+      "categories": [
+        "biography",
+        "history"
+      ]
+    },
+    {
+      "title": "Isambard Kingdom Brunel",
+      "categories": [
+        "biography",
+        "history"
+      ]
+    },
+    {
+      "title": "Luddite",
+      "categories": [
+        "history",
+        "technology"
+      ]
+    },
+    {
+      "title": "Stephenson's Rocket",
+      "categories": [
+        "history",
+        "technology"
+      ]
+    },
+    {
+      "title": "Great Stink",
+      "categories": [
+        "history",
+        "health"
+      ]
+    },
+    {
+      "title": "1854 Broad Street cholera outbreak",
+      "categories": [
+        "history",
+        "health"
+      ]
+    },
+    {
+      "title": "History of penicillin",
+      "categories": [
+        "health",
+        "biology",
+        "history"
+      ]
+    },
+    {
+      "title": "Scurvy",
+      "categories": [
+        "health",
+        "history"
+      ],
+      "sections": [
+        "History"
+      ]
+    },
+    {
+      "title": "Eradication of smallpox",
+      "categories": [
+        "health",
+        "history"
+      ]
+    },
+    {
+      "title": "Tardigrade",
+      "categories": [
+        "biology"
+      ]
+    },
+    {
+      "title": "Axolotl",
+      "categories": [
+        "biology"
+      ]
+    },
+    {
+      "title": "Cephalopod intelligence",
+      "categories": [
+        "biology"
+      ]
+    },
+    {
+      "title": "Circadian rhythm",
+      "categories": [
+        "biology",
+        "health"
+      ]
+    },
+    {
+      "title": "History of wolves in Yellowstone",
+      "categories": [
+        "biology",
+        "history"
+      ]
+    },
+    {
+      "title": "Photo 51",
+      "categories": [
+        "biology",
+        "history",
+        "biography"
+      ]
+    },
+    {
+      "title": "Placebo",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "title": "Tulip mania",
+      "categories": [
+        "finance",
+        "history"
+      ]
+    },
+    {
+      "title": "South Sea Company",
+      "categories": [
+        "finance",
+        "history"
+      ],
+      "sections": [
+        "South Sea Bubble"
+      ]
+    },
+    {
+      "title": "Long-Term Capital Management",
+      "categories": [
+        "finance",
+        "history"
+      ]
+    },
+    {
+      "title": "Black Monday (1987)",
+      "categories": [
+        "finance",
+        "history"
+      ]
+    },
+    {
+      "title": "Hyperinflation in the Weimar Republic",
+      "categories": [
+        "finance",
+        "history",
+        "geopolitics"
+      ]
+    },
+    {
+      "title": "Index fund",
+      "categories": [
+        "finance"
+      ]
+    },
+    {
+      "title": "John D. Rockefeller",
+      "categories": [
+        "biography",
+        "finance"
+      ],
+      "sections": [
+        "Early life",
+        "Career"
+      ]
+    },
+    {
+      "title": "Berlin Blockade",
+      "categories": [
+        "geopolitics",
+        "history"
+      ]
+    },
+    {
+      "title": "Cuban Missile Crisis",
+      "categories": [
+        "geopolitics",
+        "history"
+      ]
+    },
+    {
+      "title": "Marshall Plan",
+      "categories": [
+        "geopolitics",
+        "history",
+        "finance"
+      ]
+    },
+    {
+      "title": "Pomodoro Technique",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Parkinson's law",
+      "categories": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Flow (psychology)",
+      "categories": [
+        "productivity",
+        "health"
+      ]
+    }
+  ],
+  "books": [
+    {
+      "gutenberg_id": 20203,
+      "title": "The Autobiography of Benjamin Franklin",
+      "author": "Benjamin Franklin",
+      "excerpts": [
+        {
+          "heading": "PLAN FOR ATTAINING MORAL",
+          "categories": [
+            "productivity",
+            "biography"
+          ],
+          "no_break": true,
+          "title": "A Plan for Attaining Moral Perfection"
+        },
+        {
+          "heading": "ARRIVAL IN PHILADELPHIA",
+          "categories": [
+            "biography",
+            "history"
+          ]
+        },
+        {
+          "heading": "THE WAY TO WEALTH",
+          "categories": [
+            "finance",
+            "productivity"
+          ]
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 2274,
+      "title": "How to Live on 24 Hours a Day",
+      "author": "Arnold Bennett",
+      "excerpts": [
+        {
+          "heading": "THE DAILY MIRACLE",
+          "categories": [
+            "productivity"
+          ]
+        },
+        {
+          "heading": "THE DESIRE TO EXCEED ONE'S PROGRAMME",
+          "categories": [
+            "productivity"
+          ]
+        },
+        {
+          "heading": "CONTROLLING THE MIND",
+          "categories": [
+            "productivity"
+          ]
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 935,
+      "title": "Self-Help",
+      "author": "Samuel Smiles",
+      "excerpts": [
+        {
+          "heading": "LEADERS OF INDUSTRY—INVENTORS AND PRODUCERS.",
+          "categories": [
+            "history",
+            "biography"
+          ]
+        },
+        {
+          "heading": "APPLICATION AND PERSEVERANCE.",
+          "categories": [
+            "productivity",
+            "biography"
+          ]
+        },
+        {
+          "heading": "MONEY—ITS USE AND ABUSE.",
+          "categories": [
+            "finance",
+            "productivity"
+          ]
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 944,
+      "title": "The Voyage of the Beagle",
+      "author": "Charles Darwin",
+      "excerpts": [
+        {
+          "heading": "GALAPAGOS ARCHIPELAGO",
+          "categories": [
+            "biology"
+          ],
+          "skip_paragraphs": 1
+        },
+        {
+          "heading": "TIERRA DEL FUEGO",
+          "categories": [
+            "biology",
+            "history"
+          ],
+          "skip_paragraphs": 1
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 17976,
+      "title": "Autobiography of Andrew Carnegie",
+      "author": "Andrew Carnegie",
+      "excerpts": [
+        {
+          "heading": "PITTSBURGH AND WORK",
+          "categories": [
+            "biography",
+            "history"
+          ]
+        },
+        {
+          "heading": "THE TELEGRAPH OFFICE",
+          "categories": [
+            "biography",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 7213,
+      "title": "My Life and Work",
+      "author": "Henry Ford",
+      "excerpts": [
+        {
+          "heading": "GETTING INTO PRODUCTION",
+          "categories": [
+            "history",
+            "technology",
+            "biography"
+          ]
+        },
+        {
+          "heading": "THE BEGINNING OF BUSINESS",
+          "categories": [
+            "biography",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 12439,
+      "title": "Notes on Nursing",
+      "author": "Florence Nightingale",
+      "excerpts": [
+        {
+          "heading": "IV. NOISE.",
+          "categories": [
+            "health",
+            "history"
+          ]
+        }
+      ]
+    },
+    {
+      "gutenberg_id": 2376,
+      "title": "Up from Slavery",
+      "author": "Booker T. Washington",
+      "excerpts": [
+        {
+          "heading": "The Struggle For An Education",
+          "categories": [
+            "biography",
+            "history"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "Why placebos should replace active drugs in routine treatment of chronic disease",
+        "How the pharmaceutical industry developed and marketed sugar pills since the 1700s",
+        "How sham surgery became the standard method for testing new cancer treatments",
+        "How placebos work in trials, what effects they have, and what influences them"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "It defines placebos and discusses their effects, influencing factors, and depression research."
+    },
+    {
+      "q": "What did the 2001 meta-analysis of 40 conditions find?",
+      "options": [
+        "Nausea was the only effect",
+        "Placebos worked for most conditions",
+        "Placebos cured diseases",
+        "Only pain showed a significant effect"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "It concluded the only condition with a significant placebo effect was pain."
+    },
+    {
+      "q": "Which delivery form is said to have the strongest placebo effect?",
+      "options": [
+        "Injections",
+        "Capsules",
+        "Powders",
+        "Pills"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Capsules appear more influential than pills, and injections are even stronger than capsules."
+    },
+    {
+      "q": "In the open/hidden studies, when were analgesics more effective?",
+      "options": [
+        "When they were given secretly without the patient being told",
+        "When the patient knew they were receiving them",
+        "When they were combined with a placebo in a blinded trial",
+        "When they were given by a doctor the patient had never met"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Analgesics are considerably more effective when the patient knows they are receiving them."
+    },
+    {
+      "q": "Why is a no-treatment comparison group not enough to prove a true placebo effect?",
+      "options": [
+        "Placebo groups are too small to produce reliable results",
+        "It is not blinded, so bias could create differences",
+        "Regression to the mean cannot be ruled out in such groups",
+        "Patients in it tend to drop out before the study ends"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "The authors note lack of blinding could produce differences between placebo and no-treatment groups even without a true effect."
+    }
+  ]
+}

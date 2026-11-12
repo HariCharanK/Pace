@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main subject of this passage?",
+      "options": [
+        "How a Soviet missile deployment in Cuba led to a tense US-Soviet standoff and its causes",
+        "How Fidel Castro's 1959 revolution against Batista reshaped US-Cuban trade relations",
+        "Why the United States placed Jupiter and Thor missiles in Turkey, Italy and England",
+        "How the failed Bay of Pigs invasion led Kennedy to win the 1960 election"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "The passage describes the 13-day confrontation over Soviet missiles in Cuba and the Cuba, US and Soviet background factors behind it."
+    },
+    {
+      "q": "In which year did the US deploy Thor missiles in England under Project Emily?",
+      "options": [
+        "1961",
+        "1962",
+        "1957",
+        "1959"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The passage says that in 1959 the US deployed Thor nuclear missiles in England, known as Project Emily."
+    },
+    {
+      "q": "What did Kennedy call his naval blockade of Cuba, and why?",
+      "options": [
+        "A defense perimeter, to reassure the Soviet navy",
+        "A quarantine, to avoid the formal implications of a state of war",
+        "A patrol zone, to keep the United Nations involved",
+        "A shipping inspection, to satisfy Cuban exiles"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Kennedy called it a quarantine so the US could avoid the formal implications of a state of war."
+    },
+    {
+      "q": "What did the US secretly agree to do as part of the settlement?",
+      "options": [
+        "Lift its embargo against Cuba",
+        "Withdraw its troops from Guantanamo",
+        "Dismantle its offensive weapons in Turkey",
+        "Pay for UN inspections in Cuba"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The passage says the United States secretly agreed to dismantle all offensive weapons it had deployed to Turkey."
+    },
+    {
+      "q": "Why was the deal harmful to Khrushchev at home?",
+      "options": [
+        "Kennedy refused to promise the United States would never invade Cuba again",
+        "The Politburo blamed him for losing the Soviet U-2 spy plane program",
+        "The secret deal made the Soviets look like they retreated from their own crisis",
+        "Castro publicly blamed him for losing the Soviet bombers and the alliance"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "The passage says the secret deal made the Soviets seem to retreat, embarrassing Khrushchev and contributing to his fall two years later."
+    }
+  ]
+}

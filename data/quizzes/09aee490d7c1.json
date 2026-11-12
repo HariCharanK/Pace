@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article mainly reporting?",
+      "options": [
+        "Nvidia's record quarterly earnings and chip sales",
+        "A new U.S. ban on advanced chip exports to China",
+        "Jensen Huang's resignation as Nvidia CEO after affairs",
+        "Colette Kress's rise from Microsoft to Nvidia's board"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "Huang resigned after revelations of an affair with a subordinate and with a woman identified as a Chinese spy."
+    },
+    {
+      "q": "Who was named interim chief executive?",
+      "options": [
+        "Harvey Jones",
+        "Colette Kress",
+        "Kimberly Powell",
+        "Patrick Moorhead"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The board named CFO Colette Kress as interim chief executive."
+    },
+    {
+      "q": "How much in chips has Megaspeed bought since June 2024?",
+      "options": [
+        "More than $480 million",
+        "More than $1.5 billion",
+        "More than $4.8 billion",
+        "More than $48 billion"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Megaspeed has bought more than $4.8 billion in chips since June 2024."
+    },
+    {
+      "q": "By about how much have Nvidia's shares fallen from their early October peak?",
+      "options": [
+        "About a third",
+        "About ten percent",
+        "About half",
+        "About two-thirds"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Shares are down about a third, a decline of more than $1.5 trillion in market value."
+    },
+    {
+      "q": "What does Moorhead imply about replacing Huang?",
+      "options": [
+        "Kress is the obvious long-term pick to fill his shoes",
+        "Nobody can run Nvidia as he did, so a new model is needed",
+        "Any strong outside executive could easily replace him",
+        "Nvidia's operations will run the same without a leader"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He says nobody can replace Jensen as Jobs was not replaced, and there has to be a different operating system."
+    }
+  ]
+}

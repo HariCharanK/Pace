@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "How rural communities can start and fund a local food bank program",
+        "Food-as-medicine programs: their nature, history and need for stronger evidence",
+        "The Trump administration's Eat Real Food campaign and its critics",
+        "How changing weather and fuel delays drive up crop prices worldwide"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It explains the movement, its history and local results, then says larger high-quality studies are needed."
+    },
+    {
+      "q": "Where did Dr. Jack Geiger co-found community health centers in the 1960s?",
+      "options": [
+        "Appalachia and the South Side of Chicago",
+        "New Orleans and the Georgia Sea Islands",
+        "South Boston and the Mississippi Delta",
+        "Harlem and the Alabama Black Belt"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He co-founded health centers in South Boston and the Mississippi Delta."
+    },
+    {
+      "q": "What did the authors' food box program for 55 households show after two years?",
+      "options": [
+        "Lower blood sugar, cholesterol and blood pressure readings",
+        "Reductions in weight, waist circumference and triglycerides",
+        "No statistically significant change in any health measure",
+        "Fewer hospital admissions and lower emergency room costs"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "They found significant reductions in weight, waist circumference and triglyceride levels."
+    },
+    {
+      "q": "What limit did the authors cite for their food box project's 'dose'?",
+      "options": [
+        "Only four to five meals a week were supplemented",
+        "Households received food only once a month",
+        "Only children received food",
+        "Boxes had no fresh vegetables"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Their project supplemented only four to five meals per week, which may have been insufficient."
+    },
+    {
+      "q": "What would the authors say is needed before food is medicine can change standard care?",
+      "options": [
+        "More grocery stores and supermarkets in rural food deserts",
+        "Larger, high-quality studies tracking clinical outcomes",
+        "Mandatory insurance coverage for every food prescription",
+        "Fewer local programs so funding can be concentrated"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "They say that larger, high-quality studies are needed to track clinical outcomes before any shift in practice."
+    }
+  ]
+}

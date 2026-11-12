@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "How eight employees left Shockley's lab to found Fairchild Semiconductor",
+        "How Shockley's invention of the transistor won him a Nobel Prize",
+        "The corporate histories of Raytheon and Beckman Instruments compared",
+        "How Intel and AMD grew into leaders of the semiconductor industry"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "It describes why and how the eight left Shockley Semiconductor in 1957 to found Fairchild."
+    },
+    {
+      "q": "Who funded Shockley's laboratory as a department of his company?",
+      "options": [
+        "Sherman Fairchild",
+        "Arnold Beckman",
+        "Arthur Rock",
+        "Raytheon"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Arnold Beckman, owner of Beckman Instruments, agreed to fund the lab."
+    },
+    {
+      "q": "Which candidate got a salary of $675 a month?",
+      "options": [
+        "Robert Noyce",
+        "Eugene Kleiner",
+        "Jay Last",
+        "Sheldon Roberts"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The less-experienced Last got $675, while Kleiner, Noyce and Roberts got $1,000."
+    },
+    {
+      "q": "Where did Kleiner actually go in March 1957 after claiming he would visit an exhibition in Los Angeles?",
+      "options": [
+        "San Francisco",
+        "Boston",
+        "Philadelphia",
+        "New York"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He flew to New York to seek investors for a new company."
+    },
+    {
+      "q": "Why did Shockley consider Noyce his sole support in the group?",
+      "options": [
+        "Noyce stood behind him and tried to resolve conflicts",
+        "Noyce had the deepest background in electronics research",
+        "Noyce was the first physicist he recruited from Bell Labs",
+        "Noyce led the dissidents pushing for Shockley's replacement"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "While Moore led the dissidents, Noyce backed Shockley and tried to resolve conflicts."
+    }
+  ]
+}

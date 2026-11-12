@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's central point about confidence?",
+      "options": [
+        "Maximum confidence is the key to success",
+        "Confidence is inborn and cannot change",
+        "Confidence matters less than talent",
+        "The right amount of confidence matters, not the most"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "He argues confidence isn't about having more but calibrating the right amount."
+    },
+    {
+      "q": "What did Burrow's coach notice about him when he was nine?",
+      "options": [
+        "His blood pressure seemed the same whether shooting, mowing, or rescuing someone",
+        "His blood pressure spiked whenever he shot free throws in tight games",
+        "His heart rate stayed lower in games than at practice or at home",
+        "His stamina outlasted every other player on the AAU team in each game"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The coach said his blood pressure appeared the same across tasks, so he was unfazed regardless of the task."
+    },
+    {
+      "q": "How long was Burrow a backup at Ohio State?",
+      "options": [
+        "One year",
+        "Two years",
+        "Three years",
+        "Four years"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He spent three years as a backup, largely watching from the sideline."
+    },
+    {
+      "q": "What phrase did McRaven use for what he wanted in a SEAL?",
+      "options": [
+        "Maximum grit and no doubt",
+        "Just enough swagger and just enough humility",
+        "Total calm in all conditions",
+        "Natural leaders with fearless instincts"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "McRaven wanted someone with 'just enough swagger, but also just enough humility.'"
+    },
+    {
+      "q": "What does the author think the coach's comment was really aimed at?",
+      "options": [
+        "Burrow's rivals",
+        "Burrow's parents",
+        "The league's scouts",
+        "The opposing coach"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He believes the coach was directing his comments at Burrow's parents, about channeling the confidence."
+    }
+  ]
+}

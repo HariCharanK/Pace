@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The invention of the first steam engine by Thomas Newcomen",
+        "How Joseph Black discovered latent heat",
+        "The life of James Watt and how he improved the steam engine",
+        "The history of the Industrial Revolution in Scotland"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The passage covers Watt's early life, career and his improvement of the Newcomen steam engine."
+    },
+    {
+      "q": "What did the arrival of Alexander MacFarlane's instruments allow Watt to do?",
+      "options": [
+        "Train for a full apprenticeship under a London instrument maker",
+        "Join the Incorporation of Hammermen and open his own shop",
+        "Partner with Matthew Boulton to build the first steam engine",
+        "Restore them, get paid, then open a workshop at the university"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Watt restored the instruments and was paid, and professors then offered him a small workshop in the university."
+    },
+    {
+      "q": "In 1764, whom did Watt marry?",
+      "options": [
+        "His cousin Margaret (Peggy) Miller",
+        "Ann MacGregor, a dye-maker's daughter",
+        "Agnes Muirhead, daughter of a shipwright",
+        "Peggy Craig, the daughter of John Craig"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "In 1764 Watt married his cousin Margaret (Peggy) Miller."
+    },
+    {
+      "q": "About how much of the steam's thermal energy did Watt find was used heating the cylinder each cycle?",
+      "options": [
+        "One-quarter",
+        "Half",
+        "Nine-tenths",
+        "Three-quarters"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Watt showed about three-quarters of the steam's thermal energy was consumed heating the cylinder each cycle."
+    },
+    {
+      "q": "What does the passage suggest about the story of Watt and the kettle?",
+      "options": [
+        "Watt invented the steam engine after watching a kettle as a boy",
+        "Probably a myth, though he did use a kettle in experiments",
+        "It was first told by Watt himself in his surviving diaries",
+        "It proves Watt never studied the thermodynamics of steam"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "The passage calls it apocryphal in its many versions but notes his diaries show he used a kettle as a boiler."
+    }
+  ]
+}

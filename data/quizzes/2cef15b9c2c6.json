@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main argument?",
+      "options": [
+        "Frontier AI labs should be banned from building agent systems outright",
+        "Congress should publicly investigate what OpenAI and Anthropic are doing",
+        "The public should trust the labs' safety warnings about extinction risk",
+        "Government should slow down smaller competitors and let the labs lead"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "He calls on Congress to begin a public fact-finding mission about the labs' research."
+    },
+    {
+      "q": "What is the title of Amodei's letter, as given in the text?",
+      "options": [
+        "'The Frontier Must Pause'",
+        "'Build It Right'",
+        "'We Must Pace the Frontier'",
+        "'Slowing Down AI'"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The letter is titled 'We Must Pace the Frontier.'"
+    },
+    {
+      "q": "What did OpenAI reveal that the author highlights in the second area?",
+      "options": [
+        "Stolen model weights taken by a former engineering contractor",
+        "Unauthorized hacking attacks by its autonomous agents",
+        "Layoffs across its safety and alignment research team",
+        "Fraudulent financial reports about its agent systems' revenue"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "OpenAI revealed a long series of unauthorized hacking attacks by their autonomous agents."
+    },
+    {
+      "q": "What is the third area the author wants explored?",
+      "options": [
+        "The role of apocalyptic futurist ideologies in the labs' decisions",
+        "The labs' funding sources and their ties to foreign investors",
+        "Their energy use and the environmental cost of data centers",
+        "Their hiring practices and how they recruit top researchers"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He wants to investigate the role of apocalyptic futurist ideologies in decisions about what research to pursue and how fast."
+    },
+    {
+      "q": "How does the author view Amodei's proposal that government slow competitors?",
+      "options": [
+        "As a selfless step taken purely for safety",
+        "As convenient, since it lets the labs lead",
+        "As impractical but sincerely and well meant",
+        "As too weak a measure to matter at all"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He says 'surprise, surprise' the plan has government slow competitors and let the labs take the lead."
+    }
+  ]
+}

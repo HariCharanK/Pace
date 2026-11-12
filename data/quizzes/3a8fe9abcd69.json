@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article mainly about?",
+      "options": [
+        "A new drug that slows early-stage Alzheimer's progression",
+        "How practicing tongue twisters can improve older adults' memory",
+        "Commercial phone apps that diagnose Parkinson's from voice",
+        "Using subtle speech changes to predict and track dementia risk"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "Researchers analyze speech features to predict dementia risk and track brain health."
+    },
+    {
+      "q": "In Dr. Eshghi's 49-person study, how accurate was the speech-based analysis at best?",
+      "options": [
+        "77 percent",
+        "90 percent",
+        "47 percent",
+        "62 percent"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Speech analysis classified participants up to 77 percent accurately versus 47 percent for cognitive testing models."
+    },
+    {
+      "q": "What does the SpeechDX study collect?",
+      "options": [
+        "Three years of speech data from 2,000 people in three countries",
+        "Two years of speech data from 1,000 people across Europe alone",
+        "One year of speech data from 500 people in the United States",
+        "Five years of speech data from 49 people in the Boston area"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "SpeechDX collects three years of speech data, plus blood tests and scans, for 2,000 people in the U.S., Australia and Spain."
+    },
+    {
+      "q": "What did Deb's second assessment show compared with two years earlier?",
+      "options": [
+        "Her vocabulary shrank and her speech became noticeably more monotone",
+        "She paused more often and her average pitch was slightly higher",
+        "She was reclassified as moderate-risk after her blood levels rose",
+        "She spoke noticeably faster, with fewer pauses and a lower pitch"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "She paused more, spent more time pausing, had slightly higher pitch, and remained cognitively unimpaired."
+    },
+    {
+      "q": "What would Dr. Au likely say about commercial speech analysis apps?",
+      "options": [
+        "They are more accurate than brain scans or spinal taps",
+        "They are already ready for use in routine health care",
+        "They need more evidence before use in health care",
+        "They should replace blood tests as a screening tool"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "She said it is not ready for prime time in the health care space and more data is needed."
+    }
+  ]
+}

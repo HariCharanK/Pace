@@ -1,0 +1,65 @@
+{
+ "model": "claude (precomputed)",
+ "questions": [
+  {
+   "q": "What is the article's central point?",
+   "options": [
+    "Setbacks should be avoided at all costs",
+    "Big breakthroughs matter more than daily habits",
+    "Small improvements compound into large results over time",
+    "Cycling success depends on equipment alone"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "The article argues that aggregating 1 percent gains yields remarkable results."
+  },
+  {
+   "q": "What did the team do to the inside of the team truck?",
+   "options": [
+    "Added bike storage racks",
+    "Installed heaters",
+    "Covered it with insulation",
+    "Painted it white to spot dust"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "They painted it white so dust that could harm the bikes would be noticed."
+  },
+  {
+   "q": "Who was the first British cyclist to win the Tour de France?",
+   "options": [
+    "Richard Moore",
+    "Chris Froome",
+    "Dave Brailsford",
+    "Bradley Wiggins"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Bradley Wiggins won in 2012, with Froome winning the next year."
+  },
+  {
+   "q": "If you improve 1 percent daily for a year, how much better are you?",
+   "options": [
+    "One hundred times better",
+    "Ten times better",
+    "Twice as good",
+    "Thirty-seven times better"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The article says you'd end up thirty-seven times better."
+  },
+  {
+   "q": "What does the author imply about habits and goals?",
+   "options": [
+    "Systems matter more than specific goals",
+    "Only elite athletes benefit from marginal gains",
+    "Goals are pointless",
+    "Mistakes ruin progress permanently"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "He says the system is greater than the goal and mastering habits matters more than a given outcome."
+  }
+ ]
+}

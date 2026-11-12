@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main point?",
+      "options": [
+        "Heavy AI use quickly erodes persistence and independent thinking",
+        "ChatGPT gives unreliable math answers that mislead students",
+        "Smartphones damage thinking faster than chatbots ever could",
+        "AI assistance improves persistence once the chatbot is gone"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "He argues AI help degrades cognitive fitness fast, though the effects may not be permanent."
+    },
+    {
+      "q": "What task did participants in the experiment do?",
+      "options": [
+        "Summarize long newspaper articles aloud",
+        "Write short essays about their personal goals",
+        "Debug short programs written in Python",
+        "Solve math problems involving fractions"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "They solved a series of math problems involving fractions, with one group using ChatGPT."
+    },
+    {
+      "q": "What happened when the chatbot was turned off?",
+      "options": [
+        "AI group accuracy fell below control and many skipped questions",
+        "The control group's accuracy fell and many of them quit early",
+        "The AI group kept outperforming the control group on every problem",
+        "Both groups performed equally well and finished every question"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The AI group's accuracy fell below the control group and many gave up and skipped questions."
+    },
+    {
+      "q": "What does the author say is new about these findings?",
+      "options": [
+        "That the effects are permanent",
+        "The existence of cognitive harm",
+        "That math is affected",
+        "The jaw-dropping speed of the effects"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He says the new element is how fast the impacts appear, unlike smartphone trends."
+    },
+    {
+      "q": "What does the author imply about whether these effects are permanent?",
+      "options": [
+        "They are surely permanent after even brief chatbot exposure",
+        "They have been disproven by follow-up studies of participants",
+        "Unknown; they might improve if retested without AI help",
+        "They affect only younger users who grew up with smartphones"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "He says we don't yet know if effects are permanent, and participants might do better later."
+    }
+  ]
+}

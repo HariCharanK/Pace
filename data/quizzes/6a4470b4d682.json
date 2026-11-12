@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's central claim about genius?",
+      "options": [
+        "Great work needs a disinterested obsession with something that matters",
+        "Great work comes from following promising paths",
+        "Natural ability is the one ingredient that really matters",
+        "Hard work alone produces great discoveries"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "He says the recipe for genius is a disinterested obsession with something that matters."
+    },
+    {
+      "q": "Which pair of examples does the author give as people with obsessive interest in their subject?",
+      "options": [
+        "Darwin and Ramanujan",
+        "Hamming and Trollope",
+        "Tolkien and Carlyle",
+        "Newton and Pasteur"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He cites Darwin's interest in natural history and Ramanujan working out series on his slate."
+    },
+    {
+      "q": "What did Newton's other two obsessions turn out to be, besides math describing the world?",
+      "options": [
+        "Poetry and politics",
+        "Optics and astronomy",
+        "Alchemy and theology",
+        "Chemistry and medicine"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Newton's alchemy and theology seem to have been complete wastes of time."
+    },
+    {
+      "q": "How does the author teach his own kids?",
+      "options": [
+        "He encourages them to go deep into whatever interests them",
+        "He drills them daily on the most important problems in each field",
+        "He has them start broad and delay specializing until college",
+        "He keeps their schoolwork and home projects on identical topics"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He lets school handle the broad, shallow part and encourages them to go preposterously deep."
+    },
+    {
+      "q": "Why might people do less great work after having children, according to the author?",
+      "options": [
+        "Their natural ability declines once they become parents",
+        "A strong competing interest means they don't want to",
+        "They lack the energy that great work demands after having kids",
+        "Their ambition fades once they have a family to support"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He says the real change is that interest competes with another powerful interest and you don't want to."
+    }
+  ]
+}

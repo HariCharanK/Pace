@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main point of the article?",
+      "options": [
+        "Iran is compensating war victims fairly with seized property",
+        "Iran is seizing assets of critics abroad and their relatives",
+        "Iran's courts are protecting diaspora property from confiscation",
+        "Iranian banks are collapsing after the war with Israel"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The regime is confiscating property of those abroad, and of relatives at home, as punishment for dissent."
+    },
+    {
+      "q": "Why were the Najafiragheb couple's assets frozen?",
+      "options": [
+        "They sold family property to relatives living abroad",
+        "Their daughter's social media posts opposing the government",
+        "They attended anti-government protests with their son",
+        "Their son worked for the channel Iran International"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The punishment was for the social media posts of their daughter Noushin in Europe."
+    },
+    {
+      "q": "How many people outside Iran had had assets seized, according to Iranian media in April?",
+      "options": [
+        "Over 1,400",
+        "Over 400",
+        "Over 40",
+        "Over 4,000"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Iranian outlets reported seizures against over 400 people abroad."
+    },
+    {
+      "q": "What did official Mohammad Kazemifard say about the new electronic system?",
+      "options": [
+        "It required judges to approve each seizure within 400 days",
+        "It was used only to seize businesses owned by journalists",
+        "It cut a process of up to 400 days to a few clicks",
+        "It raised the time needed to seize property to 400 days"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He said a process that took up to 400 days now takes only a few clicks."
+    },
+    {
+      "q": "What does lawyer Saeid Dehghan suggest about the seizures?",
+      "options": [
+        "They target mainly the very famous",
+        "They will soon stop",
+        "They are a message to the wider diaspora",
+        "They are aimed at five specific individuals"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "He says the message is directed at a much wider Iranian diaspora, not just five people."
+    }
+  ]
+}

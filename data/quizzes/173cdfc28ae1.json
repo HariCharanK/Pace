@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What does the article mainly explain?",
+      "options": [
+        "How retirees can maximize benefits by delaying claims until age 70",
+        "Why Social Security filings surged last year after years of later claiming",
+        "How the 1983 amendments shifted retirement ages for American workers",
+        "Why employers replaced pensions with 401(k) plans and retiree insurance"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "Claims jumped in reaction to turmoil and negative signals about Social Security."
+    },
+    {
+      "q": "From October 2024 to April 2025, by how much did claims jump compared with the prior year?",
+      "options": [
+        "67,000, or 3 percent",
+        "135,000, or 7 percent",
+        "267,000, or 13 percent",
+        "435,000, or 25 percent"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Claims rose by 267,000, a 13 percent surge, versus the typical 2 to 3 percent."
+    },
+    {
+      "q": "By how much do benefits rise each year of delay beyond full retirement age?",
+      "options": [
+        "2 percent",
+        "4 percent",
+        "6 percent",
+        "8 percent"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Beyond full retirement age, benefits rise by 8 percent annually."
+    },
+    {
+      "q": "When does the latest trustees' report say the retirement trust fund will be depleted without congressional action?",
+      "options": [
+        "Late 2032",
+        "Early 2028",
+        "Mid 2040",
+        "2050"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "It will deplete its retirement trust fund by late 2032, with payments up to 22 percent lower."
+    },
+    {
+      "q": "What does the 2021 Boston College headline study imply about the 2025 surge?",
+      "options": [
+        "Fear-inducing news can push people to claim earlier",
+        "Neutral headlines caused people to delay claiming by years",
+        "Few readers notice headlines about Social Security",
+        "Younger people respond most to headlines"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "Scarier headlines led people to say they would claim about a year earlier, matching the 2025 coverage."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage's main argument?",
+      "options": [
+        "Genius is an inborn gift that no amount of effort can replace",
+        "Great results come mainly from ordinary qualities like diligence",
+        "Fortune decides who succeeds regardless of how hard they work",
+        "Only mastery of a single subject brings lasting recognition"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It says the greatest results come from simple means and ordinary qualities such as application and perseverance."
+    },
+    {
+      "q": "How did Buffon define genius?",
+      "options": [
+        "The power of lighting one's own fire",
+        "Common sense intensified",
+        "Patience",
+        "The power of making efforts"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Buffon said of genius 'it is patience.'"
+    },
+    {
+      "q": "How did Newton say he made his discoveries?",
+      "options": [
+        "By waiting for inspiration to strike",
+        "By always thinking unto them",
+        "By consulting other philosophers",
+        "By experiments conducted at night"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Asked by what means, Newton answered 'By always thinking unto them.'"
+    },
+    {
+      "q": "How did Peel's father train his boyhood memory?",
+      "options": [
+        "He made him copy out long books by hand each week",
+        "He had him study Latin at dawn before breakfast",
+        "He had him recite poetry to guests every evening",
+        "He had him repeat the Sunday sermon from memory"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "His father had him practise speaking extempore and repeat the Sunday sermon, until he could do so almost verbatim."
+    },
+    {
+      "q": "What would the author say about whether labour alone could produce a Shakespeare or Newton?",
+      "options": [
+        "It could, given enough years of patient daily practice",
+        "It could not, as original talent of heart and brain is needed",
+        "It could, if the person lived a simple and orderly life",
+        "It is impossible to say without knowing their early training"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He grants labour's achievements but says no amount of it could produce such figures without the original endowment."
+    }
+  ]
+}

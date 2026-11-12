@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's central point?",
+      "options": [
+        "Money can buy extra hours, so wealthy people should plan their days carefully",
+        "Budgeting articles in newspapers are the best guide to using one's time well",
+        "Time is unevenly shared, and geniuses should schedule their days like income",
+        "Time is the most precious equal daily supply, and we should manage it like an income"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "He says everyone gets twenty-four hours, and it should be managed with care."
+    },
+    {
+      "q": "Why does the author call time an ideal democracy?",
+      "options": [
+        "Everyone votes on how the day's hours are divided among citizens",
+        "Everyone gets the same amount; no wealth or genius earns more",
+        "Time can be traded freely, so the rich buy hours from the poor",
+        "Genius earns an extra hour a day, while wealth earns nothing more"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "No aristocracy of wealth or intellect; genius never gets an extra hour."
+    },
+    {
+      "q": "What does the author say you cannot do with time?",
+      "options": [
+        "Draw on the future or get into debt",
+        "Waste it as much as you please",
+        "Receive a fresh supply every morning",
+        "Spend it on work, rest or pleasure"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "'You cannot draw on the future. Impossible to get into debt!'"
+    },
+    {
+      "q": "What title of essay has he never seen?",
+      "options": [
+        "How to live on twenty-four hours a day",
+        "How to manage a household",
+        "How to live on eight shillings a week",
+        "How to save money"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He's seen essays on living on money but never on twenty-four hours a day."
+    },
+    {
+      "q": "What does the opening description of the man with a half-empty flat imply?",
+      "options": [
+        "Luxuries are wasteful and should be given up by everyone",
+        "People fritter away resources, as many do with time",
+        "He needs a larger income to cover both needs and luxuries",
+        "He is secretly saving money to buy a better flat soon"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He is used as an analogy for people who mismanage what they have, introducing the theme of managing time."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The founding of NATO and the Warsaw Pact in 1955",
+        "The Soviet blockade of West Berlin and the Western airlift response",
+        "The Marshall Plan and its economic results across Europe",
+        "The Potsdam Agreement's terms for Poland's borders"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "It covers the 1948-49 blockade and airlift plus the postwar background that led up to them."
+    },
+    {
+      "q": "What did the Soviets offer in exchange for dropping the blockade?",
+      "options": [
+        "That the Western Allies leave Germany altogether by 1949",
+        "That the Allies withdraw the Deutsche Mark from West Berlin",
+        "That the Allies share control of Berlin's air corridors",
+        "That Britain and America end their airlift flights"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The Soviets offered to drop it if the Western Allies withdrew the newly introduced Deutsche Mark from West Berlin."
+    },
+    {
+      "q": "At the height of the airlift, how often did a plane reach West Berlin?",
+      "options": [
+        "Every thirty seconds",
+        "Every five minutes",
+        "Every hour",
+        "Every ten seconds"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "At the height of the airlift, one plane reached West Berlin every thirty seconds."
+    },
+    {
+      "q": "Which zones were combined on 1 January 1947 to form the Bizone?",
+      "options": [
+        "French and Soviet",
+        "American and French",
+        "American and British",
+        "British and Soviet"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The British and United States occupation zones were combined into the Bizone."
+    },
+    {
+      "q": "Why did the Americans and British keep flying supplies after the blockade ended?",
+      "options": [
+        "They feared the Soviets might resume the blockade",
+        "Berlin still needed materials to rebuild its ruins",
+        "The airlift was contractually required to run to September",
+        "East Berlin had formally requested more supplies"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "They worried the Soviets would resume the blockade or were only trying to disrupt Western supply lines."
+    }
+  ]
+}

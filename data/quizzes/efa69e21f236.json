@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the central message of Father Abraham's speech?",
+      "options": [
+        "Wealth comes mainly from luck and good family connections",
+        "Industry, frugality and avoiding debt lead to prosperity",
+        "Leisure should be the main goal of all honest labor",
+        "A skilled trade matters more than diligence or thrift"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The speech urges industry and attention to business, then frugality, and warns against debt."
+    },
+    {
+      "q": "In the speech, what stays bright while rust consumes faster than labor wears?",
+      "options": [
+        "The polished shield",
+        "The used key",
+        "The oiled lock",
+        "The worked plough"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "'Sloth, like Rust, consumes faster than Labor wears; while the used key is always bright.'"
+    },
+    {
+      "q": "In the proverb about neglect, what is ultimately lost for want of a horseshoe nail?",
+      "options": [
+        "The shop",
+        "The battle",
+        "The rider",
+        "The road"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "For want of a nail the shoe was lost, then the horse, then the rider."
+    },
+    {
+      "q": "Which does the speaker name as the first vice, ahead of lying?",
+      "options": [
+        "Idleness",
+        "Pride",
+        "Running in debt",
+        "Extravagant feasting"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "'The second Vice is Lying, the first is running in Debt.'"
+    },
+    {
+      "q": "How does the speaker treat leisure?",
+      "options": [
+        "As time the diligent earn, for doing something useful",
+        "As something to avoid entirely, since idle hours breed vice",
+        "As the natural reward of inherited wealth and a good name",
+        "As the same thing as laziness, with no meaningful difference"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "He says the diligent man obtains leisure, defined as time for doing something useful, and leisure and laziness are two things."
+    }
+  ]
+}

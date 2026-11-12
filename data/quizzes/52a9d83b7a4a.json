@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is Arkwright chiefly credited with?",
+      "options": [
+        "Inventing the spinning jenny that let one worker run many spindles",
+        "Building the factory system that combined power, machinery and labour for mass yarn",
+        "Founding Britain's cotton trade by importing raw cotton from India",
+        "Inventing the steam engine that powered the first Lancashire mills"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "He combined power, machinery, semi-skilled labour and cotton, earning the title father of the modern factory system."
+    },
+    {
+      "q": "What did Arkwright invent while working as a barber and wig-maker, which funded his machinery?",
+      "options": [
+        "A fast-drying lacquer for wigs",
+        "A cheaper fabric for making wigs",
+        "A scented pomade for periwigs",
+        "A waterproof dye for periwigs"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He invented a waterproof dye for periwigs whose income later funded his prototype cotton machinery."
+    },
+    {
+      "q": "When was the world's first water-powered mill built at Cromford?",
+      "options": [
+        "1771",
+        "1748",
+        "1785",
+        "1779"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "In 1771 the partners built the world's first water-powered mill at Cromford."
+    },
+    {
+      "q": "What were the Cromford shift arrangements?",
+      "options": [
+        "Two 13-hour shifts a day; latecomers lost an extra day's pay",
+        "Three 8-hour shifts a day, with bells at 6 am, 2 pm and 10 pm",
+        "Two 10-hour shifts a day, with no holidays for workers",
+        "One 12-hour day shift; latecomers were docked an hour's pay"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Work ran in two 13-hour shifts; gates shut at 6, and latecomers lost the day and an extra day's pay."
+    },
+    {
+      "q": "What does the passage suggest about Arkwright's grand patent?",
+      "options": [
+        "The court upheld it in 1785, confirming Arkwright's monopoly over cotton spinning machinery",
+        "Public opinion strongly backed exclusive patents, so his case succeeded quickly",
+        "Lewis Paul's heirs won control of the patent after suing Arkwright in the 1780s",
+        "His case failed partly because of deficient specifications and doubts he invented the frame"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "The case was settled against him because his specifications were deficient and others were said to be the inventor."
+    }
+  ]
+}

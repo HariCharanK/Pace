@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "According to the passage, what were the Luddites mainly doing?",
+      "options": [
+        "Fighting as irregular militias against French forces during the Napoleonic Wars",
+        "Organizing legal strikes backed by trade unions to win higher wages",
+        "Using machine-breaking to pressure employers over pay and working conditions",
+        "Opposing every new technology on principle, much like modern critics of progress"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "They attacked machines as leverage; many were skilled operators not opposed to machines per se."
+    },
+    {
+      "q": "Where and when did the Luddite movement begin?",
+      "options": [
+        "Leicester, Leicestershire, 4 November 1812",
+        "Huddersfield, Yorkshire, 28 April 1812",
+        "Arnold, Nottinghamshire, 11 March 1811",
+        "Rochdale, Lancashire, 12 June 1813"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The movement began in Arnold, Nottinghamshire, on 11 March 1811."
+    },
+    {
+      "q": "What was the hammer used by Yorkshire croppers called?",
+      "options": [
+        "Enoch",
+        "Ludd",
+        "Captain",
+        "Ned"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "They called it Enoch to mock Enoch Taylor, the cropping machine maker."
+    },
+    {
+      "q": "Which event is described as the last major Luddite act?",
+      "options": [
+        "The Swing Riots",
+        "The Pentrich Rising of 1817",
+        "Burton's Mill clash",
+        "Heathcote's machine smashing"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Jeremiah Brandreth's Pentrich Rising in 1817 can be viewed as the last major Luddite act."
+    },
+    {
+      "q": "What did Eric Hobsbawm mean by 'collective bargaining by riot'?",
+      "options": [
+        "Luddites negotiated directly with mill owners while threatening to smash their machines at night",
+        "Union leaders organized riots to force Parliament to repeal laws against organized labor",
+        "Machine-wrecking was a substitute for large strikes that were impractical as factories were scattered",
+        "Rioting was tolerated by magistrates as a legal way for workers to petition for higher pay"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "Hobsbawm said manufactories were scattered, making large-scale strikes impractical."
+    }
+  ]
+}

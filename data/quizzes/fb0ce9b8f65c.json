@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly?",
+      "options": [
+        "A captain's log of repairs made to the ship at the Falklands",
+        "Darwin's survey of the geology and fossils found across Patagonia",
+        "A sailor's description of storms rounding Cape Horn in winter",
+        "Darwin's account of first meeting the Fuegians in Tierra del Fuego"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "It describes arrival and encounter with the natives at the Bay of Good Success."
+    },
+    {
+      "q": "Where did the ship anchor on the first afternoon?",
+      "options": [
+        "Cape St. Diego",
+        "Falkland Islands",
+        "Statenland",
+        "Bay of Good Success"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "They anchored in the Bay of Good Success."
+    },
+    {
+      "q": "What gift did the crew give that the Fuegians tied around their necks?",
+      "options": [
+        "A knife",
+        "A guanaco skin",
+        "White feathers",
+        "Scarlet cloth"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "They presented scarlet cloth, which they tied round their necks."
+    },
+    {
+      "q": "What did the Fuegians beg for?",
+      "options": [
+        "Biscuits, calling them galleta",
+        "Knives, calling them cuchilla",
+        "Mirrors, calling them espejo",
+        "Blankets, calling them manta"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "They begged for knives, using the Spanish word 'cuchilla'."
+    },
+    {
+      "q": "What does the writer wonder about in the mimicry passage?",
+      "options": [
+        "Whether mimicry was taught to them by earlier sailors who visited the bay",
+        "Whether mimicry is a form of mockery meant to insult the crew's visitors",
+        "Whether they could be taught English quickly if given a few months aboard",
+        "Whether mimicry is due to more practised perception and keener senses in a savage state"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "He asks if the faculty results from more practised perception and keener senses."
+    }
+  ]
+}

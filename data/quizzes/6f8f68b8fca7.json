@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main claim about noise and patients?",
+      "options": [
+        "Sheer loudness is what harms patients most, whatever its source or rhythm",
+        "Unnecessary noise, especially noise creating expectation, harms patients more than loudness",
+        "Patients need complete silence at all times, even from the nurse's footsteps",
+        "Noise matters only for patients with head injuries or other brain disturbance"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "She says unnecessary noise or noise that creates expectation hurts patients, not loudness itself."
+    },
+    {
+      "q": "What does she say about a patient woken after a few hours' sleep rather than a few minutes?",
+      "options": [
+        "He is more likely to sleep again",
+        "He is certain to become delirious",
+        "He will sleep much more deeply",
+        "He should be given medicine"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "A patient woken after a few hours is much more likely to sleep again than one woken after minutes."
+    },
+    {
+      "q": "What kind of step does she recommend for those in the sick room?",
+      "options": [
+        "A slow, lingering step",
+        "A tip-toe step",
+        "A shuffling, careful step",
+        "A firm, light, quick step"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "She asks for a firm light quick step and says slowness is not gentleness."
+    },
+    {
+      "q": "What should a good nurse check before leaving the patient for the night?",
+      "options": [
+        "That all medicines are labeled and that the lamp is turned low",
+        "That nothing rattles, creaks or flaps, such as doors, windows or blinds",
+        "That every visitor has left the house and the front door is locked",
+        "That the patient's pulse is steady and his temperature recorded"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "She should make sure no door or window rattles or creaks and no blind or curtain flaps."
+    },
+    {
+      "q": "What does the author imply caused the death after the whispered talk about an operation?",
+      "options": [
+        "Fear of the operation itself",
+        "The surgeon's carelessness",
+        "Uncertainty and strained expectation",
+        "The patient's weak heart"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "She says it was rather the uncertainty and strained expectation than mere fear that produced the fatal result."
+    }
+  ]
+}

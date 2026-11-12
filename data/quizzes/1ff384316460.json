@@ -1,0 +1,65 @@
+{
+ "model": "claude (precomputed)",
+ "questions": [
+  {
+   "q": "What is the central idea of the passage?",
+   "options": [
+    "Intuition is a more reliable guide than analysis for new problems",
+    "Breaking problems down to what is truly irreducible lets you build new solutions",
+    "Philosophers like Plato already solved the problem of foundational truth",
+    "Copying proven methods from successful people is the fastest route to innovation"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "It describes first principles thinking as separating what is absolutely true from assumptions and building from the essentials."
+  },
+  {
+   "q": "According to Musk, what share of a typical rocket's price is the cost of its materials?",
+   "options": [
+    "About ten percent",
+    "About two percent",
+    "About twenty percent",
+    "About half"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Musk found the materials cost of a rocket was around two percent of the typical price."
+  },
+  {
+   "q": "What did Musk say battery materials would cost per kilowatt-hour on the commodity market?",
+   "options": [
+    "$600",
+    "$200",
+    "$80",
+    "$8"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "He contrasted the historical $600 per kWh with about $80 for the raw materials."
+  },
+  {
+   "q": "What first principle of a successful website did Jonah Peretti identify for BuzzFeed?",
+   "options": [
+    "Wide distribution",
+    "Original investigative reporting",
+    "Premium subscriptions",
+    "Search engine ranking"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Peretti figured the first principle was wide distribution, publishing what people want to read and share."
+  },
+  {
+   "q": "Why does the author suggest people dislike the repeated 'why' game?",
+   "options": [
+    "It reminds them of childhood punishments",
+    "It is usually asked by people with bad intentions",
+    "It exposes that they often do not actually know the reason",
+    "It always leads to answers that are too complicated"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "The author says after one or two questions we are often lost, confronted with our own ignorance, and resort to self-defense."
+  }
+ ]
+}

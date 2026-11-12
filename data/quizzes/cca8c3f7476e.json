@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "The history of London's sewer system and why it missed Soho",
+        "Florence Nightingale's nursing career and her work in London hospitals",
+        "How miasma theory was proven right by the 1854 Soho outbreak",
+        "John Snow's work linking the 1854 Soho cholera outbreak to a water pump"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "Snow's study traced the outbreak to the Broad Street pump, supporting the germ-in-water hypothesis."
+    },
+    {
+      "q": "How many people died in the outbreak in total?",
+      "options": [
+        "14,137",
+        "420",
+        "127",
+        "300"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The outbreak killed 420 people."
+    },
+    {
+      "q": "What did the authorities do to the Broad Street pump?",
+      "options": [
+        "Removed its handle",
+        "Chlorinated it",
+        "Filled it in",
+        "Moved it to Cambridge Street"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "St James parish authorities disabled the pump by removing its handle."
+    },
+    {
+      "q": "Why did workers at the nearby brewery avoid cholera?",
+      "options": [
+        "They drank a daily beer allowance, made with boiled water",
+        "They were vaccinated by Snow before the outbreak began",
+        "They lived in housing outside Soho and rarely visited",
+        "They were quarantined inside the brewery for the outbreak's duration"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "They drank beer instead of pump water; brewing boils the wort and killed the bacteria."
+    },
+    {
+      "q": "What does Snow's own comment imply about the pump handle removal?",
+      "options": [
+        "It was ineffective because the water was in fact perfectly clean",
+        "Cases were already falling and residents had fled, so its effect is uncertain",
+        "It clearly ended the outbreak, as deaths fell immediately afterward",
+        "It caused deaths to rise as residents switched to other pumps"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "Snow said attacks had diminished before the water was stopped and it was impossible to decide."
+    }
+  ]
+}

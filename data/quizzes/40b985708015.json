@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "Which statement best summarizes the passage?",
+      "options": [
+        "Tardigrades are soft-bodied insects found only in polar regions",
+        "Tardigrades are tiny, widespread micro-animals known for extreme resilience",
+        "Tardigrades are extremophiles that thrive best in extreme conditions",
+        "Tardigrades are a type of arthropod with a segmented abdomen"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The passage describes their anatomy, reproduction, ecology and notable resilience."
+    },
+    {
+      "q": "What did Spallanzani call the tardigrades in 1776?",
+      "options": [
+        "Ecdysozoa, meaning molting animals",
+        "Kleiner Wasserbär, little water bear",
+        "Tardigrada, meaning slow walkers",
+        "Moss piglets, meaning small moss pigs"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He named them Tardigrada, 'slow walkers'."
+    },
+    {
+      "q": "What are tardigrade stylets made of?",
+      "options": [
+        "Calcium carbonate",
+        "Chitin",
+        "Keratin",
+        "Aragonite"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "A pair of stylets composed of aragonite pierce the prey."
+    },
+    {
+      "q": "How dense can tardigrades get on mosses?",
+      "options": [
+        "About 1,500 per square metre",
+        "Up to 300,000 per square metre",
+        "Over 2 million per square metre",
+        "Fewer than 30 per square metre"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "On mosses they can reach over 2 million per square metre (soil up to 300,000)."
+    },
+    {
+      "q": "Why are tardigrades not considered universally extremophilic?",
+      "options": [
+        "They die within seconds in every extreme environment tested",
+        "They live only in moss and lichens rather than in the sea",
+        "They only endure extreme conditions rather than thrive in them",
+        "They cannot survive exposure to outer space or radiation"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "Their chances of dying rise the longer they are exposed, whereas true extremophiles thrive."
+    }
+  ]
+}

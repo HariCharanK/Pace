@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the central question the passage explores?",
+      "options": [
+        "Whether Kennedy will run for president in 2028 after the blue wave",
+        "Whether MAHA-backed candidates will fare better in the coming primaries",
+        "Whether Trump will fire Kennedy after the disappointing election results",
+        "Whether Democrats will try to remove Kennedy or work with him"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "The passage asks whether Democrats will push Kennedy out or collaborate on shared health priorities."
+    },
+    {
+      "q": "What phrase did Kennedy use in his post three days after the election?",
+      "options": [
+        "Make America Healthy Again forever",
+        "It is time to unleash the Kraken",
+        "The Senate has no leverage left",
+        "Build a Healthier America"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Kennedy wrote 'It's time to unleash the Kraken' on X."
+    },
+    {
+      "q": "Why did many MAHA Moms feel betrayed by President Trump?",
+      "options": [
+        "He signed an order cutting federal funding for organic farmers",
+        "He publicly mocked the MAHA Moms movement on social media",
+        "He issued an order ramping up glyphosate production",
+        "He dropped his pledge to let Kennedy go wild on health"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "They felt betrayed when he issued an executive order ramping up production of the weedkiller glyphosate."
+    },
+    {
+      "q": "What did Kennedy say about the Senate at the MAHA Action party?",
+      "options": [
+        "It would soon confirm his appointees",
+        "It no longer has any leverage over him",
+        "It had voted to impeach him",
+        "It would create a new MAHA committee"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Kennedy said the Senate no longer has any leverage over him, which he called a big deal."
+    },
+    {
+      "q": "Why might Kennedy's position inside the White House be stronger despite the election?",
+      "options": [
+        "Stephen Miller, an ally, is replacing chief of staff Susie Wiles",
+        "Susie Wiles has agreed to back the MAHA agenda in full",
+        "Democrats have pledged to confirm his future appointees",
+        "Trump promised to rescind the glyphosate order next month"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "Trump replaced Wiles, accused of blocking MAHA policies, with Miller, whom Kennedy calls the strongest MAHA supporter after himself."
+    }
+  ]
+}

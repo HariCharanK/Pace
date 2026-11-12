@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main point of the passage?",
+      "options": [
+        "Skilled mechanics should build each car by hand from start to finish",
+        "Saved time and motion let unskilled men produce well under skilled planning",
+        "Wages should be set by the employer's generosity rather than output",
+        "Each part should be made by one worker doing every operation"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The author builds production on saved motion, putting skill into planning and tools so unskilled men can work."
+    },
+    {
+      "q": "Saving ten steps a day for twelve thousand employees saves how much wasted motion?",
+      "options": [
+        "Five miles",
+        "Fifty miles",
+        "Five hundred miles",
+        "Twelve miles"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He says saving ten steps for each of twelve thousand employees saves fifty miles of wasted motion."
+    },
+    {
+      "q": "Which was the first motor Ford made entirely themselves?",
+      "options": [
+        "Model A",
+        "Model N",
+        "Model K",
+        "Model T"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The Model T was the first motor that they made themselves."
+    },
+    {
+      "q": "What was the first step forward in assembly?",
+      "options": [
+        "Hiring more skilled machinists to run each department",
+        "Taking the work to the men instead of the men to the work",
+        "Building taller factories to save ground space",
+        "Putting one department in charge of making every small part"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The first step forward came when they began taking the work to the men instead of the men to the work."
+    },
+    {
+      "q": "According to the author, what actually pays workers' wages?",
+      "options": [
+        "The employer's own profits",
+        "Government regulations",
+        "The product, arranged by management",
+        "Skilled tool makers' contributions alone"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "He says it is not the employer who pays wages; the product pays them, and management arranges production for it."
+    }
+  ]
+}

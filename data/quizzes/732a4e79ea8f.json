@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main point of the author's story?",
+      "options": [
+        "Ski resorts should close terrain after storms, as the loss of his friends proved",
+        "Close friendships among teenagers can turn into rivalries when stakes become high",
+        "A risk's severe downside is easy to overlook, as an avalanche took his friends",
+        "Ski racing teaches discipline, which investors can use to avoid costly mistakes"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "He tells of two friends lost in an out-of-bounds avalanche after a small slide had seemed harmless."
+    },
+    {
+      "q": "What kind of snow conditions created the avalanche danger in February 2001?",
+      "options": [
+        "Fresh light powder sitting on a hard icy crust",
+        "Heavy wet snow on top of light fluffy snow",
+        "Thick wet slush sitting over a frozen granular base",
+        "A thin crust of ice over deep packed powder"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Three feet of heavy, wet snow fell on top of earlier light, fluffy snow."
+    },
+    {
+      "q": "How did the narrator plan to avoid hitchhiking the second time?",
+      "options": [
+        "Take a chairlift down",
+        "He would pick them up in his truck",
+        "Have Ahren drive them",
+        "They would ski to Alpine Meadows"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He offered to pick Brendan and Bryan up in his truck on the back-country road."
+    },
+    {
+      "q": "What did the narrator point to as proof that his friends weren't at a party?",
+      "options": [
+        "Their lift tickets had been scanned at the base of the Alpine Meadows chair",
+        "Their car keys were still in the lodge, so they had not driven anywhere",
+        "Their lockers were empty, so their gear had been loaded into Bryan's truck",
+        "Their sneakers were in the locker room, so their ski boots were on their feet"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "He pointed to their sneakers on the locker room floor at 9 pm."
+    },
+    {
+      "q": "What does the author imply about the first small avalanche that morning?",
+      "options": [
+        "It was a warning sign that went unheeded",
+        "It was set off by ski patrol",
+        "It only happened to him by chance and not to the others",
+        "It proved the slope was safe"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "He mentioned it to rescuers and they instantly understood the danger; the group had shrugged it off as awesome."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article mainly about?",
+      "options": [
+        "How Nvidia's chip sales are driving the A.I. stock market boom",
+        "How Lori Huang's foundation funds opera and university computing",
+        "Jensen Huang's affair admission and its effect on his private wife Lori",
+        "How Oregon State alumni built Nvidia from a lab partnership"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "Huang's admission of an affair thrust his long-private wife and family into the spotlight."
+    },
+    {
+      "q": "Where did Jensen and Lori Huang meet?",
+      "options": [
+        "Oregon State University",
+        "Stanford",
+        "Silicon Graphics",
+        "San Jose State"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "They met at Oregon State, where he was her lab partner in an electrical engineering class."
+    },
+    {
+      "q": "What was the size of the Jen-Hsun Lori Huang Foundation's assets as of 2024?",
+      "options": [
+        "$9 billion",
+        "$150 billion",
+        "$1 billion",
+        "$5 billion"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The foundation had $9 billion in assets as of 2024."
+    },
+    {
+      "q": "Why did Lori Huang give up her career?",
+      "options": [
+        "She went back to study at Stanford just before Nvidia launched",
+        "She was laid off from Silicon Graphics before Nvidia began",
+        "They struggled to find child care just before Nvidia was founded",
+        "She left to run the foundation before Nvidia was founded"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Just before he co-founded Nvidia in 1993, she gave up her career to raise their children after child care struggles."
+    },
+    {
+      "q": "Why does George Rush say this case differs from Bezos and Gates?",
+      "options": [
+        "Lori Huang is far more public than Bezos's or Gates's wives",
+        "The relationship could move markets and have global fallout",
+        "It involved no divorce, unlike the Bezos and Gates cases",
+        "Huang is a far more famous executive than Bezos or Gates"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "Rush said the dynamic could move markets and cause global fallout, unlike Bezos and Gates."
+    }
+  ]
+}

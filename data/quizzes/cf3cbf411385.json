@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the main argument of the article?",
+      "options": [
+        "Saying no preserves time and beats optimizing your work",
+        "Successful people should say yes to every opportunity",
+        "Meetings are the main cause of low productivity today",
+        "Politeness matters more than managing your own time"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "The article argues that not doing something is always faster, and elimination beats optimization."
+    },
+    {
+      "q": "Which programming saying does the author compare to saying no?",
+      "options": [
+        "Premature optimization is the root of all evil",
+        "There is no code faster than no code",
+        "Write once, run anywhere is the goal of design",
+        "Debugging is twice as hard as writing the code"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The author cites the saying that there is no code faster than no code."
+    },
+    {
+      "q": "How does the author describe saying yes versus saying no?",
+      "options": [
+        "Yes is a time credit and no is a time debt",
+        "Both carry roughly equal weight",
+        "Yes is time debt and no is time credit",
+        "Yes is a luxury and no is a duty"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "No is a form of time credit; yes is a form of time debt you must pay back."
+    },
+    {
+      "q": "What does McKeown suggest saying to a manager who asks you to take on a new project?",
+      "options": [
+        "Say you will do it once your current work ends",
+        "Say you are too busy and suggest a coworker instead",
+        "Say yes now and renegotiate the deadline later",
+        "Ask which other projects to deprioritize for it"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The note advises asking which other projects to deprioritize to make the new one the priority."
+    },
+    {
+      "q": "What does the author imply about how your approach should change as you succeed?",
+      "options": [
+        "Raise your bar and decline even previously good opportunities",
+        "Start saying yes to more things as your skills improve",
+        "Stop worrying about distractions once you have succeeded",
+        "Delegate all of your meetings to others on your team"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "He says opportunity cost rises with success, so you must upgrade your no's and decline formerly good uses of time."
+    }
+  ]
+}

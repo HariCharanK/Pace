@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the author's main claim?",
+      "options": [
+        "China's demographic decline is now its single biggest weakness",
+        "China will collapse economically within a decade over its debts",
+        "China should now be seen as a bigger military threat than before",
+        "He now expects China to be less dominant, mainly because of AI"
+      ],
+      "answer": 3,
+      "type": "main_idea",
+      "explain": "He is becoming a China bear: still powerful, but hegemony and tech dominance look out of reach, mostly because of AI."
+    },
+    {
+      "q": "What does the author say was his earlier view of China's demographic decline?",
+      "options": [
+        "It would force China to open its borders to migrants",
+        "It was the single biggest weakness holding back its growth",
+        "It never struck him as much of a threat to China's power",
+        "It would end Chinese growth entirely by around 2030"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He says demographic decline never struck him as much of a threat."
+    },
+    {
+      "q": "Compared with South Korea, China is described as:",
+      "options": [
+        "Less industrial despite being less than half as rich",
+        "More industrial despite being more than twice as rich",
+        "More export-intensive despite being less than half as rich",
+        "Equally industrial despite being roughly twice as rich"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "The text says China is now less industrial than South Korea despite being less than half as rich."
+    },
+    {
+      "q": "What did a senior transport official say in July about China's transport network?",
+      "options": [
+        "It was running at a loss",
+        "It was 91% complete",
+        "It would be privatized",
+        "It needed to double in size"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The Economist quotes the official saying the main network was '91% complete', with a pivot to upgrading."
+    },
+    {
+      "q": "How does the author's view change his policy stance?",
+      "options": [
+        "He drops military alliances but keeps friend-shoring and export controls",
+        "He now opposes export controls but still backs friend-shoring",
+        "He still backs the measures but with less urgency, like insurance",
+        "He becomes more hawkish and urges an immediate military buildup"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "He says the measures feel more like an insurance policy now, making him more of a China dove."
+    }
+  ]
+}

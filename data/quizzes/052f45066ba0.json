@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What central idea does Ford draw from comparing his first car with the Model T?",
+      "options": [
+        "Perfecting one good idea beats hunting for new ones",
+        "Redesigning a car from scratch every few years pays off",
+        "Building cars for farm work matters more than speed",
+        "Learning mechanics from books beats tinkering by hand"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "He says it is better to concentrate on perfecting a good idea; one idea at a time is enough."
+    },
+    {
+      "q": "How old was Ford when he saw the road engine?",
+      "options": [
+        "Eight",
+        "Twelve",
+        "Fifteen",
+        "Twenty"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He was twelve years old."
+    },
+    {
+      "q": "Who made the road engine he met?",
+      "options": [
+        "Ford Motor Company of Dearborn, Michigan",
+        "Detroit Steam Works of Wayne County, Michigan",
+        "Nichols, Shepard & Company of Battle Creek",
+        "Oliver Plow Works of South Bend, Indiana"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "It was made by Nichols, Shepard & Company of Battle Creek."
+    },
+    {
+      "q": "How many miles per hour could his first buggy reach?",
+      "options": [
+        "Ten",
+        "Fifteen",
+        "Thirty",
+        "Twenty"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "The two-cylinder buggy would make twenty miles an hour."
+    },
+    {
+      "q": "What does Ford imply about his family's early circumstances?",
+      "options": [
+        "They were very poor, as the legend claims",
+        "They were prosperous by Michigan farm standards",
+        "They were wealthy owners of many large estates",
+        "They had lost most of the farm to debts"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He calls the poverty a legend and says they were prosperous for Michigan farmers."
+    }
+  ]
+}

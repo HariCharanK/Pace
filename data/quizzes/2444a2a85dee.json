@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What did the study find about river nitrate?",
+      "options": [
+        "Wet climates flush nitrate downstream, leaving the highest levels in tropical rivers",
+        "Rivers in forested mountain regions hold almost no nitrate because of heavy rainfall",
+        "Dry climates are associated with high nitrate even with little farming or urban development",
+        "Nitrate pollution has fallen worldwide since stricter farm regulations were introduced"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "Scarce water lets natural nitrate accumulate rather than be diluted."
+    },
+    {
+      "q": "How many monitoring sites supplied data?",
+      "options": [
+        "More than 7,000",
+        "Fewer than 700",
+        "Roughly 37,000",
+        "Over 2.9 million"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "They combined measurements from more than 7,000 monitoring sites."
+    },
+    {
+      "q": "About how many people live where rivers exceed the 10 mg/L standard?",
+      "options": [
+        "2.9 million",
+        "480 million",
+        "7,000",
+        "37,000"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "About 37,000, mostly in the U.S. Corn Belt."
+    },
+    {
+      "q": "Why are small headwater streams important?",
+      "options": [
+        "They are well monitored and rarely contain nitrate above the 2.5 mg/L level",
+        "They dilute nitrate from farms before it reaches larger rivers downstream",
+        "They can accumulate nitrate under low flow and feed larger drinking-water rivers",
+        "They are too small to hold nitrate, so they are excluded from global maps"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "They often cease to flow, concentrate nitrate, and feed larger rivers."
+    },
+    {
+      "q": "What does the author imply about a warming world?",
+      "options": [
+        "Wetter regions will see rising nitrate as runoff from storms increases",
+        "Treatment plants will remove nitrate as temperatures and river flows rise",
+        "Drier regions may see rising nitrate even without added nitrogen",
+        "Nitrate levels will fall as rivers warm and microbes consume more of it"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "They ask how much nitrate will rise if regions become drier even without added nitrogen."
+    }
+  ]
+}

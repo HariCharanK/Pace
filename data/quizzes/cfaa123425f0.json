@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the essay's main argument?",
+      "options": [
+        "Procrastination can be cured by keeping a disciplined, well-organized to-do list",
+        "Procrastination is inevitable, so the aim is to procrastinate well, on big work",
+        "Interruptions are harmless to deep work as long as they are kept short",
+        "Ambitious people should avoid big problems and focus on small errands"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "The author says you can't avoid procrastination, only choose to put off errands for more important work."
+    },
+    {
+      "q": "What are the three variants of procrastination described?",
+      "options": [
+        "Planning the work, delaying the work, or abandoning the work entirely",
+        "Starting early, finishing late, or never starting the task at all",
+        "Working on errands, attending meetings, or checking email constantly",
+        "Working on nothing, something less important, or something more important"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Type (a) nothing, (b) something less important, (c) something more important, which is the good kind."
+    },
+    {
+      "q": "Why does the author think startups are most productive at the beginning?",
+      "options": [
+        "There is nobody around yet to interrupt them",
+        "They have the most funding they will ever see",
+        "Customers demand much less of them early on",
+        "Founders are at their youngest and most energetic"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He says the main reason may be that there's no one to interrupt a couple of guys in an apartment."
+    },
+    {
+      "q": "What three questions does Richard Hamming suggest asking?",
+      "options": [
+        "What do you enjoy most, what pays best, what is easiest to finish",
+        "Who are your competitors, what do they do, how can you beat them",
+        "Which problems in your field matter most, are you on one, why not",
+        "What did you finish today, was it useful, what should come next"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Hamming asked about the field's most important problems, whether you work on one, and why not."
+    },
+    {
+      "q": "What solution to procrastination does the author finally suggest?",
+      "options": [
+        "Schedule your hardest work in short, strict daily time slices",
+        "Let delight pull you rather than a to-do list push you",
+        "Hire assistants to handle your errands so you can focus",
+        "Work on easier problems first to build early momentum daily"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He ends by saying to let delight pull you, working on an ambitious project you enjoy."
+    }
+  ]
+}

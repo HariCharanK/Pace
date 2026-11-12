@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the article's central argument?",
+      "options": [
+        "Climate risk drives multinationals away from poor countries, hurting both sides",
+        "Poor countries cause most emissions, so they should pay for adaptation",
+        "Foreign investment is largely unaffected by climate vulnerability",
+        "Companies should exit all risky markets and invest at home"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "Avoidance costs developing countries jobs and technology and costs firms opportunities."
+    },
+    {
+      "q": "What reduction in foreign direct investment does the author find for each 1-point rise in climate vulnerability?",
+      "options": [
+        "2%",
+        "5%",
+        "12%",
+        "30%"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The book identifies a 12% reduction per 1-point rise on a 100-point scale."
+    },
+    {
+      "q": "Which company halted a $200 million data center in Chile?",
+      "options": [
+        "Microsoft",
+        "Google",
+        "G42",
+        "Toyota"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "Google halted its plans after an environmental court revoked its permit."
+    },
+    {
+      "q": "Which are named as examples of countries supplying critical minerals while highly climate-vulnerable?",
+      "options": [
+        "Chile and Kenya, where data centers were halted",
+        "Vietnam and Thailand, hit by typhoons and floods",
+        "Mozambique and Nigeria, covered by World Bank insurance",
+        "Democratic Republic of Congo and Indonesia"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "DRC supplies most of the world's cobalt and Indonesia dominates nickel."
+    },
+    {
+      "q": "Why does the author recommend better, more local risk data?",
+      "options": [
+        "To let companies avoid only the riskiest areas, not whole countries",
+        "To justify banning new investment in any flood-prone region",
+        "To lower the foreign aid sent to climate-vulnerable countries",
+        "To replace insurance from international development banks"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "National scores hide local variation; finer data would limit avoidance to the riskiest sites."
+    }
+  ]
+}

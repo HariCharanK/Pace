@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the essay's central argument?",
+      "options": [
+        "Organizations are the surest path to success for ambitious people",
+        "Capitalism's rules are what make outcomes so unequal, and should change",
+        "Returns for performance are superlinear, which ambitious people should understand",
+        "Effort is always rewarded in direct proportion to what you put in"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The author says returns for performance are superlinear, stemming from exponential growth and thresholds."
+    },
+    {
+      "q": "What are the two fundamental causes of superlinear returns?",
+      "options": [
+        "Capital accumulation and cheap labor",
+        "Competition and sheer luck in markets",
+        "Exponential growth and thresholds",
+        "Network effects and social prestige"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "The author says they reduce to exponential growth and thresholds."
+    },
+    {
+      "q": "What does Y Combinator encourage founders to focus on?",
+      "options": [
+        "Growth rate",
+        "Number of employees",
+        "Absolute revenue numbers",
+        "Fundraising amounts"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "YC encourages focusing on growth rate rather than absolute numbers."
+    },
+    {
+      "q": "Why did prestige used to track organizations, according to the author?",
+      "options": [
+        "Organizations paid their members far more than independents",
+        "Individuals were legally forbidden from working on their own",
+        "Governments licensed ambitious work only through large institutions",
+        "Without an organization you were unlikely to achieve much"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "In 1970 organizations were the only source of resources, colleagues and distribution."
+    },
+    {
+      "q": "Why is Silicon Valley tolerant of failure, per the author?",
+      "options": [
+        "Failure thresholds there are easy for anyone to cross",
+        "Investors there are insured against losing their money",
+        "It treats failure itself as an achievement worth celebrating",
+        "Failures that involve learning are still compounding"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "It will keep betting on you only if you're learning from failures, since learning compounds."
+    }
+  ]
+}

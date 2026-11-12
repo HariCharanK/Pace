@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage about?",
+      "options": [
+        "How the Nobel Prize committee chose the 1962 winners in medicine",
+        "How Photo 51 helped lead to the DNA model and Franklin's credit controversy",
+        "The history of X-ray crystallography before and after World War II",
+        "Watson and Crick's rivalry with Linus Pauling over a triple helix"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "Wilkins showed Photo 51 to Watson, who with Crick built the DNA model; Franklin's role is debated."
+    },
+    {
+      "q": "Who showed Photo 51 to Watson?",
+      "options": [
+        "Maurice Wilkins",
+        "Randall",
+        "Francis Crick",
+        "Raymond Gosling"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Wilkins showed Watson the photo without Franklin's knowledge."
+    },
+    {
+      "q": "Why did the 1962 Nobel Prize not go to Franklin?",
+      "options": [
+        "She died four years earlier and the committee makes no posthumous nominations",
+        "She left King's College before Gosling finished her experiments",
+        "She declined to share the prize with Watson, Crick and Wilkins",
+        "Her photograph was published in Nature after the prize was awarded"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "She had died four years before; the committee never makes posthumous nominations."
+    },
+    {
+      "q": "Which actress played Franklin in the 2015 West End play?",
+      "options": [
+        "Nicole Kidman",
+        "Jeff Goldblum",
+        "Sigourney Weaver",
+        "Juliet Stevenson"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Nicole Kidman played Franklin in Photograph 51 in 2015."
+    },
+    {
+      "q": "What does Watson's epilogue imply?",
+      "options": [
+        "He admitted his early impressions of Franklin were often wrong",
+        "He said Wilkins had stolen the photo from Franklin's lab bench",
+        "He denied that Photo 51 played any part in the double helix",
+        "He claimed that the diffraction work was really his own"
+      ],
+      "answer": 0,
+      "type": "inference",
+      "explain": "He said his early impressions, scientific and personal, were often wrong."
+    }
+  ]
+}

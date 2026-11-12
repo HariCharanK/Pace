@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the passage mainly about?",
+      "options": [
+        "How Carnegie built a telegraph company from a single office",
+        "Carnegie's early messenger years, his raise, his family, and telegraphy",
+        "How Colonel Glass left the telegraph for a political career",
+        "The building of the Allegheny River bridge in Pittsburgh"
+      ],
+      "answer": 1,
+      "type": "main_idea",
+      "explain": "Carnegie recounts his messenger work, his joyful pay raise, family life and learning the telegraph."
+    },
+    {
+      "q": "How did the Carnegie family repay Mrs. Henderson's loan?",
+      "options": [
+        "With a draft bought using two hundred half-dollars saved in a stocking",
+        "By selling the furniture the family had slowly bought",
+        "With a gift of money from Colonel Glass one Saturday",
+        "Through wages sent by an uncle working in Dunfermline"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Mother saved silver half-dollars in a stocking until two hundred were gathered, then he obtained a draft to repay the twenty pounds."
+    },
+    {
+      "q": "What new monthly wage did Mr. Glass give Carnegie?",
+      "options": [
+        "Eleven and a quarter dollars",
+        "Fifteen dollars",
+        "Twenty dollars",
+        "Thirteen and a half dollars"
+      ],
+      "answer": 3,
+      "type": "detail",
+      "explain": "Glass said Carnegie was worth more and would be paid thirteen and a half dollars a month."
+    },
+    {
+      "q": "How did Carnegie first take a telegraph message?",
+      "options": [
+        "He copied one as Mr. Brooks dictated it from the instrument",
+        "He answered a Philadelphia death-message call and asked for slow sending",
+        "He was assigned to a message when an operator fell ill",
+        "He read it from a printed slip handed over the counter"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He answered the Pittsburgh call, took Philadelphia's death message at slow speed, and ran out with it."
+    },
+    {
+      "q": "Why did the other boys think Carnegie was mean?",
+      "options": [
+        "He refused to share his lunch with the other messenger boys",
+        "He was paid a higher wage than the others from the start",
+        "He did not spend his extra dimes because the family needed them",
+        "He reported the other boys to Colonel Glass for idling"
+      ],
+      "answer": 2,
+      "type": "inference",
+      "explain": "The boys saw him not spending dimes but did not know he saved every penny for his family."
+    }
+  ]
+}

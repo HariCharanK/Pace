@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What was the Marshall Plan?",
+      "options": [
+        "A US aid program for Western European economic recovery after WWII",
+        "A US plan to dismantle German industry and divide it among the Allies",
+        "A Soviet-led program to rebuild factories across the Eastern Bloc",
+        "A NATO military alliance to contain communism across Western Europe"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "It transferred billions in aid to European countries to rebuild economies after the war."
+    },
+    {
+      "q": "Which country received the largest share of Marshall Plan money?",
+      "options": [
+        "Western Germany",
+        "The United Kingdom",
+        "The Netherlands",
+        "Metropolitan France"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The UK received about 26%, followed by France 18% and West Germany 11%."
+    },
+    {
+      "q": "What did the Soviet Union do with the aid offer?",
+      "options": [
+        "Asked for it to be paid as loans instead of grants",
+        "Refused it and blocked Eastern Bloc countries from it",
+        "Accepted a reduced amount and shared it with Poland",
+        "Accepted it only for East Germany and Czechoslovakia"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "The USSR refused and blocked benefits to Eastern Bloc countries like Romania and Poland."
+    },
+    {
+      "q": "By how much was output in 1951 higher than 1938 for all recipients?",
+      "options": [
+        "At least 35%",
+        "About 3%",
+        "At least 83%",
+        "Half a percent"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Output in 1951 was at least 35% higher than in 1938."
+    },
+    {
+      "q": "What does the passage suggest about the plan's effect on recovery?",
+      "options": [
+        "It was the sole cause of growth, as aid exceeded a third of national income",
+        "Its contribution is debated, as aid was only about 3% of national income",
+        "It had little effect because output stayed below 1938 levels through 1951",
+        "It mostly harmed Europe by adding debt equal to 30% of national income"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "Aid was about 3% of income, and economists are not sure how much growth was due to the ERP."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What project does Franklin describe?",
+      "options": [
+        "Attaining moral perfection by mastering thirteen virtues one at a time",
+        "Founding a printing business with thirteen apprentices in Philadelphia",
+        "Writing a dictionary of virtues drawn from Greek philosophers",
+        "Organizing a debating club to practice thirteen rules of conversation"
+      ],
+      "answer": 0,
+      "type": "main_idea",
+      "explain": "He set out to live without fault, using thirteen virtues and a daily examination method."
+    },
+    {
+      "q": "What is the precept for Temperance?",
+      "options": [
+        "Speak not but what may benefit others",
+        "Lose no time; be always employ'd in something useful",
+        "Eat not to dullness; drink not to elevation",
+        "Let all your things have their places"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "Temperance: 'Eat not to dullness; drink not to elevation.'"
+    },
+    {
+      "q": "Why did Franklin put Silence second?",
+      "options": [
+        "To please his employer by speaking less in the print shop",
+        "To listen more and learn, and break a habit of prattling",
+        "To avoid quarrels with his brother over money and debt",
+        "To save money on candles by working in silence each night"
+      ],
+      "answer": 1,
+      "type": "detail",
+      "explain": "He wanted to gain knowledge by listening and to break his habit of prattling, punning and joking."
+    },
+    {
+      "q": "How did he record faults in his little book?",
+      "options": [
+        "Black spots in ruled columns for each day and virtue",
+        "Red ink checkmarks in a daily ledger of successes",
+        "Written essays each night on the faults of the day",
+        "Letters sent each week to friends listing his errors"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "Pages were ruled with red ink into seven day columns, thirteen virtue lines, marked with black spots for faults."
+    },
+    {
+      "q": "Why did Franklin conclude he needed a method rather than simple conviction?",
+      "options": [
+        "His friends told him that reading about virtue was the surest cure",
+        "Knowing virtue is in our interest wasn't enough; habits had to change",
+        "He lacked knowledge of right and wrong, so rules were needed",
+        "He believed no one could be virtuous without a strict teacher"
+      ],
+      "answer": 1,
+      "type": "inference",
+      "explain": "He found habit and inclination overpowered reason, so contrary habits must be broken and good ones established."
+    }
+  ]
+}

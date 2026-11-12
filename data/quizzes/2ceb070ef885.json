@@ -1,0 +1,65 @@
+{
+  "model": "claude (precomputed)",
+  "questions": [
+    {
+      "q": "What is the central point of the passage?",
+      "options": [
+        "Most people manage twenty-four hours well and should stop worrying about wasted time",
+        "Modern workers should abandon aspiration because it only produces constant discomfort",
+        "Many people feel an uneasy aspiration to do more than their obligations and never act on it",
+        "Pilgrimage and travel are the surest cure for feeling that years slip away"
+      ],
+      "answer": 2,
+      "type": "main_idea",
+      "explain": "The author says a common uneasy feeling comes from wanting to exceed one's formal programme."
+    },
+    {
+      "q": "What example does the author use of a man who desires to go to Mecca?",
+      "options": [
+        "One who never leaves Brixton",
+        "One who is robbed at Port Said",
+        "One who goes by train to Paris",
+        "One who joins a pilgrimage group"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He contrasts a traveler who sets out with the man who never leaves Brixton."
+    },
+    {
+      "q": "Which thinker does the author call the greatest mind that ever lived?",
+      "options": [
+        "Herbert Spencer",
+        "Immanuel Kant",
+        "Isaac Newton",
+        "John Stuart Mill"
+      ],
+      "answer": 0,
+      "type": "detail",
+      "explain": "He calls Herbert Spencer the greatest mind that ever lived."
+    },
+    {
+      "q": "What does the author say about literature?",
+      "options": [
+        "It is the only dependable source for satisfying a hunger for learning",
+        "It is becoming too costly for ordinary clerks to enjoy regularly",
+        "It is not the only well for slaking the thirst for knowledge",
+        "It is overrated compared with newspapers and popular competitions"
+      ],
+      "answer": 2,
+      "type": "detail",
+      "explain": "He says literature is not the only well and knowledge can be sought apart from it."
+    },
+    {
+      "q": "What does the author imply about the person who says living on 24 hours is easy?",
+      "options": [
+        "He is annoyed by such a person and wants him to stop boasting",
+        "He admires such a person and plans to copy his daily timetable",
+        "He believes such a person is common and needs no advice at all",
+        "He doubts such a person exists and would like to learn his secret"
+      ],
+      "answer": 3,
+      "type": "inference",
+      "explain": "He says he has long wished to meet him and asks him to come forward, implying such people are rare."
+    }
+  ]
+}
