@@ -3,7 +3,7 @@
 A local web app for measuring and training reading speed on your own reading material, with a comprehension quiz after every session.
 
 ```bash
-git clone git@github.com:HariCharanK/pace.git && cd pace
+git clone git@github.com:HariCharanK/Pace.git && cd Pace
 uv run python ingest.py                # first run: fetch the corpus (~1-2 min)
 uv run uvicorn app:app --port 8765     # then open http://localhost:8765
 ```
