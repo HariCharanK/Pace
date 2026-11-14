@@ -2,9 +2,9 @@
 (() => {
 "use strict";
 
-const CATS = ["health", "technology", "biology", "finance", "productivity", "history", "geopolitics", "biography"];
+const CATS = ["technology", "space", "health", "biology", "finance", "productivity", "history", "geopolitics", "biography"];
 const KINDS = { news: "News", blog: "Blogs", essay: "Essays", book: "Books", knowledge: "Knowledge" };
-const LENGTHS = { any: "Any length", short: "< 900 words", medium: "900–1600", long: "1600+" };
+const LENGTHS = { any: "Any length", short: "Quick · ≤ 1000 words", medium: "1000–1600", long: "1600+" };
 const MODES = {
   test: { name: "Speed test", desc: "Read naturally. Timer runs, then a quiz." },
   pacer: { name: "Pacer drill", desc: "A guide sweeps line by line at your target pace." },
@@ -67,11 +67,46 @@ async function api(path, opts = {}) {
   }
   return res.json();
 }
-let PASSAGES = null, QUIZ_PROVIDER = null;
+let PASSAGES = null, QUIZ_PROVIDER = null, AFFINITY = { sources: {}, categories: {} };
 async function loadPassages(force) {
-  if (!PASSAGES || force) { const d = await api("/api/passages"); PASSAGES = d.passages; QUIZ_PROVIDER = d.quiz_provider; }
+  if (!PASSAGES || force) { const d = await api("/api/passages"); PASSAGES = d.passages; QUIZ_PROVIDER = d.quiz_provider; AFFINITY = d.affinity || AFFINITY; }
   return PASSAGES;
 }
+
+/* ---------------------------------------------------------------- taste (votes) */
+// How much you'd probably like a passage: its source's score counts most, its topics a bit,
+// fresh news gets a small bump, and things you've already read sink.
+function taste(p) {
+  // Wikipedia is kept for the pieces already there, but liking one counts toward its topics, not the source.
+  const src = p.source === "Wikipedia" ? Math.min(0, AFFINITY.sources[p.source] || 0) : AFFINITY.sources[p.source] || 0;
+  const dense = p.flesch != null && p.flesch < 40 ? -0.5 : 0;
+  const cat = p.categories.reduce((s, c) => s + (AFFINITY.categories[c] || 0), 0) / Math.max(1, p.categories.length);
+  const ageDays = (Date.now() - (Date.parse(p.published) || p.fetched_at * 1000)) / 864e5;
+  const fresh = p.kind === "news" ? Math.max(0, 1 - ageDays / 7) : 0;
+  // A liked piece has been read: its vote feeds the source/topic scores rather than resurfacing it.
+  const seen = p.reads || p.vote > 0 ? 1 : 0;
+  return 1.5 * src + 0.6 * cat + (p.vote < 0 ? -4 : 0) + fresh + dense - 3 * seen;
+}
+function voteButtons(p, label = false) {
+  const v = p.vote || 0;
+  return `<span class="votes" data-vote-for="${p.id}" data-cur="${v}" title="Upvote what you enjoy; similar pieces and sources show up more">
+    <button class="vote up ${v > 0 ? "on" : ""}" data-vote="1" aria-label="Upvote">▲${label ? " Liked it" : ""}</button>
+    <button class="vote down ${v < 0 ? "on" : ""}" data-vote="-1" aria-label="Downvote">▼${label ? " Not for me" : ""}</button></span>`;
+}
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-vote]"); if (!b) return;
+  e.preventDefault(); e.stopPropagation();
+  const wrap = b.closest("[data-vote-for]"); const id = wrap.dataset.voteFor;
+  const p = (PASSAGES || []).find((x) => x.id === id) || { id, vote: +wrap.dataset.cur || 0 };
+  const want = +b.dataset.vote; const next = (+wrap.dataset.cur || 0) === want ? 0 : want;
+  try {
+    await api(`/api/passages/${id}/vote`, { method: "POST", body: { vote: next } });
+    $$(`[data-vote-for="${id}"]`).forEach((w) => { w.dataset.cur = next; $(".up", w).classList.toggle("on", next > 0); $(".down", w).classList.toggle("on", next < 0); });
+    p.vote = next;
+    loadPassages(true); // refresh taste scores in the background
+    if (next) toast(next > 0 ? "Noted, more like this" : "Noted, less like this");
+  } catch (err) { toast(err.message); }
+}, true);
 async function loadResults() { return (await api("/api/results")).results; }
 
 function toast(msg) {
@@ -107,13 +142,13 @@ function model(results) {
 }
 
 /* ---------------------------------------------------------------- filters */
-const filters = Object.assign({ cats: [], kinds: [], length: "any", unread: false, q: "", sort: "new" }, store.get("filters", {}));
+const filters = Object.assign({ cats: [], kinds: [], length: "any", unread: false, q: "", sort: "foryou" }, store.get("filters", {}));
 function applyFilters(list, f = filters) {
   return list.filter((p) => {
     if (f.cats.length && !p.categories.some((c) => f.cats.includes(c))) return false;
     if (f.kinds.length && !f.kinds.includes(p.kind)) return false;
-    if (f.length === "short" && p.words >= 900) return false;
-    if (f.length === "medium" && (p.words < 900 || p.words > 1600)) return false;
+    if (f.length === "short" && p.words > 1000) return false;
+    if (f.length === "medium" && (p.words <= 1000 || p.words > 1600)) return false;
     if (f.length === "long" && p.words <= 1600) return false;
     if (f.unread && p.reads) return false;
     if (f.q) { const q = f.q.toLowerCase(); if (!(p.title + " " + p.source + " " + (p.author || "")).toLowerCase().includes(q)) return false; }
@@ -122,10 +157,15 @@ function applyFilters(list, f = filters) {
 }
 function pickRandom(list, { maxWords, minWords } = {}) {
   let pool = list.filter((p) => (QUIZ_PROVIDER || p.has_quiz) && (!maxWords || p.words <= maxWords) && (!minWords || p.words >= minWords));
-  const unread = pool.filter((p) => !p.reads);
+  const unread = pool.filter((p) => !p.reads && (p.vote || 0) >= 0);
   if (unread.length) pool = unread;
   if (!pool.length) pool = list;
-  return pool[Math.floor(Math.random() * pool.length)];
+  if (!pool.length) return null;
+  // weighted by taste: a liked source is several times likelier, but everything keeps a chance
+  const w = pool.map((p) => Math.exp(0.6 * Math.max(-4, Math.min(6, taste(p)))));
+  let r = Math.random() * w.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < pool.length; i++) { r -= w[i]; if (r <= 0) return pool[i]; }
+  return pool[pool.length - 1];
 }
 
 /* ---------------------------------------------------------------- router */
@@ -329,7 +369,7 @@ async function renderLibrary() {
         <div class="seg" id="len">${Object.entries(LENGTHS).map(([k, v]) => `<button data-v="${k}" class="${filters.length === k ? "on" : ""}">${v}</button>`).join("")}</div>
         <label class="row small muted" style="gap:6px;margin-left:12px"><input type="checkbox" class="switch" id="unread" ${filters.unread ? "checked" : ""}> Unread only</label>
         <div class="spacer"></div>
-        <select id="sort" style="width:auto"><option value="new">Newest</option><option value="short">Shortest</option><option value="long">Longest</option><option value="easy">Easiest</option></select>
+        <select id="sort" style="width:auto"><option value="foryou">For you</option><option value="new">Newest</option><option value="short">Shortest</option><option value="long">Longest</option><option value="easy">Easiest</option></select>
       </div>
     </div>
     <div class="faint small" id="count" style="margin-bottom:10px"></div>
@@ -340,7 +380,7 @@ async function renderLibrary() {
     store.set("filters", filters);
     let list = applyFilters(passages);
     const when = (p) => Date.parse(p.published) || p.fetched_at * 1000;
-    const sorters = { new: (a, b) => when(b) - when(a), short: (a, b) => a.words - b.words, long: (a, b) => b.words - a.words, easy: (a, b) => (b.flesch || 0) - (a.flesch || 0) };
+    const sorters = { foryou: (a, b) => taste(b) - taste(a) || when(b) - when(a), new: (a, b) => when(b) - when(a), short: (a, b) => a.words - b.words, long: (a, b) => b.words - a.words, easy: (a, b) => (b.flesch || 0) - (a.flesch || 0) };
     list = list.slice().sort(sorters[filters.sort] || sorters.new);
     $("#count").textContent = `${list.length} passages · times estimated at ${Math.round(pace)} wpm`;
     $("#grid").innerHTML = list.map((p) => card(p, pace)).join("") || `<div class="card empty">Nothing matches. Loosen the filters.</div>`;
@@ -371,6 +411,7 @@ function card(p, pace) {
       ${p.categories.map((c) => `<span class="tag">${esc(c)}</span>`).join("")}
       <span class="spacer"></span>
       ${p.reads ? `<span class="read-badge">✓ read</span>` : ""}
+      ${voteButtons(p)}
       <span>${p.words.toLocaleString()} w · ~${mins} min${ease ? " · " + ease : ""}${p.has_quiz ? "" : QUIZ_PROVIDER ? "" : " · no quiz"}</span>
     </div></div>`;
 }
@@ -406,7 +447,7 @@ async function renderRead(id, params) {
       <div class="row" id="chunkRow" ${mode === "rsvp" ? "" : "hidden"} style="margin:-8px 0 18px"><span class="muted small">Words per flash</span>
         <div class="seg" id="chunk">${[1, 2, 3].map((c) => `<button data-v="${c}" class="${settings.chunk === c ? "on" : ""}">${c}</button>`).join("")}</div></div>
       <div class="row"><button class="btn primary big" id="begin">Begin</button><span class="faint small"><kbd>Enter</kbd> to start${mode === "test" ? " · <kbd>Enter</kbd> again when you finish" : " · <kbd>Space</kbd> pause · <kbd>↑</kbd><kbd>↓</kbd> speed"}</span>
-        <div class="spacer"></div><button class="btn ghost small" id="hide" title="Hide this passage from the library">Hide passage</button></div>
+        <div class="spacer"></div>${voteButtons(p)}<button class="btn ghost small" id="hide" title="Hide this passage from the library">Hide passage</button></div>
       <p class="faint small" id="quizNote" style="margin:16px 0 0"></p>
     </div></div>`;
     quizPromise.then((q) => { const n = $("#quizNote"); if (n) n.textContent = q.error ? `Quiz: ${q.error}` : `${q.questions.length}-question quiz afterwards · don't scroll back during it.`; });
@@ -706,6 +747,7 @@ function showResult(p, run, qs, picks, score, saved, before) {
     </div>
     ${saved.wpm > 1200 && run.mode === "test" ? `<p class="card" style="border-color:var(--bad);color:var(--bad)">${Math.round(saved.wpm)} wpm is faster than skimming. If you hit “done” by accident, discard this session so it doesn't skew your stats.</p>` : ""}
     <p class="verdict">${verdict}</p>
+    <div class="row small muted" style="margin:6px 0 2px">Enjoyed this piece? ${voteButtons({ id: p.id, vote: p.vote || 0 }, true)}<span class="faint">Votes shape what you're served next.</span></div>
     <p class="faint small">${p.words.toLocaleString()} words in ${fmtTime(run.seconds)}${run.target ? ` · paced at ${run.pacedWpm || run.target} wpm` : ""}</p>
     <div class="row" style="margin:16px 0 8px">
       <button class="btn primary" id="next">Next passage</button>
@@ -732,15 +774,17 @@ function showResult(p, run, qs, picks, score, saved, before) {
 /* ---------------------------------------------------------------- history */
 async function renderHistory() {
   const results = (await loadResults()).reverse();
+  const voteOf = Object.fromEntries((await loadPassages(true)).map((x) => [x.id, x.vote || 0]));
   view.innerHTML = `<h1>History</h1><p class="muted">Every session you've saved.</p>
     ${results.length ? `<div class="card" style="padding:6px 8px;overflow-x:auto"><table>
-      <thead><tr><th>Date</th><th>Passage</th><th>Mode</th><th class="num">Words</th><th class="num">Time</th><th class="num">WPM</th><th class="num">Score</th><th class="num">Effective</th><th></th></tr></thead>
+      <thead><tr><th>Date</th><th>Passage</th><th>Mode</th><th class="num">Words</th><th class="num">Time</th><th class="num">WPM</th><th class="num">Score</th><th class="num">Effective</th><th>Liked?</th><th></th></tr></thead>
       <tbody>${results.map((r) => `<tr>
         <td class="faint">${fmtDate(r.ts)}</td>
         <td><a href="#/read/${r.passage_id}" style="text-decoration:none">${esc(r.title || "(removed)")}</a></td>
         <td>${esc(MODES[r.mode]?.name || r.mode)}${r.target_wpm ? ` <span class="faint small">@${Math.round(r.target_wpm)}</span>` : ""}</td>
         <td class="num">${r.words}</td><td class="num">${fmtTime(r.seconds)}</td><td class="num">${Math.round(r.wpm)}</td>
         <td class="num">${r.total ? `${r.score}/${r.total}` : "—"}</td><td class="num">${r.effective_wpm ? Math.round(r.effective_wpm) : "—"}</td>
+        <td>${voteButtons({ id: r.passage_id, vote: voteOf[r.passage_id] || 0 })}</td>
         <td><button class="btn ghost small" data-del="${r.id}" title="Delete">✕</button></td></tr>`).join("")}</tbody></table></div>`
       : `<div class="card empty">No sessions yet. <a href="#/library">Pick something to read</a>.</div>`}`;
   $$("[data-del]").forEach((b) => b.addEventListener("click", async () => { await api(`/api/results/${b.dataset.del}`, { method: "DELETE" }); renderHistory(); }));
@@ -761,6 +805,11 @@ const SUGGESTED = [
   { name: "Astral Codex Ten", url: "https://www.astralcodexten.com/feed", kind: "essay", categories: ["health", "technology"] },
   { name: "Bits about Money", url: "https://www.bitsaboutmoney.com/archive/rss/", kind: "essay", categories: ["finance"] },
 ];
+
+function boostCtl(name, score) {
+  return `<span class="votes boost" data-boost="${esc(name)}"><button class="vote down" data-d="-1" title="Less from this source">▼</button>
+    <b class="score ${score > 0 ? "pos" : score < 0 ? "neg" : ""}">${score > 0 ? "+" : ""}${score}</b><button class="vote up" data-d="1" title="More from this source">▲</button></span>`;
+}
 
 async function renderSources() {
   const s = await api("/api/sources");
@@ -794,11 +843,16 @@ async function renderSources() {
         <button class="btn primary">Add text</button></form>
     </div>
 
-    <div class="section"><div class="section-head"><h2>Feeds</h2><span class="faint small">Fetch new articles pulls the latest few from each enabled feed.</span></div>
-      <div class="card" style="padding:6px 8px"><table><thead><tr><th>On</th><th>Feed</th><th>Type</th><th>Topics</th><th class="num">In library</th></tr></thead>
-      <tbody>${s.feeds.map((f) => `<tr><td><input type="checkbox" class="switch" data-feed="${f.id}" ${f.enabled === false ? "" : "checked"}></td>
-        <td>${esc(f.name)}${f.ua === "googlebot" ? ` <span class="tag">paywall</span>` : ""}<div class="faint small">${esc(f.url)}</div></td>
-        <td>${esc(f.kind)}</td><td>${f.categories.map((c) => `<span class="tag">${esc(c)}</span>`).join(" ")}</td><td class="num">${f.count}</td></tr>`).join("")}</tbody></table></div>
+    <div class="section"><div class="section-head"><h2>Feeds</h2><span class="faint small">Upvote a source (or pieces from it) to get more of it on each fetch and in “For you”. A score of −3 mutes a feed.</span></div>
+      <div class="card" style="padding:6px 8px"><table><thead><tr><th>On</th><th>Feed</th><th>Topics</th><th class="num">In library</th><th class="num">Score</th><th class="num">Next fetch</th></tr></thead>
+      <tbody>${s.feeds.slice().sort((a, b) => b.score - a.score || b.count - a.count).map((f) => `<tr><td><input type="checkbox" class="switch" data-feed="${f.id}" ${f.enabled === false ? "" : "checked"}></td>
+        <td>${esc(f.name)} <span class="faint small">${esc(f.kind)}</span>${f.ua === "googlebot" ? ` <span class="tag">paywall</span>` : ""}${f.skip_over ? ` <span class="tag">≤ ${f.skip_over} w</span>` : ""}<div class="faint small">${esc(f.url)}</div></td>
+        <td>${f.categories.map((c) => `<span class="tag">${esc(c)}</span>`).join(" ")}</td><td class="num">${f.count}</td>
+        <td class="num">${boostCtl(f.name, f.score)}</td><td class="num">${f.enabled === false ? "off" : f.quota ? f.quota : "muted"}</td></tr>`).join("")}</tbody></table></div>
+    </div>
+    <div class="section"><div class="section-head"><h2>Other sources</h2><span class="faint small">Essays, books and saved pages. ${s.wikipedia_enabled ? "" : "Wikipedia pulls are off; the existing Wikipedia pieces stay in your library."}</span></div>
+      <div class="card" style="padding:6px 8px"><table><thead><tr><th>Source</th><th class="num">In library</th><th class="num">Score</th></tr></thead>
+      <tbody>${s.others.map((o) => `<tr><td>${esc(o.name)}</td><td class="num">${o.count}</td><td class="num">${boostCtl(o.name, o.score)}</td></tr>`).join("")}</tbody></table></div>
     </div>
 
     <div class="two-col section">
@@ -825,6 +879,11 @@ async function renderSources() {
   submit("#fUrl", "/api/add/url", (d, f) => ({ url: d.get("url"), kind: d.get("kind"), categories: cats(f), googlebot: !!d.get("googlebot") }));
   submit("#fText", "/api/add/text", (d, f) => ({ title: d.get("title"), text: d.get("text"), kind: d.get("kind"), categories: cats(f) }));
   submit("#fFeed", "/api/add/feed", (d, f) => ({ name: d.get("name"), url: d.get("url"), kind: d.get("kind"), categories: cats(f), max_items: +d.get("max_items"), googlebot: !!d.get("googlebot") }));
+  $$("[data-boost] [data-d]").forEach((b) => b.addEventListener("click", async () => {
+    const name = b.closest("[data-boost]").dataset.boost;
+    try { await api("/api/sources/boost", { method: "POST", body: { source: name, delta: +b.dataset.d } }); PASSAGES = null; const y = window.scrollY; await renderSources(); window.scrollTo(0, y); }
+    catch (e) { toast(e.message); }
+  }));
   $$("[data-feed]").forEach((cb) => cb.addEventListener("change", () => api(`/api/sources/feeds/${cb.dataset.feed}`, { method: "POST", body: { enabled: cb.checked } })));
   $$("[data-sug]").forEach((b) => b.addEventListener("click", async () => {
     const x = SUGGESTED[+b.dataset.sug];

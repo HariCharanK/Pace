@@ -2,6 +2,7 @@
 import json
 import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
@@ -31,7 +32,13 @@ with db.connect() as _c:
         print(f"imported {n} precomputed quizzes")
 
 refresh_state = {"running": False, "log": [], "stats": None, "finished_at": None}
-quiz_lock = threading.Lock()
+_locks_guard = threading.Lock()
+_quiz_locks: dict = {}
+
+
+def quiz_lock_for(pid: str) -> threading.Lock:
+    with _locks_guard:
+        return _quiz_locks.setdefault(pid, threading.Lock())
 
 
 def row_meta(r) -> dict:
@@ -49,13 +56,15 @@ def list_passages():
     reads = {}
     for r in con.execute("SELECT passage_id, COUNT(*), MAX(ts) FROM results GROUP BY passage_id"):
         reads[r[0]] = {"count": r[1], "last": r[2]}
+    votes = dict(con.execute("SELECT passage_id, vote FROM votes").fetchall())
     out = []
     for r in con.execute("SELECT * FROM passages WHERE hidden=0 ORDER BY fetched_at DESC"):
         m = row_meta(r)
         m["has_quiz"] = r["id"] in quizzed
         m["reads"] = reads.get(r["id"], {}).get("count", 0)
+        m["vote"] = votes.get(r["id"], 0)
         out.append(m)
-    return {"passages": out, "quiz_provider": quizgen.provider()}
+    return {"passages": out, "quiz_provider": quizgen.provider(), "affinity": db.affinity(con)}
 
 
 @app.get("/api/passages/{pid}")
@@ -67,7 +76,22 @@ def get_passage(pid: str):
     m = row_meta(r)
     m["text"] = r["text"]
     m["has_quiz"] = db.get_quiz(con, pid) is not None
+    v = con.execute("SELECT vote FROM votes WHERE passage_id=?", (pid,)).fetchone()
+    m["vote"] = v[0] if v else 0
     return m
+
+
+class Vote(BaseModel):
+    vote: int  # 1 = upvote, -1 = downvote, 0 = clear
+
+
+@app.post("/api/passages/{pid}/vote")
+def vote(pid: str, v: Vote):
+    con = db.connect()
+    if not con.execute("SELECT 1 FROM passages WHERE id=?", (pid,)).fetchone():
+        raise HTTPException(404, "not found")
+    db.set_vote(con, pid, v.vote)
+    return {"ok": True, "vote": max(-1, min(1, v.vote))}
 
 
 def ensure_quiz(pid: str):
@@ -80,7 +104,7 @@ def ensure_quiz(pid: str):
     r = con.execute("SELECT title, text FROM passages WHERE id=?", (pid,)).fetchone()
     if not r:
         return None
-    with quiz_lock:  # avoid double-generation from concurrent requests
+    with quiz_lock_for(pid):  # avoid double-generation of the same quiz; different passages run in parallel
         q = db.get_quiz(con, pid)
         if q:
             return q
@@ -247,10 +271,38 @@ def sources():
     s = ingest.load_sources()
     con = db.connect()
     counts = dict(con.execute("SELECT source_id, COUNT(*) FROM passages WHERE hidden=0 GROUP BY source_id").fetchall())
+    aff = db.affinity(con)
+    boosts = dict(con.execute("SELECT source, boost FROM source_boost").fetchall())
     for f in s["feeds"]:
         f["count"] = counts.get(f["id"], 0)
-    return {"feeds": s["feeds"], "pages": len(s["pages"]), "wikipedia": len(s["wikipedia"]),
+        f["score"] = aff["sources"].get(f["name"], 0)
+        f["quota"] = ingest.feed_quota(f, f["score"])
+    feed_names = {f["name"] for f in s["feeds"]}
+    others = []
+    for name, n in con.execute("SELECT source_name, COUNT(*) FROM passages WHERE hidden=0 GROUP BY source_name"):
+        if name not in feed_names:
+            others.append({"name": name, "count": n, "score": aff["sources"].get(name, 0)})
+    others.sort(key=lambda o: (-o["score"], -o["count"]))
+    return {"feeds": s["feeds"], "others": others, "boosts": boosts, "categories": aff["categories"],
+            "pages": len(s["pages"]), "wikipedia": len(s["wikipedia"]),
+            "wikipedia_enabled": s.get("wikipedia_enabled", True),
             "books": sum(len(b["excerpts"]) for b in s["books"]), "quiz_provider": quizgen.provider()}
+
+
+class Boost(BaseModel):
+    source: str
+    delta: int
+
+
+@app.post("/api/sources/boost")
+def boost_source(b: Boost):
+    """Upvote/downvote a whole source (on top of votes on its individual pieces)."""
+    con = db.connect()
+    cur = con.execute("SELECT boost FROM source_boost WHERE source=?", (b.source,)).fetchone()
+    val = max(-5, min(5, (cur[0] if cur else 0) + (1 if b.delta > 0 else -1)))
+    con.execute("INSERT OR REPLACE INTO source_boost VALUES (?,?)", (b.source, val))
+    con.commit()
+    return {"boost": val, "score": db.affinity(con)["sources"].get(b.source, 0)}
 
 
 class FeedToggle(BaseModel):
@@ -271,13 +323,19 @@ def _run_refresh():
     refresh_state.update(running=True, log=[], stats=None)
     try:
         before = {r[0] for r in db.connect().execute("SELECT id FROM passages")}
-        stats = ingest.refresh(log=lambda m: refresh_state["log"].append(m))
+        scores = db.affinity(db.connect())["sources"]
+        stats = ingest.refresh(log=lambda m: refresh_state["log"].append(m), scores=scores)
         refresh_state["stats"] = stats
         if quizgen.provider():
             new = [r[0] for r in db.connect().execute("SELECT id FROM passages") if r[0] not in before]
-            for pid in new:
-                refresh_state["log"].append(f"quiz: {pid}")
+            refresh_state["log"].append(f"writing quizzes for {len(new)} new passages…")
+
+            def one(pid):
                 _safe(ensure_quiz, pid)
+                refresh_state["log"].append(f"quiz ready: {pid}")
+
+            with ThreadPoolExecutor(6) as pool:
+                list(pool.map(one, new))
     finally:
         refresh_state.update(running=False, finished_at=time.time())
 

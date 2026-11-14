@@ -271,3 +271,16 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   .intro { padding: 24px 20px; }
   .settings-panel { right: 8px; left: 8px; width: auto; }
 }
+
+/* ---------- votes */
+.votes { display: inline-flex; align-items: center; gap: 2px; }
+.vote {
+  border: 1px solid transparent; background: transparent; color: var(--ink-3); border-radius: 7px;
+  padding: 2px 7px; font-size: 12px; line-height: 1.4; font-weight: 600;
+}
+.vote:hover { background: var(--surface-2); color: var(--ink); }
+.vote.up.on { color: var(--accent); background: var(--accent-soft); }
+.vote.down.on { color: var(--ink); background: var(--surface-2); border-color: var(--line); }
+.votes.boost .score { min-width: 26px; text-align: center; font-variant-numeric: tabular-nums; color: var(--ink-3); }
+.votes.boost .score.pos { color: var(--accent); }
+.votes.boost .score.neg { color: var(--bad); }

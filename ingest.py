@@ -105,7 +105,12 @@ def trim(paras: list[str], max_words: int = MAX_WORDS) -> tuple[list[str], bool]
 
 def finalize(paras: list[str], *, key: str, title: str, kind: str, categories: list, source_id: str,
              source_name: str, url: str = None, author: str = None, published: str = None,
-             max_words: int = MAX_WORDS, min_words: int = MIN_WORDS, check_flesch: bool = True):
+             max_words: int = MAX_WORDS, min_words: int = MIN_WORDS, check_flesch: bool = True,
+             skip_over: int = None):
+    if skip_over:
+        raw = sum(len(p.split()) for p in paras)
+        if raw > skip_over:
+            return None, f"too long for this feed ({raw}w > {skip_over})"
     paras, truncated = trim(paras, max_words)
     while paras and (paras[-1].startswith("## ") or not paras[-1].rstrip().endswith((".", "?", "!", '"', "”", "’", ")"))):
         paras.pop()  # drop dangling headings / half sentences at the end
@@ -165,15 +170,17 @@ def ingest_page(src: dict, url: str = None, ua: str = None, title: str = None, p
     return finalize(paras, key=url, title=title, kind=src.get("kind", "blog"),
                     categories=src.get("categories", []), source_id=src.get("id", "page"),
                     source_name=src.get("name") or d.get("sitename") or "",
-                    url=url, author=d.get("author"), published=published or d.get("date"))
+                    url=url, author=d.get("author"), published=published or d.get("date"),
+                    min_words=src.get("min_words", MIN_WORDS), skip_over=src.get("skip_over"))
 
 
-def ingest_feed(src: dict, con, known_urls: set):
+def ingest_feed(src: dict, con, known_urls: set, max_items: int = None):
     r = http_get(src["url"])
     feed = feedparser.parse(r.content)
     accepted, log = [], []
-    for e in feed.entries[: max(src.get("max_items", 3) * 4, 8)]:
-        if len(accepted) >= src.get("max_items", 3):
+    n = max_items if max_items is not None else src.get("max_items", 3)
+    for e in feed.entries[: max(n * 5, 10)]:
+        if len(accepted) >= n:
             break
         link = e.get("link")
         if not link or link in known_urls:
@@ -181,6 +188,8 @@ def ingest_feed(src: dict, con, known_urls: set):
         if re.search(r"/(video|interactive|live|podcasts?|slideshow|crosswords|briefing)/", link):
             continue
         if src.get("exclude") and re.search(src["exclude"], e.get("title", ""), re.I):
+            continue
+        if src.get("include") and not re.search(src["include"], e.get("title", ""), re.I):
             continue
         try:
             p, why = ingest_page(src, url=link, title=e.get("title"), published=e.get("published"))
@@ -303,7 +312,16 @@ def save_sources(s: dict):
     SOURCES.write_text(json.dumps(s, indent=2, ensure_ascii=False) + "\n")
 
 
-def refresh(only: set = None, log=print) -> dict:
+def feed_quota(feed: dict, score: int) -> int:
+    """How many new items to pull from a feed, nudged by how much you've liked it.
+    Each net upvote adds one (max +3); a net score of -3 or worse mutes the feed."""
+    base = feed.get("max_items", 3)
+    if score <= -3:
+        return 0
+    return max(1, base + max(-base + 1, min(3, score)))
+
+
+def refresh(only: set = None, log=print, scores: dict = None) -> dict:
     con = db.connect()
     s = load_sources()
     known = {r[0] for r in con.execute("SELECT url FROM passages WHERE url IS NOT NULL")}
@@ -320,10 +338,14 @@ def refresh(only: set = None, log=print) -> dict:
     if not only or "feeds" in only:
         for f in s.get("feeds", []):
             if f.get("enabled", True):
-                jobs.append(("feed", f))
+                q = feed_quota(f, (scores or {}).get(f["name"], 0))
+                if q:
+                    jobs.append(("feed", {**f, "_quota": q}))
+                else:
+                    log(f"[feed] {f['name']}: muted by your votes")
     if not only or "pages" in only:
         jobs += [("page", p) for p in s.get("pages", []) if p["url"] not in known]
-    if not only or "wikipedia" in only:
+    if (not only and s.get("wikipedia_enabled", True)) or (only and "wikipedia" in only):
         jobs += [("wiki", w) for w in s.get("wikipedia", [])
                  if "https://en.wikipedia.org/wiki/" + w["title"].replace(" ", "_") not in known]
     if not only or "books" in only:
@@ -335,7 +357,7 @@ def refresh(only: set = None, log=print) -> dict:
         typ, src = job
         try:
             if typ == "feed":
-                return typ, src, ingest_feed(src, con, known)
+                return typ, src, ingest_feed(src, con, known, src.get("_quota"))
             if typ == "page":
                 return typ, src, ingest_page(src)
             if typ == "wiki":

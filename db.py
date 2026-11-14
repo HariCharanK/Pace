@@ -22,6 +22,12 @@ CREATE TABLE IF NOT EXISTS quizzes (
   passage_id TEXT PRIMARY KEY,
   questions TEXT, model TEXT, created_at REAL
 );
+CREATE TABLE IF NOT EXISTS votes (
+  passage_id TEXT PRIMARY KEY, vote INTEGER, ts REAL
+);
+CREATE TABLE IF NOT EXISTS source_boost (
+  source TEXT PRIMARY KEY, boost INTEGER
+);
 CREATE TABLE IF NOT EXISTS results (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   passage_id TEXT, ts REAL, mode TEXT,
@@ -88,3 +94,24 @@ def import_quiz_files(con) -> int:
         except Exception as e:  # noqa: BLE001
             print("bad quiz file", f, e)
     return n
+
+
+def set_vote(con, passage_id: str, vote: int):
+    if vote == 0:
+        con.execute("DELETE FROM votes WHERE passage_id=?", (passage_id,))
+    else:
+        con.execute("INSERT OR REPLACE INTO votes VALUES (?,?,?)", (passage_id, 1 if vote > 0 else -1, time.time()))
+    con.commit()
+
+
+def affinity(con) -> dict:
+    """Your taste, from votes: per-source score (passage votes + manual boost) and per-topic score."""
+    sources, cats = {}, {}
+    for name, cats_json, v in con.execute(
+            "SELECT p.source_name, p.categories, v.vote FROM votes v JOIN passages p ON p.id = v.passage_id"):
+        sources[name] = sources.get(name, 0) + v
+        for c in json.loads(cats_json or "[]"):
+            cats[c] = cats.get(c, 0) + v
+    for name, b in con.execute("SELECT source, boost FROM source_boost"):
+        sources[name] = sources.get(name, 0) + b
+    return {"sources": sources, "categories": cats}
