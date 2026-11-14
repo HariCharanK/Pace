@@ -382,10 +382,20 @@ async function renderLibrary() {
     const when = (p) => Date.parse(p.published) || p.fetched_at * 1000;
     const sorters = { foryou: (a, b) => taste(b) - taste(a) || when(b) - when(a), new: (a, b) => when(b) - when(a), short: (a, b) => a.words - b.words, long: (a, b) => b.words - a.words, easy: (a, b) => (b.flesch || 0) - (a.flesch || 0) };
     list = list.slice().sort(sorters[filters.sort] || sorters.new);
+    // one card per book: the next unread chapter stands in for the rest until you expand it
+    const groups = [], bySource = new Map();
+    for (const p of list) {
+      if (p.kind !== "book" || openBooks.has(p.source)) { groups.push([p]); continue; }
+      let g = bySource.get(p.source);
+      if (!g) { g = []; bySource.set(p.source, g); groups.push(g); }
+      g.push(p);
+    }
     $("#count").textContent = `${list.length} passages · times estimated at ${Math.round(pace)} wpm`;
-    $("#grid").innerHTML = list.map((p) => card(p, pace)).join("") || `<div class="card empty">Nothing matches. Loosen the filters.</div>`;
+    $("#grid").innerHTML = groups.map((g) => card(g.find((p) => !p.reads) || g[0], pace, g.length - 1)).join("") || `<div class="card empty">Nothing matches. Loosen the filters.</div>`;
   };
   view.addEventListener("click", (e) => {
+    const ob = e.target.closest("[data-open-book]");
+    if (ob) { const k = ob.dataset.openBook; openBooks.has(k) ? openBooks.delete(k) : openBooks.add(k); draw(); return; }
     const c = e.target.closest("[data-f]");
     if (c) { const arr = filters[c.dataset.f]; const i = arr.indexOf(c.dataset.v); i >= 0 ? arr.splice(i, 1) : arr.push(c.dataset.v); c.classList.toggle("on"); draw(); }
     const l = e.target.closest("#len button");
@@ -400,12 +410,22 @@ async function renderLibrary() {
   draw();
 }
 
-function card(p, pace) {
+const openBooks = new Set();
+// "How to Live on 24 Hours a Day: Controlling the Mind" under a "Arnold Bennett · How to Live on 24 Hours a Day"
+// source line reads as a duplicate; show just the part the source line doesn't already say.
+function cardTitle(p) {
+  const book = String(p.source || "").split(" · ").pop();
+  return book && p.title.startsWith(book + ": ") ? p.title.slice(book.length + 2) : p.title;
+}
+function card(p, pace, more = 0) {
   const mins = Math.max(1, Math.round(p.words / pace));
+  const bookOpen = p.kind === "book" && openBooks.has(p.source);
   const ease = p.flesch == null ? "" : p.flesch >= 65 ? "Easy" : p.flesch >= 50 ? "Moderate" : "Dense";
   return `<div class="card pcard" data-id="${p.id}">
     <div class="src">${esc(p.source)}${p.published ? " · " + esc(String(p.published).slice(0, 16)) : ""}</div>
-    <h3>${esc(p.title)}</h3>
+    <h3>${esc(cardTitle(p))}</h3>
+    ${more ? `<button class="more-ch" data-open-book="${esc(p.source)}">+ ${more} more chapter${more > 1 ? "s" : ""} from this book</button>`
+      : bookOpen ? `<button class="more-ch" data-open-book="${esc(p.source)}">Collapse this book</button>` : ""}
     <div class="meta">
       <span class="tag kind">${KINDS[p.kind] ? KINDS[p.kind].replace(/s$/, "") : esc(p.kind)}</span>
       ${p.categories.map((c) => `<span class="tag">${esc(c)}</span>`).join("")}

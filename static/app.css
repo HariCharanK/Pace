@@ -167,6 +167,8 @@ input:focus, textarea:focus, select:focus { outline: 2px solid color-mix(in srgb
 .pcard:hover { border-color: var(--ink-3); transform: translateY(-1px); }
 .pcard .src { font-size: 12px; color: var(--ink-3); font-weight: 500; }
 .pcard h3 { font-size: 17.5px; line-height: 1.3; }
+.pcard .more-ch { align-self: flex-start; background: none; border: 0; padding: 0; font: inherit; font-size: 12.5px; color: var(--accent); cursor: pointer; }
+.pcard .more-ch:hover { text-decoration: underline; }
 .pcard .excerpt { font-family: var(--read-font); color: var(--ink-2); font-size: 14px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .pcard .meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: auto; padding-top: 6px; font-size: 12.5px; color: var(--ink-3); }
 .pcard .read-badge { color: var(--good); font-weight: 600; }

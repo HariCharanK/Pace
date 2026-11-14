@@ -38,9 +38,31 @@ BOILERPLATE = re.compile(
     r"^(advertisement|skip advertisement|supported by|credit\b|photo|image|read more|related:|subscribe|sign up|"
     r"share this|this article is republished|the conversation|listen to this article|follow .* on|"
     r"we want to hear|thank you for your patience|you can now listen|leer en español|"
-    r"if you enjoyed this|want more|join \d|get the|click here)",
+    r"if you enjoyed this|want more|join \d|get the|click here|"
+    # site chrome that trafilatura sometimes keeps (seths.blog, space.com, technologyreview.com)
+    r"you have unread updates|or try my new ai|learn which workshop|welcome back\. have you thought about subscribing|"
+    r"privacy & cookies|to find out more, including how to control cookies|enter your mastodon instance|"
+    r"you must confirm your public display name|please logout and then login again|discover special offers)",
     re.I,
 )
+
+SMALL_WORDS = {"a", "an", "the", "and", "or", "but", "nor", "of", "to", "in", "on", "at", "by", "for", "with", "its", "as"}
+ROMAN = re.compile(r"^(x{0,3})(ix|iv|v?i{0,3})\.?$", re.I)
+
+
+def title_case(s: str) -> str:
+    """'THE DESIRE TO EXCEED ONE'S PROGRAMME' -> 'The Desire to Exceed One's Programme' (str.title() gives One'S)."""
+    words = s.split()
+    out = []
+    for i, w in enumerate(words):
+        lw = w.lower()
+        if ROMAN.match(w) and w.strip(".") and lw not in ("i", "x"):
+            out.append(w.upper())
+        elif i > 0 and lw in SMALL_WORDS and words[i - 1] not in ("—", "-", ":"):
+            out.append(lw)
+        else:
+            out.append(lw[:1].upper() + lw[1:])
+    return " ".join(out)
 
 SKIP_WIKI_SECTIONS = {"see also", "references", "notes", "further reading", "external links", "bibliography",
                       "sources", "citations", "footnotes", "gallery", "works cited", "explanatory notes"}
@@ -286,7 +308,7 @@ def ingest_book_excerpt(book: dict, ex: dict):
         if sum(len(p.split()) for p in paras) > 2000:
             break
     paras = paras[ex.get("skip_paragraphs", 0):]
-    heading = ex.get("title") or ex["heading"].strip(". ").title().replace("—", " — ")
+    heading = ex.get("title") or title_case(ex["heading"].strip(". ").replace("—", " — "))
     key = f"gutenberg:{book['gutenberg_id']}:{ex['heading']}"
     return finalize(paras, key=key, title=f"{book['title']}: {heading}", kind="book",
                     categories=ex.get("categories", []), source_id=f"gutenberg-{book['gutenberg_id']}",
@@ -319,6 +341,39 @@ def feed_quota(feed: dict, score: int) -> int:
     if score <= -3:
         return 0
     return max(1, base + max(-base + 1, min(3, score)))
+
+
+def tidy(con, log=print) -> int:
+    """Clean passages already in the library. A paragraph that shows up in two or more pieces from the
+    same source is site chrome (subscribe boxes, comment notices, tweet attributions, related links),
+    not content. Section headings are left alone. Returns how many passages changed."""
+    from collections import defaultdict
+    rows = con.execute("SELECT id, source_name, title, kind, text FROM passages").fetchall()
+    seen = defaultdict(set)
+    for r in rows:
+        for para in r["text"].split("\n\n"):
+            para = para.strip()
+            if para and not para.startswith("## ") and len(para.split()) >= 3:
+                seen[(r["source_name"], para)].add(r["id"])
+    changed = 0
+    for r in rows:
+        paras = [p.strip() for p in r["text"].split("\n\n") if p.strip()]
+        keep = [p for p in paras if not BOILERPLATE.match(p) and len(seen.get((r["source_name"], p), ())) < 2]
+        title = r["title"]
+        if r["kind"] == "book" and ": " in title:
+            book, heading = title.split(": ", 1)
+            title = f"{book}: {title_case(heading)}"
+        if keep == paras and title == r["title"]:
+            continue
+        plain = " ".join(p.removeprefix("## ") for p in keep)
+        con.execute("UPDATE passages SET text=?, words=?, flesch=?, title=? WHERE id=?",
+                    ("\n\n".join(keep), len(plain.split()), round(textstat.flesch_reading_ease(plain), 1) if plain else None,
+                     title, r["id"]))
+        changed += 1
+        if len(keep) != len(paras):
+            log(f"  tidied {r['source_name']}: {r['title'][:60]} (-{len(paras) - len(keep)} paragraphs)")
+    con.commit()
+    return changed
 
 
 def refresh(only: set = None, log=print, scores: dict = None) -> dict:
@@ -388,9 +443,13 @@ def refresh(only: set = None, log=print, scores: dict = None) -> dict:
                 store(p)
             else:
                 stats["failed"] += 1
+    stats["tidied"] = tidy(con, log)
     log(f"done: {stats}")
     return stats
 
 
 if __name__ == "__main__":
-    refresh(set(sys.argv[1:]) or None)
+    if sys.argv[1:] == ["tidy"]:
+        print("tidied", tidy(db.connect()), "passages")
+    else:
+        refresh(set(sys.argv[1:]) or None)

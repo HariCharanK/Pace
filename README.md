@@ -54,6 +54,8 @@ Passages are trimmed to about 450–2,300 words, unless a feed sets its own limi
 
 You can also refresh from the command line: `uv run python ingest.py` (or `ingest.py feeds`).
 
+After each fetch, a tidy pass removes paragraphs that repeat across several pieces from the same source (subscribe boxes, cookie notices, comment prompts, related-story links). To run it by hand: `uv run python ingest.py tidy`. In the library, chapters from the same book share one card, which shows your next unread chapter; click **+ N more chapters** to see the rest.
+
 ## Quizzes
 
 - Quizzes for the starter library are already written and stored in `data/quizzes/<passage_id>.json`. You can drop in or edit files there; changed files are re-imported when the server starts.
