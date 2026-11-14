@@ -145,7 +145,10 @@ async function route() {
     else view.innerHTML = `<div class="empty">Not found.</div>`;
   } catch (e) {
     console.error(e);
-    view.innerHTML = `<div class="card empty">Something went wrong: ${esc(e.message)}<br><br><a class="btn" href="#/">Home</a></div>`;
+    const down = e instanceof TypeError; // fetch() rejects with TypeError when the server is unreachable
+    view.innerHTML = down
+      ? `<div class="card empty"><b>The Pace server isn't running.</b><br><span class="small">It runs as the LaunchAgent <code>com.haricharank.pace</code>. Restart it with<br><code>launchctl kickstart -k gui/$(id -u)/com.haricharank.pace</code><br>and check <code>~/Library/Logs/pace.log</code> if it won't start.</span><br><br><button class="btn" onclick="location.reload()">Retry</button></div>`
+      : `<div class="card empty">Something went wrong: ${esc(e.message)}<br><br><a class="btn" href="#/">Home</a></div>`;
   }
 }
 window.addEventListener("hashchange", route);

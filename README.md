@@ -10,6 +10,16 @@ uv run uvicorn app:app --port 8765     # then open http://localhost:8765
 
 API keys are read from `~/keystore/credentials.env`, or from a local `.env` (see `.env.example`).
 
+### Running it in the background (macOS)
+
+Running uvicorn from a terminal or an editor ties the server to that process; when it's closed the app shows "The Pace server isn't running". To keep it up permanently, install the LaunchAgent. It starts at login and restarts the server if it dies:
+
+```bash
+./scripts/install-launchagent.sh          # installs ~/Library/LaunchAgents/com.haricharank.pace.plist and starts it
+launchctl kickstart -k gui/$(id -u)/com.haricharank.pace   # restart (e.g. after editing app.py or changing keys)
+tail -f ~/Library/Logs/pace.log           # logs
+```
+
 ## How it works
 
 - **Speed test**: read the passage naturally. The timer pauses if you switch tabs. Then answer 5 questions from memory: 1 main idea, 3 details, 1 inference.

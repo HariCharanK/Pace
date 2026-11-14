@@ -4,7 +4,7 @@ import threading
 import time
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -14,6 +14,16 @@ import quizgen
 
 app = FastAPI(title="Speedreader")
 STATIC = db.ROOT / "static"
+
+
+@app.middleware("http")
+async def revalidate_static(request, call_next):
+    """Make browsers re-check the page and its JS/CSS on every load (cheap 304s),
+    so code updates are picked up instead of serving a stale cached app.js."""
+    resp = await call_next(request)
+    if request.url.path == "/" or request.url.path.startswith("/static/"):
+        resp.headers["Cache-Control"] = "no-cache"
+    return resp
 
 with db.connect() as _c:
     n = db.import_quiz_files(_c)
@@ -289,4 +299,9 @@ app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 @app.get("/")
 def index():
-    return FileResponse(STATIC / "index.html")
+    # Version asset URLs by file mtime so a code change always busts the browser cache.
+    html = (STATIC / "index.html").read_text()
+    for name in ("app.js", "app.css"):
+        v = int((STATIC / name).stat().st_mtime)
+        html = html.replace(f"/static/{name}", f"/static/{name}?v={v}")
+    return HTMLResponse(html, headers={"Cache-Control": "no-cache"})
