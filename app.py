@@ -56,13 +56,13 @@ def list_passages():
     reads = {}
     for r in con.execute("SELECT passage_id, COUNT(*), MAX(ts) FROM results GROUP BY passage_id"):
         reads[r[0]] = {"count": r[1], "last": r[2]}
-    votes = dict(con.execute("SELECT passage_id, vote FROM votes").fetchall())
+    votes = {r[0]: (r[1], r[2]) for r in con.execute("SELECT passage_id, vote, ts FROM votes")}
     out = []
     for r in con.execute("SELECT * FROM passages WHERE hidden=0 ORDER BY fetched_at DESC"):
         m = row_meta(r)
         m["has_quiz"] = r["id"] in quizzed
         m["reads"] = reads.get(r["id"], {}).get("count", 0)
-        m["vote"] = votes.get(r["id"], 0)
+        m["vote"], m["vote_ts"] = votes.get(r["id"], (0, None))
         out.append(m)
     return {"passages": out, "quiz_provider": quizgen.provider(), "affinity": db.affinity(con)}
 

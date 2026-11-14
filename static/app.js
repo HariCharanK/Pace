@@ -105,6 +105,7 @@ document.addEventListener("click", async (e) => {
     p.vote = next;
     loadPassages(true); // refresh taste scores in the background
     if (next) toast(next > 0 ? "Noted, more like this" : "Noted, less like this");
+    document.dispatchEvent(new CustomEvent("pace:vote", { detail: { id, vote: next } }));
   } catch (err) { toast(err.message); }
 }, true);
 async function loadResults() { return (await api("/api/results")).results; }
@@ -181,6 +182,7 @@ async function route() {
     else if (page === "library") await renderLibrary();
     else if (page === "read") await renderRead(id.split("?")[0], params);
     else if (page === "history") await renderHistory();
+    else if (page === "votes") await renderVotes();
     else if (page === "add") await renderSources();
     else view.innerHTML = `<div class="empty">Not found.</div>`;
   } catch (e) {
@@ -808,6 +810,49 @@ async function renderHistory() {
         <td><button class="btn ghost small" data-del="${r.id}" title="Delete">✕</button></td></tr>`).join("")}</tbody></table></div>`
       : `<div class="card empty">No sessions yet. <a href="#/library">Pick something to read</a>.</div>`}`;
   $$("[data-del]").forEach((b) => b.addEventListener("click", async () => { await api(`/api/results/${b.dataset.del}`, { method: "DELETE" }); renderHistory(); }));
+}
+
+/* ---------------------------------------------------------------- votes */
+async function renderVotes() {
+  const passages = await loadPassages(true);
+  const s = await api("/api/sources");
+  const byTime = (a, b) => (b.vote_ts || 0) - (a.vote_ts || 0);
+  const liked = passages.filter((p) => p.vote > 0).sort(byTime);
+  const disliked = passages.filter((p) => p.vote < 0).sort(byTime);
+  const boosted = Object.entries(s.boosts || {}).filter(([, b]) => b).sort((a, b) => b[1] - a[1]);
+  const topics = Object.entries(AFFINITY.categories || {}).filter(([, v]) => v).sort((a, b) => b[1] - a[1]);
+  const srcScores = Object.entries(AFFINITY.sources || {}).filter(([, v]) => v).sort((a, b) => b[1] - a[1]);
+
+  const rows = (list, empty) => list.length
+    ? `<div class="card" style="padding:6px 8px;overflow-x:auto"><table><tbody>${list.map((p) => `<tr>
+        <td><a href="#/read/${p.id}" style="text-decoration:none">${esc(p.title)}</a><div class="faint small">${esc(p.source)} · ${p.words.toLocaleString()} w${p.reads ? " · ✓ read" : ""}</div></td>
+        <td class="faint small" style="white-space:nowrap">${p.vote_ts ? fmtDate(p.vote_ts) : ""}</td>
+        <td class="num">${voteButtons(p)}</td></tr>`).join("")}</tbody></table></div>`
+    : `<div class="card empty small">${empty}</div>`;
+  const score = (v) => `<b class="score ${v > 0 ? "pos" : "neg"}">${v > 0 ? "+" : ""}${v}</b>`;
+
+  view.innerHTML = `<h1>Votes</h1>
+    <p class="muted">Everything you've upvoted or downvoted. Votes steer the <b>For you</b> sort, Surprise me, and how much each feed fetches. Click a highlighted arrow again to undo it.</p>
+    <div class="section"><div class="section-head"><h2>▲ Liked <span class="faint">${liked.length}</span></h2></div>
+      ${rows(liked, "Nothing liked yet. Use ▲ on any piece in the library, reader or results.")}</div>
+    <div class="section"><div class="section-head"><h2>▼ Not for me <span class="faint">${disliked.length}</span></h2></div>
+      ${rows(disliked, "Nothing downvoted.")}</div>
+    <div class="section"><div class="section-head"><h2>Sources you boosted</h2><span class="faint small">Set on the <a href="#/add">Sources</a> page.</span></div>
+      ${boosted.length ? `<div class="card" style="padding:6px 8px"><table><tbody>${boosted.map(([name, b]) => `<tr><td>${esc(name)}</td>
+        <td class="num">${boostCtl(name, b)}</td></tr>`).join("")}</tbody></table></div>` : `<div class="card empty small">No source boosts. The ▲/▼ next to each feed on the Sources page adds them.</div>`}</div>
+    <div class="section"><div class="section-head"><h2>What this adds up to</h2><span class="faint small">Piece votes plus source boosts.</span></div>
+      <div class="card"><div class="row small" style="gap:6px;flex-wrap:wrap"><span class="flabel">Topics</span>${topics.map(([c, v]) => `<span class="tag">${esc(c)} ${score(v)}</span>`).join("") || `<span class="faint">none yet</span>`}</div>
+      <div class="row small" style="gap:6px;flex-wrap:wrap;margin-top:10px"><span class="flabel">Sources</span>${srcScores.map(([n, v]) => `<span class="tag">${esc(n)} ${score(v)}</span>`).join("") || `<span class="faint">none yet</span>`}</div></div></div>`;
+
+  $$("[data-boost] [data-d]").forEach((b) => b.addEventListener("click", async () => {
+    const name = b.closest("[data-boost]").dataset.boost;
+    try { await api("/api/sources/boost", { method: "POST", body: { source: name, delta: +b.dataset.d } }); const y = window.scrollY; await renderVotes(); window.scrollTo(0, y); }
+    catch (e) { toast(e.message); }
+  }));
+  // re-draw after a vote here so the piece moves between lists (or drops off on undo)
+  const onVote = async () => { const y = window.scrollY; await renderVotes(); window.scrollTo(0, y); };
+  document.addEventListener("pace:vote", onVote, { once: true });
+  cleanup = () => document.removeEventListener("pace:vote", onVote);
 }
 
 /* ---------------------------------------------------------------- sources */

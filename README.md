@@ -30,7 +30,7 @@ tail -f ~/Library/Logs/pace.log           # logs
   1. Pacer warm-up at your target pace. The target is your recent pace +10% if your last comprehension was ≥ 80%, the same if it was 60–80%, and −8% below that.
   2. An overspeed RSVP sprint at about 145% of your pace.
   3. A free-reading test to see whether your normal pace moved.
-- **Upvotes**: ▲/▼ on any piece (library card, reader, results, history), or on a whole source (Sources page). Votes drive the library's **For you** sort and the Surprise me / today's-session picks. They also set how much each feed fetches: +1 item per net upvote (max +3), and a score of −3 mutes the feed. A liked piece boosts its source and topics, not itself, since you've already read it. Likes on Wikipedia pieces count toward their topics only.
+- **Upvotes**: ▲/▼ on any piece (library card, reader, results, history), or on a whole source (Sources page). Votes drive the library's **For you** sort and the Surprise me / today's-session picks. They also set how much each feed fetches: +1 item per net upvote (max +3), and a score of −3 mutes the feed. A liked piece boosts its source and topics, not itself, since you've already read it. Likes on Wikipedia pieces count toward their topics only. The **Votes** tab lists everything you've liked or downvoted, your source boosts, and the topic and source scores they add up to.
 
 ## Corpus
 
