@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly?",
-      "options": [
-        "A critique of Tesla's $1 trillion pay package and its milestones",
-        "A corporate history of SpaceX from its founding through its IPO",
-        "A biographical overview of Elon Musk's life, businesses and politics",
-        "An account of South African apartheid and the Musk family's role"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "It covers his birth, education, companies, politics and controversies."
-    },
-    {
-      "q": "Why did Musk apply for a Canadian passport?",
-      "options": [
-        "To join his younger brother Kimbal, who had already settled in Vancouver",
-        "To obtain a work permit at Netscape, where he planned to build browsers",
-        "To avoid South Africa's mandatory military service and ease emigration to the US",
-        "To claim an inheritance from his Canadian-born grandfather's estate"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He used his mother's Canadian citizenship to avoid military service and ease immigration to the US."
-    },
-    {
-      "q": "What did Musk sell for about $500 at age 12?",
-      "options": [
-        "A BASIC game called Blastar",
-        "A VIC-20 tutorial guide",
-        "A chess-playing program",
-        "A school-yearbook website"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "He sold his BASIC-based game Blastar to a magazine."
-    },
-    {
-      "q": "When did Musk become CEO of Tesla?",
-      "options": [
-        "2004",
-        "2015",
-        "2008",
-        "2002"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He joined as angel investor in 2004 and became CEO in 2008."
-    },
-    {
-      "q": "Which fact does the passage suggest about his first US company ventures?",
-      "options": [
-        "He completed a Stanford graduate degree before launching Zip2 in 1995",
-        "He didn't enroll in Stanford and his legal status to work in the US was questioned",
-        "He founded PayPal alone after Confinity rejected his merger proposal",
-        "He took a Netscape job whose visa sponsorship settled his status"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "He was accepted but didn't enroll at Stanford, and reports questioned his authorization to work."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly?",
+   "options": [
+    "A critique of Tesla's $1 trillion pay package and its milestones",
+    "A corporate history of SpaceX from its founding through its IPO",
+    "A biographical overview of Elon Musk's life, businesses and politics",
+    "An account of South African apartheid and the Musk family's role"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "It covers his birth, education, companies, politics and controversies."
+  },
+  {
+   "q": "Why did Musk apply for a Canadian passport?",
+   "options": [
+    "To join his younger brother Kimbal, who had already settled in Vancouver",
+    "To obtain a work permit at Netscape, where he planned to build browsers",
+    "To avoid South Africa's mandatory military service and ease emigration to the US",
+    "To claim an inheritance from his Canadian-born grandfather's estate"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "He used his mother's Canadian citizenship to avoid military service and ease immigration to the US."
+  },
+  {
+   "q": "What did Musk sell for about $500 at age 12?",
+   "options": [
+    "A BASIC game called Blastar",
+    "A VIC-20 tutorial guide",
+    "A chess-playing program",
+    "A school-yearbook website"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He sold his BASIC-based game Blastar to a magazine."
+  },
+  {
+   "q": "What happened on Twitter after Musk pledged to decrease censorship?",
+   "options": [
+    "An increase in hate speech and misinformation on the service",
+    "A large rise in Twitter's advertising revenue",
+    "Legal restrictions forcing the platform to shut in some countries",
+    "A surge in active user numbers and daily signups"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The passage says his pledge coincided with an increase in hate speech and misinformation on the service."
+  },
+  {
+   "q": "Which fact does the passage suggest about his first US company ventures?",
+   "options": [
+    "He completed a Stanford graduate degree before launching Zip2 in 1995",
+    "He didn't enroll in Stanford and his legal status to work in the US was questioned",
+    "He founded PayPal alone after Confinity rejected his merger proposal",
+    "He took a Netscape job whose visa sponsorship settled his status"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "He was accepted but didn't enroll at Stanford, and reports questioned his authorization to work."
+  }
+ ]
 }

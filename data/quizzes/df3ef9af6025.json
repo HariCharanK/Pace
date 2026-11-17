@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "How sailors learned to navigate long voyages without sight of land",
-        "The medical effects, causes and long history of scurvy and its cures",
-        "How vitamin C was first isolated and synthesised in a laboratory",
-        "The spread of potatoes across Europe and its effect on famine"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "It describes scurvy's symptoms and cause, then its history and repeated rediscovery of food cures."
-    },
-    {
-      "q": "How long does it take for symptoms to appear without vitamin C?",
-      "options": [
-        "A few days",
-        "At least a month",
-        "About a year",
-        "Several decades"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "It takes at least a month of little to no vitamin C in the diet before symptoms occur."
-    },
-    {
-      "q": "What did Jacques Cartier use to save his men in 1536?",
-      "options": [
-        "Spruce beer brewed on board from conifer needles",
-        "Lemons and oranges bought from traders in Madagascar",
-        "Lime juice that Dutch sailors had carried from the Moluccas",
-        "A tea boiled from the needles of the aneda tree"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Using local knowledge, he boiled aneda tree needles into a tea that contained vitamin C."
-    },
-    {
-      "q": "What did Captain James Lancaster's experiment in 1601 show?",
-      "options": [
-        "Crews given lemon juice stayed healthier than the untreated ships",
-        "Crews given spruce beer recovered faster than those given lemons",
-        "Oranges proved more effective than lemons against the disease",
-        "Ginger carried on the ships prevented scurvy in all four crews"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Only one ship got lemon juice, while the other crews began to contract scurvy, with many dying."
-    },
-    {
-      "q": "Why did John Woodall's advice not change prevailing medical opinion?",
-      "options": [
-        "His book was never published, so apprentice surgeons never saw it",
-        "He recommended foods the company's ships could not afford to buy",
-        "Sailors on the East India ships refused to eat citrus fruit",
-        "He could not explain why it worked, and physicians saw a digestive complaint"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Woodall could not explain the reason, and influential physicians still held that scurvy was a digestive complaint."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "How sailors learned to navigate long voyages without sight of land",
+    "The medical effects, causes and long history of scurvy and its cures",
+    "How vitamin C was first isolated and synthesised in a laboratory",
+    "The spread of potatoes across Europe and its effect on famine"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "It describes scurvy's symptoms and cause, then its history and repeated rediscovery of food cures."
+  },
+  {
+   "q": "How long does it take for symptoms to appear without vitamin C?",
+   "options": [
+    "A few days",
+    "At least a month",
+    "About a year",
+    "Several decades"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "It takes at least a month of little to no vitamin C in the diet before symptoms occur."
+  },
+  {
+   "q": "What did Jacques Cartier use to save his men in 1536?",
+   "options": [
+    "Spruce beer brewed on board from conifer needles",
+    "Lemons and oranges bought from traders in Madagascar",
+    "Lime juice that Dutch sailors had carried from the Moluccas",
+    "A tea boiled from the needles of the aneda tree"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Using local knowledge, he boiled aneda tree needles into a tea that contained vitamin C."
+  },
+  {
+   "q": "What did Captain James Lancaster's experiment in 1601 show?",
+   "options": [
+    "Crews given lemon juice stayed healthier than the untreated ships",
+    "Crews given spruce beer recovered faster than those given lemons",
+    "Oranges proved more effective than lemons against the disease",
+    "Ginger carried on the ships prevented scurvy in all four crews"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Only one ship got lemon juice, while the other crews began to contract scurvy, with many dying."
+  },
+  {
+   "q": "Why did John Woodall's advice not change prevailing medical opinion?",
+   "options": [
+    "His book was never published, so apprentice surgeons never saw it",
+    "He recommended foods the company's ships could not afford to buy",
+    "Sailors on the East India ships refused to eat citrus fruit",
+    "He could not explain why it worked, and physicians saw a digestive complaint"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Woodall could not explain the reason, and influential physicians still held that scurvy was a digestive complaint."
+  }
+ ]
 }

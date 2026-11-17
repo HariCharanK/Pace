@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The Metropolitan Police's response to the 1858 summer riots in London",
-        "The architecture of Abbey Mills and Crossness pumping stations",
-        "The discovery of germ theory and John Snow's Broad Street map",
-        "The 1858 Thames stench and how Bazalgette's sewers solved London's sewage crisis"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "It covers the Great Stink, the sewage background, and Bazalgette's sewer system."
-    },
-    {
-      "q": "What two embankments besides Victoria and Chelsea did Bazalgette's plan include?",
-      "options": [
-        "Albert Embankment",
-        "Crossness Embankment",
-        "Westminster Embankment",
-        "Thames Embankment"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The plan introduced the Victoria, Chelsea and Albert Embankments."
-    },
-    {
-      "q": "How many Londoners died in the 1848-49 cholera outbreak?",
-      "options": [
-        "200,000",
-        "6,536",
-        "10,738",
-        "14,137"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The second outbreak killed 14,137, between 6,536 in 1831 and 10,738 in 1853-54."
-    },
-    {
-      "q": "What did Michael Faraday do to test the Thames in 1855?",
-      "options": [
-        "Sampled the fish living near the bridges",
-        "Measured the river's temperature at midday",
-        "Boiled river water and tested the steam",
-        "Dropped white paper into the river"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He dropped pieces of white paper into the river to test its opacity."
-    },
-    {
-      "q": "Why did flushing the sewers regularly make the Thames worse?",
-      "options": [
-        "It discharged more sewage into the river",
-        "It blocked the old brick pipes with debris",
-        "It spread miasma into homes and cesspits",
-        "It killed the fish living below the bridges"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Chadwick and Simon flushed sewers out of miasma fear, which resulted in more sewage in the Thames."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The Metropolitan Police's response to the 1858 summer riots in London",
+    "The architecture of Abbey Mills and Crossness pumping stations",
+    "The discovery of germ theory and John Snow's Broad Street map",
+    "The 1858 Thames stench and how Bazalgette's sewers solved London's sewage crisis"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "It covers the Great Stink, the sewage background, and Bazalgette's sewer system."
+  },
+  {
+   "q": "What two embankments besides Victoria and Chelsea did Bazalgette's plan include?",
+   "options": [
+    "Albert Embankment",
+    "Crossness Embankment",
+    "Westminster Embankment",
+    "Thames Embankment"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The plan introduced the Victoria, Chelsea and Albert Embankments."
+  },
+  {
+   "q": "What did the Metropolis Management Act do?",
+   "options": [
+    "Replaced the Metropolitan Commission of Sewers with the Metropolitan Board of Works",
+    "Required all new buildings to be connected to a sewer",
+    "Appointed Joseph Bazalgette as chief engineer of the city",
+    "Transferred control of the sewers to a national public health agency"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The Metropolis Management Act 1855 replaced the commission with the Metropolitan Board of Works, which took control of the sewers."
+  },
+  {
+   "q": "What did Michael Faraday do to test the Thames in 1855?",
+   "options": [
+    "Sampled the fish living near the bridges",
+    "Measured the river's temperature at midday",
+    "Boiled river water and tested the steam",
+    "Dropped white paper into the river"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "He dropped pieces of white paper into the river to test its opacity."
+  },
+  {
+   "q": "Why did flushing the sewers regularly make the Thames worse?",
+   "options": [
+    "It discharged more sewage into the river",
+    "It blocked the old brick pipes with debris",
+    "It spread miasma into homes and cesspits",
+    "It killed the fish living below the bridges"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Chadwick and Simon flushed sewers out of miasma fear, which resulted in more sewage in the Thames."
+  }
+ ]
 }

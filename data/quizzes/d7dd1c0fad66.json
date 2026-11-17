@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is this passage mainly about?",
-      "options": [
-        "How jet lag is diagnosed and treated in clinical settings",
-        "The definition, history and defining criteria of circadian rhythms",
-        "Why plants and animals sleep at different times of day",
-        "The genetics and treatment of human sleep disorders only"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "It defines circadian rhythms, traces their discovery, lists criteria, and discusses their origin."
-    },
-    {
-      "q": "Which plant did Theophrastus' ancient account of leaves closing at night turn out to describe?",
-      "options": [
-        "Rose",
-        "Mimosa",
-        "Tamarind",
-        "Fig"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The tree he described was later identified as the tamarind tree."
-    },
-    {
-      "q": "What did de Mairan's 1729 experiment show about Mimosa pudica?",
-      "options": [
-        "Its leaf movements persisted even in constant darkness",
-        "Its leaves stopped moving whenever light was removed",
-        "Its leaf movements sped up sharply in cold weather",
-        "Its leaves opened only at noon in constant darkness"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "24-hour leaf movement patterns persisted in constant darkness, suggesting an endogenous clock."
-    },
-    {
-      "q": "What was distinctive about the people in the Utah family with the first human clock mutation?",
-      "options": [
-        "They were extreme night owls with sleep delayed by four hours",
-        "They slept almost no hours but kept normal daily rhythms",
-        "They were extreme morning larks with sleep advanced by four hours",
-        "They had a 36-hour cycle and slept every second night"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Affected individuals were extreme morning larks with 4-hour advanced sleep and other rhythms."
-    },
-    {
-      "q": "What does the passage suggest about the purpose of circadian rhythms?",
-      "options": [
-        "They only help organisms match the outside environment",
-        "They also coordinate internal metabolic processes",
-        "They are mainly a byproduct of temperature changes",
-        "They evolved once and spread to all kingdoms"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "Rhythms persisted for hundreds of generations of flies in constant conditions, suggesting internal regulation matters as much as environmental coordination."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is this passage mainly about?",
+   "options": [
+    "How jet lag is diagnosed and treated in clinical settings",
+    "The definition, history and defining criteria of circadian rhythms",
+    "Why plants and animals sleep at different times of day",
+    "The genetics and treatment of human sleep disorders only"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "It defines circadian rhythms, traces their discovery, lists criteria, and discusses their origin."
+  },
+  {
+   "q": "Which plant did Theophrastus' ancient account of leaves closing at night turn out to describe?",
+   "options": [
+    "a rose-like tree he described",
+    "the plant Mimosa pudica, known for sensitive leaves",
+    "the tamarind tree",
+    "a common fig tree from the region"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The tree he described was later identified as the tamarind tree."
+  },
+  {
+   "q": "What did de Mairan's 1729 experiment show about Mimosa pudica?",
+   "options": [
+    "Its leaf movements persisted even in constant darkness",
+    "Its leaves stopped moving whenever light was removed",
+    "Its leaf movements sped up sharply in cold weather",
+    "Its leaves opened only at noon in constant darkness"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "24-hour leaf movement patterns persisted in constant darkness, suggesting an endogenous clock."
+  },
+  {
+   "q": "What was distinctive about the people in the Utah family with the first human clock mutation?",
+   "options": [
+    "They were extreme night owls with sleep delayed by four hours",
+    "They slept almost no hours but kept normal daily rhythms",
+    "They were extreme morning larks with sleep advanced by four hours",
+    "They had a 36-hour cycle and slept every second night"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Affected individuals were extreme morning larks with 4-hour advanced sleep and other rhythms."
+  },
+  {
+   "q": "What does the passage suggest about the purpose of circadian rhythms?",
+   "options": [
+    "They only help organisms match the outside environment",
+    "They also coordinate internal metabolic processes",
+    "They are mainly a byproduct of temperature changes",
+    "They evolved once and spread to all kingdoms"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "Rhythms persisted for hundreds of generations of flies in constant conditions, suggesting internal regulation matters as much as environmental coordination."
+  }
+ ]
 }

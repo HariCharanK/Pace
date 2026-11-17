@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "CEOs ousted over relationships, including Nvidia's Jensen Huang",
-        "Nvidia's chip strategy and how its board reviews executive pay",
-        "How boards reformed governance rules after the Me Too movement",
-        "Founders who were fired and later returned to lead their firms"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It places Huang's resignation among other CEOs ousted over affairs and personal conduct."
-    },
-    {
-      "q": "What was unusual about the Huang case compared with typical CEO ousters?",
-      "options": [
-        "Nvidia's code of conduct had no policy on personal relationships",
-        "He had led Nvidia for only a few months before he was forced out",
-        "A woman he was involved with was judged an intelligence asset for China",
-        "He was dismissed by the board rather than resigning of his own accord"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Intelligence agencies concluded one woman was an asset for China."
-    },
-    {
-      "q": "How much did Steve Easterbrook give back to McDonald's?",
-      "options": [
-        "More than $10 million",
-        "More than $25 million",
-        "More than $50 million",
-        "More than $105 million"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He gave back more than $105 million in cash and stock."
-    },
-    {
-      "q": "How long was Sam Altman out as OpenAI's chief executive in 2023?",
-      "options": [
-        "Five days",
-        "One month",
-        "Two weeks",
-        "Five months"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "He was pushed out on a Friday and reinstated five days later."
-    },
-    {
-      "q": "What does Sonnenfeld's remark that the board \"has taken too long\" imply?",
-      "options": [
-        "Boards should never fire founders of very successful companies",
-        "Boards defer to successful founders and may ignore warning signs",
-        "Huang resigned too early, before the board could complete its review",
-        "Boards are unaware of the conduct rules their chief executives follow"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "He says boards are in awe of founders and there were lots of indicators for a board paying attention."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "CEOs ousted over relationships, including Nvidia's Jensen Huang",
+    "Nvidia's chip strategy and how its board reviews executive pay",
+    "How boards reformed governance rules after the Me Too movement",
+    "Founders who were fired and later returned to lead their firms"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It places Huang's resignation among other CEOs ousted over affairs and personal conduct."
+  },
+  {
+   "q": "What was unusual about the Huang case compared with typical CEO ousters?",
+   "options": [
+    "Nvidia's code of conduct had no policy on personal relationships",
+    "He had led Nvidia for only a few months before he was forced out",
+    "A woman he was involved with was judged an intelligence asset for China",
+    "He was dismissed by the board rather than resigning of his own accord"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Intelligence agencies concluded one woman was an asset for China."
+  },
+  {
+   "q": "What happened to Ashley Buchanan at Kohl's?",
+   "options": [
+    "He resigned after a disagreement with the board over vendor contracts",
+    "He was promoted after increasing company sales in his few months",
+    "He left to pursue a role at another retail chain",
+    "He was fired after steering business to a romantic partner"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Kohl's fired him after the company learned he was trying to direct business to a vendor who turned out to be his romantic partner."
+  },
+  {
+   "q": "How long was Sam Altman out as OpenAI's chief executive in 2023?",
+   "options": [
+    "Five days",
+    "One month",
+    "Two weeks",
+    "Five months"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He was pushed out on a Friday and reinstated five days later."
+  },
+  {
+   "q": "What does Sonnenfeld's remark that the board \"has taken too long\" imply?",
+   "options": [
+    "Boards should never fire founders of very successful companies",
+    "Boards defer to successful founders and may ignore warning signs",
+    "Huang resigned too early, before the board could complete its review",
+    "Boards are unaware of the conduct rules their chief executives follow"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "He says boards are in awe of founders and there were lots of indicators for a board paying attention."
+  }
+ ]
 }

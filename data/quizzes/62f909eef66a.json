@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the main purpose of this article?",
-      "options": [
-        "To argue that willpower matters more than environment design",
-        "To compare popular habit-tracking apps and notebooks in detail",
-        "To share short reader stories showing how people apply habit-building ideas",
-        "To review the Habit Journal product and its templates"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "The author shares 30 short stories from Atomic Habits readers showing real people building habits."
-    },
-    {
-      "q": "What did the reader who gave up drinking pay himself after each day of not drinking?",
-      "options": [
-        "$10",
-        "$20",
-        "$1",
-        "$5"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "He gave himself $10 each day to buy something nice, and is six years sober."
-    },
-    {
-      "q": "How did Daniel make himself get out of bed without hesitation?",
-      "options": [
-        "He asked a friend to call him every morning at six",
-        "He placed his phone in the garage until morning came",
-        "He slept in his running clothes and went straight out",
-        "Scanning a QR code in the bathroom turned off his alarm"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The only way to turn off his alarm was scanning a QR code in the bathroom."
-    },
-    {
-      "q": "How did Qiana quit drinking soda?",
-      "options": [
-        "She told herself she would quit only until her next cheat day",
-        "She replaced soda with juice, tea, then seltzer over months",
-        "She locked the soda in a car parked out in the cold",
-        "She scooped the week's soda sugar into a big bowl to see it"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "She added up the sugar in a week of sodas and scooped it into an enormous bowl."
-    },
-    {
-      "q": "What does the author imply about habit substitution with exercise?",
-      "options": [
-        "Replacing a habit works better than gradually cutting back",
-        "Exercise is never unhealthy, however much a person does",
-        "Substitution is useless against serious drug or alcohol addictions",
-        "Swapping in exercise can be a healthier obsession than drinking"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "He says habit substitution lets you find a healthier obsession, as exercising beats drinking for hours."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the main purpose of this article?",
+   "options": [
+    "To argue that willpower matters more than environment design",
+    "To compare popular habit-tracking apps and notebooks in detail",
+    "To share short reader stories showing how people apply habit-building ideas",
+    "To review the Habit Journal product and its templates"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "The author shares 30 short stories from Atomic Habits readers showing real people building habits."
+  },
+  {
+   "q": "How did one reader practice Mandarin while living in China?",
+   "options": [
+    "He practiced with online lessons every day during his spare time",
+    "He struck up conversations with taxi drivers on each ride",
+    "He joined a weekly language-exchange group and spoke with partners every weekend",
+    "He reviewed flashcards during his daily commute to and from work"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "He committed to strike up a conversation with the taxi driver whenever he took a cab, doing it for two years."
+  },
+  {
+   "q": "How did Daniel make himself get out of bed without hesitation?",
+   "options": [
+    "He asked a friend to call him every morning at six",
+    "He placed his phone in the garage until morning came",
+    "He slept in his running clothes and went straight out",
+    "Scanning a QR code in the bathroom turned off his alarm"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The only way to turn off his alarm was scanning a QR code in the bathroom."
+  },
+  {
+   "q": "How did Qiana quit drinking soda?",
+   "options": [
+    "She told herself she would quit only until her next cheat day",
+    "She replaced soda with juice, tea, then seltzer over months",
+    "She locked the soda in a car parked out in the cold",
+    "She scooped the week's soda sugar into a big bowl to see it"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "She added up the sugar in a week of sodas and scooped it into an enormous bowl."
+  },
+  {
+   "q": "What does the author imply about habit substitution with exercise?",
+   "options": [
+    "Replacing a habit works better than gradually cutting back",
+    "Exercise is never unhealthy, however much a person does",
+    "Substitution is useless against serious drug or alcohol addictions",
+    "Swapping in exercise can be a healthier obsession than drinking"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "He suggests substitution can give you a healthier obsession, noting exercise is generally better than hours spent drinking."
+  }
+ ]
 }

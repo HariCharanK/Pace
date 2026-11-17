@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "Hospitals preparing for new Medicaid work rules and funding cuts",
-        "Democrats' plan to repeal the Trump tax cut package",
-        "Arkansas's 2018 experiment with Medicaid work mandates",
-        "Rural hospitals closing because of nursing shortages"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "Hospitals are mobilizing outreach so patients keep coverage under work rules starting in January."
-    },
-    {
-      "q": "How many hours a month must affected adults work, volunteer, or study?",
-      "options": [
-        "40",
-        "60",
-        "80",
-        "120"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The rules require at least 80 hours a month."
-    },
-    {
-      "q": "After Nebraska imposed work rules in May, wait times at its Medicaid call center rose to as much as how long?",
-      "options": [
-        "Two hours",
-        "Four hours",
-        "Forty-five minutes",
-        "One day"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Wait times rose to as much as two hours from under 30 minutes."
-    },
-    {
-      "q": "What share of the Arkansas people who lost insurance had actually met the requirement or should have been exempt?",
-      "options": [
-        "52 percent",
-        "72 percent",
-        "83 percent",
-        "92 percent"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "A New England Journal of Medicine survey found 92 percent of those who lost insurance met the rule or should have been exempt."
-    },
-    {
-      "q": "Why is a rollback of the Medicaid cuts uncertain even with the Democratic majority?",
-      "options": [
-        "Democrats lack votes to override a presidential veto",
-        "Federal courts have already upheld the new work rules",
-        "Hospital groups oppose repealing the Medicaid cuts",
-        "Most states control the Medicaid funding formula"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Democrats cannot override a veto unless they strike a deal with Republicans."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "Hospitals preparing for new Medicaid work rules and funding cuts",
+    "Democrats' plan to repeal the Trump tax cut package",
+    "Arkansas's 2018 experiment with Medicaid work mandates",
+    "Rural hospitals closing because of nursing shortages"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "Hospitals are mobilizing outreach so patients keep coverage under work rules starting in January."
+  },
+  {
+   "q": "What methods are health systems using to reach patients about the new rules?",
+   "options": [
+    "Door-to-door visits and community meetings",
+    "Television ads and billboards",
+    "Text messages, phone calls and offers of help",
+    "Court notices and legal action"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Hospitals are deploying staff and volunteers to contact patients with text messages, phone calls and offers of help."
+  },
+  {
+   "q": "After Nebraska imposed work rules in May, wait times at its Medicaid call center rose to as much as how long?",
+   "options": [
+    "Two hours",
+    "Four hours",
+    "Forty-five minutes",
+    "One day"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Wait times rose to as much as two hours from under 30 minutes."
+  },
+  {
+   "q": "What happened when Arkansas first tried Medicaid work mandates?",
+   "options": [
+    "Medicaid enrollment rose and expenses increased",
+    "Thousands lost insurance before a judge suspended the program",
+    "The program was upheld and expanded by federal courts",
+    "States adopted a uniform list of medical exemptions"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Arkansas's 2018 program resulted in the loss of insurance for thousands before a federal judge suspended it."
+  },
+  {
+   "q": "Why is a rollback of the Medicaid cuts uncertain even with the Democratic majority?",
+   "options": [
+    "Democrats lack votes to override a presidential veto",
+    "Federal courts have already upheld the new work rules",
+    "Hospital groups oppose repealing the Medicaid cuts",
+    "Most states control the Medicaid funding formula"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Democrats cannot override a veto unless they strike a deal with Republicans."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the author's main argument?",
-      "options": [
-        "Wise handling of money through thrift builds character and independence",
-        "Money is a trifling matter that philosophers should hold in contempt",
-        "Borrowing freely is the surest key to prosperity for working men",
-        "Governments must tax the working classes more to fund thrift schemes"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "The text says how one uses money tests wisdom and stresses frugality and self-denial."
-    },
-    {
-      "q": "What did Lord John Russell say working people spent more on than the government taxed them?",
-      "options": [
-        "Intoxicating drinks",
-        "Newspapers and books",
-        "Rent and household goods",
-        "Clothing and fuel"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "He said the Government dare not tax them as much as they tax themselves through drink."
-    },
-    {
-      "q": "Who is quoted as saying the world is divided into savers and spenders?",
-      "options": [
-        "John Sterling",
-        "Mr. Cobden",
-        "Mr. Bright",
-        "Samuel Drew"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Cobden told Huddersfield working men that the thrifty built civilization and spendthrifts were their slaves."
-    },
-    {
-      "q": "Where and when did Mr. Bright address working men?",
-      "options": [
-        "Huddersfield, 1847",
-        "Manchester, 1851",
-        "Rochdale, 1847",
-        "London, 1819"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Bright spoke to an assembly of working men at Rochdale in 1847."
-    },
-    {
-      "q": "What does the author imply about reform?",
-      "options": [
-        "Parliamentary reform is the best cure for bad times",
-        "Personal reform is harder than reforming Church and State",
-        "Patriotism rewards frugality",
-        "Reforming others should come first"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "He says it is easier to reform Church and State than our own bad habits."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the author's main argument?",
+   "options": [
+    "Wise handling of money through thrift builds character and independence",
+    "Money is a trifling matter that philosophers should hold in contempt",
+    "Borrowing freely is the surest key to prosperity for working men",
+    "Governments must tax the working classes more to fund thrift schemes"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "The text says how one uses money tests wisdom and stresses frugality and self-denial."
+  },
+  {
+   "q": "What did Lord John Russell say working people spent more on than the government taxed them?",
+   "options": [
+    "Intoxicating drinks",
+    "Newspapers and books",
+    "Rent and household goods",
+    "Clothing and fuel"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He said the Government dare not tax them as much as they tax themselves through drink."
+  },
+  {
+   "q": "Who is quoted as saying the world is divided into savers and spenders?",
+   "options": [
+    "John Sterling",
+    "Mr. Cobden",
+    "Mr. Bright",
+    "Samuel Drew"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Cobden told Huddersfield working men that the thrifty built civilization and spendthrifts were their slaves."
+  },
+  {
+   "q": "According to Mr. Bright what is the only safe way for men to maintain or improve their position?",
+   "options": [
+    "By waiting for laws and government reforms to improve their lot",
+    "By organizing strikes and political agitation for immediate change",
+    "By saving privately while seeking help from charitable institutions",
+    "By practicing industry, frugality, temperance, and honesty"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Bright said the safe way was by practicing industry, frugality, temperance, and honesty."
+  },
+  {
+   "q": "What does the author imply about reform?",
+   "options": [
+    "Parliamentary reform is the best cure for bad times",
+    "Personal reform is harder than reforming Church and State",
+    "Patriotism rewards frugality",
+    "Reforming others should come first"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "He says it is easier to reform Church and State than our own bad habits."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "Mortgage rates staying above 7 percent while housing sales sink",
-        "The Federal Reserve's decision to cut rates ahead of the 2026 election",
-        "The long history of 30-year mortgage lending and Freddie Mac's role",
-        "Mortgage rates dipping below 6 percent as the housing market rebounds"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "Rates remain above 7 percent and home sales are at multi-year lows."
-    },
-    {
-      "q": "What was the 30-year fixed rate per Freddie Mac this week?",
-      "options": [
-        "6.24 percent",
-        "7.11 percent",
-        "7.18 percent",
-        "5.95 percent"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "It fell to 7.11 percent from 7.18 percent."
-    },
-    {
-      "q": "Existing-home sales fell to an annual rate of 3.75 million, the slowest since when?",
-      "options": [
-        "June 2009",
-        "March 2012",
-        "August 2010",
-        "October 2008"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "It was the slowest since August 2010."
-    },
-    {
-      "q": "What started pushing mortgage rates up again after they fell below 6 percent in February?",
-      "options": [
-        "A Fed rate hike announced in March",
-        "The failure of a regional bank in March",
-        "A jump in unemployment claims in March",
-        "The attacks on Iran launched Feb. 28"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Rates began rising after the US and Israel attacked Iran on Feb. 28."
-    },
-    {
-      "q": "Why are homeowners unwilling to sell, according to the article?",
-      "options": [
-        "Many locked in ultralow rates and don't want to give them up",
-        "Home prices are falling, so they expect to sell for less later",
-        "They fear job losses and want to keep their savings as a cushion",
-        "Buyers are unavailable because they cannot qualify for any loans"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Homeowners who got rates below 3 percent are unwilling to sell, gridlocking the market."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "Mortgage rates staying above 7 percent while housing sales sink",
+    "The Federal Reserve's decision to cut rates ahead of the 2026 election",
+    "The long history of 30-year mortgage lending and Freddie Mac's role",
+    "Mortgage rates dipping below 6 percent as the housing market rebounds"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "Rates remain above 7 percent and home sales are at multi-year lows."
+  },
+  {
+   "q": "How did mortgage rates move recently?",
+   "options": [
+    "They rose sharply after briefly falling to ultralow levels last year",
+    "They remained about the same as they had been the previous month",
+    "They slid for the fourth straight week but stayed above 7 percent",
+    "They dropped below 6 percent and then sparked a quick rebound"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The passage says rates slid for a fourth week but remained above 7 percent."
+  },
+  {
+   "q": "How did existing-home sales change in October from a year earlier?",
+   "options": [
+    "They rose by around 9 percent from a year earlier",
+    "They fell by around 9 percent from a year earlier",
+    "They fell by about 1 percent from a year earlier",
+    "They were roughly unchanged from the year before"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The report said existing-home sales fell 8.8 percent from a year earlier."
+  },
+  {
+   "q": "What started pushing mortgage rates up again after they fell below 6 percent in February?",
+   "options": [
+    "A Fed rate hike announced in March",
+    "The failure of a regional bank in March",
+    "A jump in unemployment claims in March",
+    "The attacks on Iran launched Feb. 28"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Rates began rising after the US and Israel attacked Iran on Feb. 28."
+  },
+  {
+   "q": "Why are homeowners unwilling to sell, according to the article?",
+   "options": [
+    "Many locked in ultralow rates and don't want to give them up",
+    "Home prices are falling, so they expect to sell for less later",
+    "They fear job losses and want to keep their savings as a cushion",
+    "Buyers are unavailable because they cannot qualify for any loans"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Homeowners who got rates below 3 percent are unwilling to sell, gridlocking the market."
+  }
+ ]
 }

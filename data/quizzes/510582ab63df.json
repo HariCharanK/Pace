@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The October 19, 1987 stock crash and its causes and responses",
-        "The Louvre Accord negotiations and the dollar's decline in 1987",
-        "The history of portfolio insurance and index futures trading",
-        "New Zealand's economic recovery after the crash of 1987"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It covers the crash, its possible causes, liquidity problems and the Fed response."
-    },
-    {
-      "q": "By what percent did the DJIA fall on Black Monday?",
-      "options": [
-        "12 percent",
-        "18 percent",
-        "22.6 percent",
-        "3.8 percent"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The DJIA fell 508 points, or 22.6 percent."
-    },
-    {
-      "q": "Why were large selling pressures expected on Monday even though markets were closed over the weekend?",
-      "options": [
-        "Regulators required banks to sell large holdings before the Monday opening",
-        "Mutual fund customers could redeem shares at Friday prices, forcing fund sales",
-        "The Louvre Accord expired on the weekend, unsettling currency traders",
-        "Margin loans were automatically cancelled over the weekend by clearinghouses"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Redemption requests far exceeded cash reserves, forcing large sales when markets opened."
-    },
-    {
-      "q": "What did Greenspan's statement on October 20 do?",
-      "options": [
-        "Ended the slide permanently by cutting interest rates a full point",
-        "Announced a halt in trading at the New York exchange until Friday",
-        "Sparked a rally of about 2,000 points that held through the week",
-        "Briefly lifted markets about 200 points before gains were erased"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The market rallied about 200 points, but by noon gains were erased."
-    },
-    {
-      "q": "What difference in central bank behavior explains New Zealand's worse outcome?",
-      "options": [
-        "It refused to loosen monetary policy",
-        "It raised margin requirements",
-        "It provided too much liquidity",
-        "It closed its stock exchange"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "The Reserve Bank of New Zealand refused to loosen policy, with sharply negative, longer-term consequences."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The October 19, 1987 stock crash and its causes and responses",
+    "The Louvre Accord negotiations and the dollar's decline in 1987",
+    "The history of portfolio insurance and index futures trading",
+    "New Zealand's economic recovery after the crash of 1987"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It covers the crash, its possible causes, liquidity problems and the Fed response."
+  },
+  {
+   "q": "What happened to computer and communications systems during the crash?",
+   "options": [
+    "Designated market makers halted trading in most stocks for hours to prevent disorderly markets",
+    "Trading volume overwhelmed computer and communications systems, leaving orders unfilled for an hour or more",
+    "Futures markets processed all trades immediately so NYSE systems were unaffected",
+    "Clearinghouses kept up with demand and filled all orders without delay"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Total trading volume was so large that the computer and communications systems were overwhelmed, leaving orders unfilled for an hour or more."
+  },
+  {
+   "q": "Why were large selling pressures expected on Monday even though markets were closed over the weekend?",
+   "options": [
+    "Regulators required banks to sell large holdings before the Monday opening",
+    "Mutual fund customers could redeem shares at Friday prices, forcing fund sales",
+    "The Louvre Accord expired on the weekend, unsettling currency traders",
+    "Margin loans were automatically cancelled over the weekend by clearinghouses"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Redemption requests far exceeded cash reserves, forcing large sales when markets opened."
+  },
+  {
+   "q": "What did Greenspan's statement on October 20 do?",
+   "options": [
+    "Ended the slide permanently by cutting interest rates a full point",
+    "Announced a halt in trading at the New York exchange until Friday",
+    "Sparked a rally of about 2,000 points that held through the week",
+    "Briefly lifted markets about 200 points before gains were erased"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The market rallied about 200 points, but by noon gains were erased."
+  },
+  {
+   "q": "What difference in central bank behavior explains New Zealand's worse outcome?",
+   "options": [
+    "It refused to loosen monetary policy",
+    "It raised margin requirements",
+    "It provided too much liquidity",
+    "It closed its stock exchange"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "The Reserve Bank of New Zealand refused to loosen policy, with sharply negative, longer-term consequences."
+  }
+ ]
 }

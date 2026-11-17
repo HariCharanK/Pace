@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the Pomodoro Technique?",
-      "options": [
-        "Breaking work into timed intervals, typically 25 minutes, with short breaks",
-        "A speed-reading method that times each paragraph with a stopwatch",
-        "A way of ranking daily tasks by deadline and doing the earliest first",
-        "A study method that sorts flashcards into five timed boxes"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It uses a timer to break work into intervals with short breaks."
-    },
-    {
-      "q": "Why is each interval called a pomodoro?",
-      "options": [
-        "Named for the Italian town where Cirillo was born",
-        "After a university course on Italian cooking Cirillo took",
-        "After the tomato-shaped kitchen timer Cirillo used",
-        "After the red pencil Cirillo used to mark finished tasks"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Pomodoro is Italian for tomato, after Cirillo's kitchen timer."
-    },
-    {
-      "q": "How long is the long break after four pomodori?",
-      "options": [
-        "5 to 10 minutes",
-        "15 minutes",
-        "Exactly one hour",
-        "20 to 30 minutes"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "A long break is typically 20 to 30 minutes."
-    },
-    {
-      "q": "In the study of 25 students versus 35 taking self-regulated breaks, what did the self-regulated group do?",
-      "options": [
-        "Chose shorter sessions, linked to lower fatigue",
-        "Chose longer study sessions, linked to higher fatigue",
-        "Reported higher motivation and better concentration",
-        "Completed more tasks than the Pomodoro group"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "They chose longer sessions linked to higher fatigue and lower concentration and motivation."
-    },
-    {
-      "q": "Why do proponents prefer a mechanical timer, paper and pencil?",
-      "options": [
-        "Physical stimuli like winding and ticking become tied to flow and focus",
-        "Digital apps are too expensive for most students to afford",
-        "Paper lists are faster to read than apps, which saves minutes",
-        "Software cannot count pomodori accurately across several devices"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Winding confirms determination, ticking externalizes the desire, and ringing announces a break."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the Pomodoro Technique?",
+   "options": [
+    "Breaking work into timed intervals, typically 25 minutes, with short breaks",
+    "A speed-reading method that times each paragraph with a stopwatch",
+    "A way of ranking daily tasks by deadline and doing the earliest first",
+    "A study method that sorts flashcards into five timed boxes"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It uses a timer to break work into intervals with short breaks."
+  },
+  {
+   "q": "Why is each interval called a pomodoro?",
+   "options": [
+    "Named for the Italian town where Cirillo was born",
+    "After a university course on Italian cooking Cirillo took",
+    "After the tomato-shaped kitchen timer Cirillo used",
+    "After the red pencil Cirillo used to mark finished tasks"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Pomodoro is Italian for tomato, after Cirillo's kitchen timer."
+  },
+  {
+   "q": "How long is the long break after four pomodori?",
+   "options": [
+    "5 to 10 minutes",
+    "15 minutes",
+    "Exactly one hour",
+    "20 to 30 minutes"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "A long break is typically 20 to 30 minutes."
+  },
+  {
+   "q": "In the study of 25 students versus 35 taking self-regulated breaks, what did the self-regulated group do?",
+   "options": [
+    "Chose shorter sessions, linked to lower fatigue",
+    "Chose longer study sessions, linked to higher fatigue",
+    "Reported higher motivation and better concentration",
+    "Completed more tasks than the Pomodoro group"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "They chose longer sessions linked to higher fatigue and lower concentration and motivation."
+  },
+  {
+   "q": "Why do proponents prefer a mechanical timer, paper and pencil?",
+   "options": [
+    "Physical stimuli like winding and ticking become tied to flow and focus",
+    "Digital apps are too expensive for most students to afford",
+    "Paper lists are faster to read than apps, which saves minutes",
+    "Software cannot count pomodori accurately across several devices"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Winding confirms determination, ticking externalizes the desire, and ringing announces a break."
+  }
+ ]
 }

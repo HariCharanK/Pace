@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the central argument of the passage?",
-      "options": [
-        "Getting wealthy depends mainly on frugality, while staying wealthy needs bold concentrated bets",
-        "Most investors stay wealthy by copying the strategies of legendary traders like Jesse Livermore",
-        "Staying wealthy takes survival traits like frugality and paranoia, unlike getting wealthy",
-        "Long-term compounding makes picking stocks irrelevant, so luck decides who stays wealthy"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "The author says there's only one way to stay wealthy: frugality and paranoia, and survival matters most."
-    },
-    {
-      "q": "How did Jesse Livermore profit in the 1929 crash?",
-      "options": [
-        "He sold his real estate",
-        "He bought gold",
-        "He held only cash",
-        "He was short the market"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He had bet stocks would decline and made over $3 billion equivalent in one day."
-    },
-    {
-      "q": "Why did Rick Guerin drop out of Buffett and Munger's group?",
-      "options": [
-        "He was levered with margin loans and was forced to sell Berkshire stock in 1973-74",
-        "He bet heavily on tech start-ups and was forced to sell his Berkshire stock in 1987",
-        "He overpaid for an insurance acquisition and had to sell his Berkshire shares in 1969",
-        "He fell out with Munger over a partnership and cashed out his Berkshire stake in 1980"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Margin calls in the downturn forced him to sell his Berkshire stock to Warren at under $40."
-    },
-    {
-      "q": "What did Michael Moritz say about why Sequoia has lasted four decades?",
-      "options": [
-        "They've always trusted a handful of star partners to pick winners",
-        "They've always been afraid of going out of business",
-        "They've never taken on risk outside of proven software markets",
-        "They've always avoided companies not already near profitability"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "He said 'we've always been afraid of going out of business.'"
-    },
-    {
-      "q": "According to the author, what is margin of safety?",
-      "options": [
-        "Raising returns at a given level of risk by concentrating in the best ideas",
-        "Reducing the odds of failure by diversifying across as many assets as possible",
-        "Increasing leverage at a given level of risk to speed up compounding of wealth",
-        "Raising the odds of success at a given level of risk by improving the chance of survival"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "It is distinct from being conservative; it increases survival odds at a given level of risk."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the central argument of the passage?",
+   "options": [
+    "Getting wealthy depends mainly on frugality, while staying wealthy needs bold concentrated bets",
+    "Most investors stay wealthy by copying the strategies of legendary traders like Jesse Livermore",
+    "Staying wealthy takes survival traits like frugality and paranoia, unlike getting wealthy",
+    "Long-term compounding makes picking stocks irrelevant, so luck decides who stays wealthy"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "The author says there's only one way to stay wealthy: frugality and paranoia, and survival matters most."
+  },
+  {
+   "q": "How did Jesse Livermore profit in the 1929 crash?",
+   "options": [
+    "He sold his real estate",
+    "He bought gold",
+    "He held only cash",
+    "He was short the market"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "He had bet stocks would decline and made over $3 billion equivalent in one day."
+  },
+  {
+   "q": "What forced Rick Guerin to sell his Berkshire shares and fall behind Buffett and Munger?",
+   "options": [
+    "He was heavily leveraged and faced margin calls during a steep market decline",
+    "He slowly sold shares to cover living costs while focusing on long-term value",
+    "He had a falling out with Buffett and chose to cash out his stake",
+    "He backed a failed outside venture that wiped out his capital"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The passage says he was levered with margin loans and was forced to sell during a market downturn."
+  },
+  {
+   "q": "Which of the following statements would the author most likely agree with?",
+   "options": [
+    "Chasing the highest short-term returns is worth risking everything if you can get rich fast",
+    "Avoiding ruin and ensuring you can stay invested matters more than maximizing short-term gains",
+    "Following every new investment trend is the best way to ensure long-term wealth",
+    "Relying on past success is a reliable guide to future financial performance"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "The author emphasizes survival, frugality, and avoiding ruin as more important than chasing big returns."
+  },
+  {
+   "q": "According to the author, what is margin of safety?",
+   "options": [
+    "Raising returns at a given level of risk by concentrating in the best ideas",
+    "Reducing the odds of failure by diversifying across as many assets as possible",
+    "Increasing leverage at a given level of risk to speed up compounding of wealth",
+    "Raising the odds of success at a given level of risk by improving the chance of survival"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "It is distinct from being conservative; it increases survival odds at a given level of risk."
+  }
+ ]
 }

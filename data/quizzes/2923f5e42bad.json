@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The founding of the Baseball Hall of Fame in Cooperstown",
-        "The history of the Baltimore Orioles under Ned Hanlon",
-        "The 1938 Giants season and the team's exhibition tours",
-        "McGraw's life and the Truxton sites honoring him"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "It covers McGraw's career and the monument, ballfield and sign commemorating him in Truxton."
-    },
-    {
-      "q": "How old was McGraw when he ran away from home?",
-      "options": [
-        "18",
-        "8",
-        "12",
-        "16"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He ran away at 12 after a diphtheria epidemic killed his mother and four siblings and his father turned abusive."
-    },
-    {
-      "q": "Who won the 1938 exhibition and by what score?",
-      "options": [
-        "Giants, 8-1",
-        "Truxton, 8-1",
-        "Truxton, 4-3",
-        "Giants, 5-1"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The professional Giants beat the Truxton amateurs 8-1."
-    },
-    {
-      "q": "What was McGraw's nickname, and why?",
-      "options": [
-        "The Old Professor, for teaching hitters new batting tactics",
-        "Iron Man, for playing through injuries for seventeen years",
-        "Little Napoleon, for calling every pitch and ruling his players",
-        "The Peerless Leader, for winning ten pennants in a row"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He was called Little Napoleon for calling every pitch and telling players how to live."
-    },
-    {
-      "q": "What does the passage imply about McGraw and Truxton?",
-      "options": [
-        "He was buried in Truxton beside his mother",
-        "He never returned to his hometown after leaving in 1890",
-        "He often visited Truxton during the Giants' spring tours",
-        "He retired to Truxton after managing the Giants"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "He never returned to his hometown after leaving in 1890 to play baseball."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The founding of the Baseball Hall of Fame in Cooperstown",
+    "The history of the Baltimore Orioles under Ned Hanlon",
+    "The 1938 Giants season and the team's exhibition tours",
+    "McGraw's life and the Truxton sites honoring him"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "It covers McGraw's career and the monument, ballfield and sign commemorating him in Truxton."
+  },
+  {
+   "q": "Why did McGraw run away from home?",
+   "options": [
+    "He was offered a place on a professional team and left to play elsewhere",
+    "He ran away to work for the Elmira, Cortland and Northern Railroad selling goods",
+    "His father became physically abusive after the family lost several members to disease",
+    "A neighbor persuaded his father to let the boy live with her and her two sons"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The passage says his father became abusive after the diphtheria deaths, prompting McGraw to run away."
+  },
+  {
+   "q": "What was the purpose of the 1938 exhibition game in Truxton?",
+   "options": [
+    "To serve as the Giants' final spring training game before the season",
+    "To raise money for a monument to McGraw in Truxton",
+    "To recruit local players into professional baseball",
+    "To celebrate the opening of John J. McGraw Field"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The friendly match was scheduled to raise funds for a monument to the local lad who never returned."
+  },
+  {
+   "q": "What was McGraw's nickname, and why?",
+   "options": [
+    "The Old Professor, for teaching hitters new batting tactics",
+    "Iron Man, for playing through injuries for seventeen years",
+    "Little Napoleon, for calling every pitch and ruling his players",
+    "The Peerless Leader, for winning ten pennants in a row"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "He was called Little Napoleon for calling every pitch and telling players how to live."
+  },
+  {
+   "q": "What does the passage imply about McGraw and Truxton?",
+   "options": [
+    "He was buried in Truxton beside his mother",
+    "He never returned to his hometown after leaving in 1890",
+    "He often visited Truxton during the Giants' spring tours",
+    "He retired to Truxton after managing the Giants"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "He never returned to his hometown after leaving in 1890 to play baseball."
+  }
+ ]
 }

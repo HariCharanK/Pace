@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the main point of the article?",
-      "options": [
-        "Male bonobos are more aggressive hunters than male chimpanzees",
-        "Female bonobos lead most hunts, challenging the 'man the hunter' story",
-        "Chimpanzees were found to hunt less than bonobos in Congo",
-        "Bonobo hunting is dying out as Congo's rainforest shrinks"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "New research shows female bonobos are the primary hunters, which challenges the man-the-hunter origin story."
-    },
-    {
-      "q": "Of the 158 hunts catalogued, how many were led by females?",
-      "options": [
-        "59",
-        "78",
-        "99",
-        "120"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "99 hunts were led by females and 59 by males."
-    },
-    {
-      "q": "What was the most common prey of the bonobos?",
-      "options": [
-        "Red colobus monkey",
-        "Wild forest pig",
-        "Pygmy flying squirrel",
-        "Grey parrot nestling"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The most common prey was the red colobus monkey, which required coordinated teamwork."
-    },
-    {
-      "q": "According to Dr. Fruth, what do dominant female bonobos do with hunted meat?",
-      "options": [
-        "Keep it all for their own young",
-        "Hand it to the males to reward them",
-        "Share it to form alliances",
-        "Bury it for the dry season"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Dominant females dole out meat as a way to form alliances."
-    },
-    {
-      "q": "What does the article imply about the link between hunting and physical strength?",
-      "options": [
-        "Physical strength is the main factor in hunting success",
-        "Male bonobos hunt less because they are weaker",
-        "Hunting ability is not necessarily about big muscles",
-        "Females hunt only when the males are absent"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "Males are larger and stronger but not dominant, showing hunting is not necessarily about big muscles."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the main point of the article?",
+   "options": [
+    "Male bonobos are more aggressive hunters than male chimpanzees",
+    "Female bonobos lead most hunts, challenging the 'man the hunter' story",
+    "Chimpanzees were found to hunt less than bonobos in Congo",
+    "Bonobo hunting is dying out as Congo's rainforest shrinks"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "New research shows female bonobos are the primary hunters, which challenges the man-the-hunter origin story."
+  },
+  {
+   "q": "Who typically led the majority of hunts recorded in the study?",
+   "options": [
+    "Older, more dominant females",
+    "Young solitary males",
+    "Males and females equally",
+    "Only immature bonobos"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The data showed it was typically the older, more dominant females who led most hunts."
+  },
+  {
+   "q": "What was the most common prey of the bonobos?",
+   "options": [
+    "Red colobus monkey",
+    "Wild forest pig",
+    "Pygmy flying squirrel",
+    "Grey parrot nestling"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The most common prey was the red colobus monkey, which required coordinated teamwork."
+  },
+  {
+   "q": "According to Dr. Fruth, what do dominant female bonobos do with hunted meat?",
+   "options": [
+    "Keep it all for their own young",
+    "Hand it to the males to reward them",
+    "Share it to form alliances",
+    "Bury it for the dry season"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Dominant females dole out meat as a way to form alliances."
+  },
+  {
+   "q": "What does the article imply about the link between hunting and physical strength?",
+   "options": [
+    "Physical strength is the main factor in hunting success",
+    "Male bonobos hunt less because they are weaker",
+    "Hunting ability is not necessarily about big muscles",
+    "Females hunt only when the males are absent"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "Males are larger and stronger but not dominant, showing hunting is not necessarily about big muscles."
+  }
+ ]
 }

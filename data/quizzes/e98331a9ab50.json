@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is flow, according to the passage?",
-      "options": [
-        "A state of full absorption where skill and challenge are balanced",
-        "A form of meditation aimed at deep relaxation and reduced arousal",
-        "A medical condition of attention found in autism and ADHD patients",
-        "A technique for working faster under pressure by raising stress levels"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "Flow is a mental state of energized focus and full involvement, balancing skill and challenge."
-    },
-    {
-      "q": "Why is the state called 'flow'?",
-      "options": [
-        "It was named after a mountain stream",
-        "People used a water-current metaphor to describe how it felt",
-        "It described the flow of information in the brain",
-        "The founder was a swimmer"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Interviewees said things like 'I was carried on by the flow' as though by a water current."
-    },
-    {
-      "q": "About how much information per second can the mind attend to, per Csikszentmihalyi's TED talk?",
-      "options": [
-        "About 11 bits",
-        "About 40 bits",
-        "About 110 bits",
-        "About 1,100 bits"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The number given is about 110 bits per second, with decoding speech using 40-60 bits."
-    },
-    {
-      "q": "What can the flow questionnaire NOT measure?",
-      "options": [
-        "Whether people have experienced flow",
-        "Differences in likelihood across factors",
-        "The prevalence of flow",
-        "The intensity of flow during specific activities"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The FQ does not allow measurement of intensity of flow during specific activities."
-    },
-    {
-      "q": "Which example would the passage count as hyperfocus rather than flow?",
-      "options": [
-        "A chess player in balance with the challenge, energized throughout the whole game",
-        "Becoming so absorbed in one part of an assignment that the whole assignment suffers",
-        "A runner whose pace matches her ability, enjoying the challenge of the race",
-        "A student enjoying an exam whose difficulty is well suited to her skills"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "Hyperfocus is not always positive, such as absorption in one aspect of a task to the detriment of the overall assignment."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is flow, according to the passage?",
+   "options": [
+    "A state of full absorption where skill and challenge are balanced",
+    "A form of meditation aimed at deep relaxation and reduced arousal",
+    "A medical condition of attention found in autism and ADHD patients",
+    "A technique for working faster under pressure by raising stress levels"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "Flow is described as a mental state of energized focus and full involvement, balancing skill and challenge."
+  },
+  {
+   "q": "Why is the state called 'flow'?",
+   "options": [
+    "It was named after a mountain stream",
+    "People used a water-current metaphor to describe how it felt",
+    "It described the flow of information in the brain",
+    "The founder was a swimmer"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Interviewees used a water-current metaphor, saying things like 'I was carried on by the flow.'"
+  },
+  {
+   "q": "According to Csikszentmihályi, why do people in flow lose awareness of distractions and bodily needs?",
+   "options": [
+    "Because their mind can attend to more information than usual during flow",
+    "Because they make a conscious decision to ignore feelings and time",
+    "Because all their attention is absorbed by the task, leaving no attention for other things",
+    "Because they are motivated by future goals and external rewards"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The passage says flow happens because all of the person's attention is on the task, so no attention remains for other things."
+  },
+  {
+   "q": "What can the flow questionnaire NOT measure?",
+   "options": [
+    "Whether people have experienced flow",
+    "Differences in likelihood across factors",
+    "The prevalence of flow",
+    "The intensity of flow during specific activities"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The FQ does not allow measurement of the intensity of flow during specific activities."
+  },
+  {
+   "q": "Which example would the passage count as hyperfocus rather than flow?",
+   "options": [
+    "A chess player in balance with the challenge, energized throughout the whole game",
+    "Becoming so absorbed in one part of an assignment that the whole assignment suffers",
+    "A runner whose pace matches her ability, enjoying the challenge of the race",
+    "A student enjoying an exam whose difficulty is well suited to her skills"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "The passage contrasts hyperfocus as absorption in one aspect of a task to the detriment of the overall assignment."
+  }
+ ]
 }

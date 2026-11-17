@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "Carnegie's steel empire and its rivalry with Standard Oil",
-        "The rise of kerosene and gasoline as household fuels",
-        "Rockefeller's oil empire and his later philanthropy",
-        "The Baptist church's role in building Cleveland's industry"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "It covers Standard Oil, its breakup, and Rockefeller's philanthropy."
-    },
-    {
-      "q": "How many entities was Standard Oil broken into in 1911?",
-      "options": [
-        "12",
-        "34",
-        "90",
-        "7"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "The Supreme Court ordered it dismantled into 34 separate entities."
-    },
-    {
-      "q": "On what date did Rockefeller become the first billionaire?",
-      "options": [
-        "1 January 1913",
-        "23 May 1937",
-        "28 September 1916",
-        "8 July 1839"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He became the country's first billionaire on 28 September 1916."
-    },
-    {
-      "q": "What share of the nation's oil production did Standard Oil control by 1900?",
-      "options": [
-        "About 70%",
-        "About 50%",
-        "About 99%",
-        "About 90%"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "By 1900 Standard Oil controlled about 90% of national oil production."
-    },
-    {
-      "q": "What does the passage suggest about Rockefeller's view of business?",
-      "options": [
-        "Large trusts should be broken up for the public good",
-        "Competition among oil firms keeps business healthy",
-        "Large business growth reflects survival of the fittest",
-        "Charity work should be left to churches, not business"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "He was quoted as saying growth of a large business is merely survival of the fittest."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "Carnegie's steel empire and its rivalry with Standard Oil",
+    "The rise of kerosene and gasoline as household fuels",
+    "Rockefeller's oil empire and his later philanthropy",
+    "The Baptist church's role in building Cleveland's industry"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "It covers Standard Oil, its breakup, and Rockefeller's philanthropy."
+  },
+  {
+   "q": "What business did Rockefeller concentrate his work on?",
+   "options": [
+    "Railroad transport",
+    "Oil refining",
+    "Steel production",
+    "Commercial banking"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "He concentrated his business on oil refining."
+  },
+  {
+   "q": "What did Rockefeller focus on during his retirement?",
+   "options": [
+    "Philanthropy in education and medicine",
+    "Expanding Standard Oil's overseas operations",
+    "Running for national political office",
+    "Writing personal memoirs and fiction"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "In retirement he focused his energy and wealth on philanthropy, especially regarding education and medicine."
+  },
+  {
+   "q": "How did the government respond to criticisms of Standard Oil in 1911?",
+   "options": [
+    "The Supreme Court ordered the company dismantled",
+    "Congress imposed new protective tariffs on oil",
+    "State regulators took over day-to-day operations",
+    "The company was fined heavily but remained intact"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The Supreme Court ruled in 1911 that Standard Oil must be dismantled for violation of federal antitrust laws."
+  },
+  {
+   "q": "What does the passage suggest about Rockefeller's view of business?",
+   "options": [
+    "Large trusts should be broken up for the public good",
+    "Competition among oil firms keeps business healthy",
+    "Large business growth reflects survival of the fittest",
+    "Charity work should be left to churches, not business"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "He was quoted as saying growth of a large business is merely survival of the fittest."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The narrator's drive to reach Hampton Institute and lessons learned on the way",
-        "The narrator's escape from slavery and his flight to Virginia",
-        "The narrator's work in the salt furnace and his early wages",
-        "The narrator's life as a teacher at a small coloured school"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "He hears of Hampton in the coal-mine, works for Mrs. Ruffner and sets out to go."
-    },
-    {
-      "q": "How did the narrator first learn about Hampton Institute?",
-      "options": [
-        "From a letter sent by a former classmate",
-        "By overhearing two miners talking in the coal-mine",
-        "From his teacher at the little coloured school",
-        "From Mrs. Ruffner, who had visited Hampton"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "He crept close to two miners discussing the school in the dark of the mine."
-    },
-    {
-      "q": "What salary did Mrs. Ruffner pay him?",
-      "options": [
-        "$2 per month",
-        "$10 per month",
-        "$5 per month",
-        "$1 per week"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He was hired at a salary of $5 per month."
-    },
-    {
-      "q": "What did he use as his first library?",
-      "options": [
-        "A wooden shelf built into the wall of the little school",
-        "A trunk of borrowed books kept under his mother's bed",
-        "A crate at the mine, filled with books from the miners",
-        "A dry-goods box with one side knocked out and shelves added"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He turned a dry-goods box into a library of every book he could get."
-    },
-    {
-      "q": "How did the narrator come to view Mrs. Ruffner?",
-      "options": [
-        "As too strict to endure, so he left within a few weeks",
-        "As an obstacle who kept him from studying at night",
-        "As a friend, whose habits and lessons were as valuable as schooling",
-        "As a stranger who never trusted him with her household"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "He went from fearing her to seeing her as a best friend, valuing her lessons as much as any schooling."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The narrator's drive to reach Hampton Institute and lessons learned on the way",
+    "The narrator's escape from slavery and his flight to Virginia",
+    "The narrator's work in the salt furnace and his early wages",
+    "The narrator's life as a teacher at a small coloured school"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "He hears of Hampton in the coal-mine, works for Mrs. Ruffner and sets out to go."
+  },
+  {
+   "q": "How did the narrator first learn about Hampton Institute?",
+   "options": [
+    "From a letter sent by a former classmate",
+    "By overhearing two miners talking in the coal-mine",
+    "From his teacher at the little coloured school",
+    "From Mrs. Ruffner, who had visited Hampton"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "He crept close to two miners discussing the school in the dark of the mine."
+  },
+  {
+   "q": "How did he travel the remainder of the distance to Hampton after trains stopped?",
+   "options": [
+    "A through train carried him the entire way",
+    "He walked for most of the remaining trip",
+    "He went the rest of the way by stage-coach",
+    "He continued by riverboat along the route"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Trains ran only part of the way, and the remainder of the distance was travelled by stage-coaches."
+  },
+  {
+   "q": "What did he use as his first library?",
+   "options": [
+    "A wooden shelf built into the wall of the little school",
+    "A trunk of borrowed books kept under his mother's bed",
+    "A crate at the mine, filled with books from the miners",
+    "A dry-goods box with one side knocked out and shelves added"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "He turned a dry-goods box into a library of every book he could get."
+  },
+  {
+   "q": "How did the narrator come to view Mrs. Ruffner?",
+   "options": [
+    "As too strict to endure, so he left within a few weeks",
+    "As an obstacle who kept him from studying at night",
+    "As a friend, whose habits and lessons were as valuable as schooling",
+    "As a stranger who never trusted him with her household"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "He went from fearing her to seeing her as a best friend, valuing her lessons as much as any schooling."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the essay's central advice to founders?",
-      "options": [
-        "Build a polished, elegant product before opening it to any users",
-        "Hire dedicated salespeople early so engineers can focus on writing code",
-        "Wait for the market to discover your better mousetrap on its own",
-        "Do manual, unscalable work like recruiting and delighting early users"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "The essay opens with YC's advice to do things that don't scale, such as recruiting users manually."
-    },
-    {
-      "q": "What did the Collison brothers do when someone agreed to try Stripe?",
-      "options": [
-        "Asked for their laptop and set them up on the spot",
-        "Mailed a hand-written note to each interested founder",
-        "Sent them a link to the beta and waited for feedback",
-        "Offered a free month of service to every new company"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The 'Collison installation' was saying 'give me your laptop' and installing Stripe immediately."
-    },
-    {
-      "q": "According to the essay, how many users would 10% weekly growth from 100 users give after a year?",
-      "options": [
-        "About 1,400",
-        "About 140,000",
-        "About 2 million",
-        "About 14,000"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "After a year you'll have 14,000 users, and after 2 years 2 million."
-    },
-    {
-      "q": "Why did Ben Silbermann go to a conference of design bloggers?",
-      "options": [
-        "Pinterest's earliest users were interested in design",
-        "Investors there had already offered him seed funding",
-        "He wanted to recruit designers for his early team",
-        "Airbnb's founders had recommended the conference to him"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "He noticed many early Pinterest users liked design, so he recruited at a design bloggers' conference."
-    },
-    {
-      "q": "What does the author mean by 'insanely great' for an early startup?",
-      "options": [
-        "The product should be flawless and feature-complete from the day of launch",
-        "The experience of being the user should be great, even if the product is buggy",
-        "The founders should work insane hours until weekly growth reaches 10 percent",
-        "The marketing should be extremely aggressive and reach millions of users quickly"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "He says it's the user's experience, not the product, that should be insanely great, made up for by attentiveness."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the essay's central advice to founders?",
+   "options": [
+    "Build a polished, elegant product before opening it to any users",
+    "Hire dedicated salespeople early so engineers can focus on writing code",
+    "Wait for the market to discover your better mousetrap on its own",
+    "Do manual, unscalable work like recruiting and delighting early users"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "The essay opens with YC's advice to do things that don't scale, such as recruiting users manually."
+  },
+  {
+   "q": "What did the Collison brothers do when someone agreed to try Stripe?",
+   "options": [
+    "Asked for their laptop and set them up on the spot",
+    "Mailed a hand-written note to each interested founder",
+    "Sent them a link to the beta and waited for feedback",
+    "Offered a free month of service to every new company"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The 'Collison installation' was saying 'give me your laptop' and installing Stripe immediately."
+  },
+  {
+   "q": "What did Airbnb's founders do to get their marketplace started?",
+   "options": [
+    "Posted listings on many classified websites to attract guests",
+    "Hired a PR firm to generate press coverage and brand awareness",
+    "Went door to door in New York, recruiting users and helping improve listings",
+    "Focused on building a polished product before reaching out to users"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Airbnb went door to door in New York to recruit users and help existing hosts improve listings."
+  },
+  {
+   "q": "Why did Ben Silbermann go to a conference of design bloggers?",
+   "options": [
+    "Pinterest's earliest users were interested in design",
+    "Investors there had already offered him seed funding",
+    "He wanted to recruit designers for his early team",
+    "Airbnb's founders had recommended the conference to him"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He noticed many early Pinterest users liked design, so he recruited at a design bloggers' conference."
+  },
+  {
+   "q": "What does the author mean by 'insanely great' for an early startup?",
+   "options": [
+    "The product should be flawless and feature-complete from the day of launch",
+    "The experience of being the user should be great, even if the product is buggy",
+    "The founders should work insane hours until weekly growth reaches 10 percent",
+    "The marketing should be extremely aggressive and reach millions of users quickly"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "He says it's the user's experience, not the product, that should be insanely great, made up for by attentiveness."
+  }
+ ]
 }

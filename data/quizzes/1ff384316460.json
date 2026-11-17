@@ -1,5 +1,5 @@
 {
- "model": "claude (precomputed)",
+ "model": "claude (precomputed) + gpt-5-mini revision",
  "questions": [
   {
    "q": "What is the central idea of the passage?",
@@ -26,16 +26,16 @@
    "explain": "Musk found the materials cost of a rocket was around two percent of the typical price."
   },
   {
-   "q": "What did Musk say battery materials would cost per kilowatt-hour on the commodity market?",
+   "q": "When Musk examined battery costs, what did he recommend breaking down to estimate cheaper prices?",
    "options": [
-    "$600",
-    "$200",
-    "$80",
-    "$8"
+    "Historical retail price figures",
+    "Patents and production processes",
+    "Materials in the battery and their market prices",
+    "How many people want to buy batteries"
    ],
    "answer": 2,
    "type": "detail",
-   "explain": "He contrasted the historical $600 per kWh with about $80 for the raw materials."
+   "explain": "He said to break batteries into their material constituents and check spot-market values to see lower raw costs."
   },
   {
    "q": "What first principle of a successful website did Jonah Peretti identify for BuzzFeed?",

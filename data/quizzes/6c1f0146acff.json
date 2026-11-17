@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "Carnegie's first jobs and his family's pride and determination",
-        "Carnegie's later steel fortune and his gifts to libraries",
-        "Carnegie's voyage to America and first weeks in Allegheny",
-        "Carnegie's schooling in Scotland and his love of Wallace"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "Carnegie describes starting work at thirteen to help the family and his mother's pride."
-    },
-    {
-      "q": "How much did Carnegie earn weekly as a bobbin boy at Mr. Blackstock's factory?",
-      "options": [
-        "Two dollars and fifty cents",
-        "Twenty-five cents a day",
-        "Three dollars and ten cents",
-        "One dollar and twenty cents"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "His first work was at one dollar and twenty cents per week."
-    },
-    {
-      "q": "How did his mother react when her brother-in-law's relative suggested he peddle goods on the wharves?",
-      "options": [
-        "She gladly accepted the offer and bought him a basket",
-        "She said she would rather throw him into the Allegheny River",
-        "She asked young Andrew to decide whether he wanted it",
-        "She suggested he first work as a clerk on the wharves"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "She declared she would rather throw him into the Allegheny River and sent Mr. Hogan away."
-    },
-    {
-      "q": "What task at Mr. Hay's did Carnegie never get used to?",
-      "options": [
-        "Writing out bills for Mr. Hay, which strained his hands",
-        "Firing the boiler in the cellar, which he found too easy",
-        "Bathing newly made spools in oil, whose smell made him sick",
-        "Running errands across Allegheny City in the cold"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He never overcame the nausea from the oil smell."
-    },
-    {
-      "q": "What does Carnegie imply his mother objected to about peddling?",
-      "options": [
-        "It paid too little to help the family reach its goal",
-        "It was hard physical labor, which she thought beneath him",
-        "It would have kept him from the schooling she valued",
-        "It was not respectable and meant mingling with rough company"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Her objection was that the work was vagrant and not respectable, not that it was labor."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "Carnegie's first jobs and his family's pride and determination",
+    "Carnegie's later steel fortune and his gifts to libraries",
+    "Carnegie's voyage to America and first weeks in Allegheny",
+    "Carnegie's schooling in Scotland and his love of Wallace"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "Carnegie describes starting work at thirteen to help the family and his mother's pride."
+  },
+  {
+   "q": "What work did Carnegie first do after his father entered Mr. Blackstock's factory?",
+   "options": [
+    "He worked as a bobbin boy in the cotton factory",
+    "He ran the steam-engine and fired the boiler in the cellar",
+    "He made out bills and did clerical work for the manufacturer",
+    "He bathed newly made spools in vats of oil as his main duty"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "His father obtained for him a position as a bobbin boy in Mr. Blackstock's factory."
+  },
+  {
+   "q": "How did his mother react when her brother-in-law's relative suggested he peddle goods on the wharves?",
+   "options": [
+    "She gladly accepted the offer and bought him a basket",
+    "She said she would rather throw him into the Allegheny River",
+    "She asked young Andrew to decide whether he wanted it",
+    "She suggested he first work as a clerk on the wharves"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "She declared she would rather throw him into the Allegheny River and sent Mr. Hogan away."
+  },
+  {
+   "q": "What task at Mr. Hay's did Carnegie never get used to?",
+   "options": [
+    "Writing out bills for Mr. Hay, which strained his hands",
+    "Firing the boiler in the cellar, which he found too easy",
+    "Bathing newly made spools in oil, whose smell made him sick",
+    "Running errands across Allegheny City in the cold"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "He never overcame the nausea from the oil smell."
+  },
+  {
+   "q": "What does Carnegie imply his mother objected to about peddling?",
+   "options": [
+    "It paid too little to help the family reach its goal",
+    "It was hard physical labor, which she thought beneath him",
+    "It would have kept him from the schooling she valued",
+    "It was not respectable and meant mingling with rough company"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Her objection was that the work was vagrant and not respectable, not that it was labor."
+  }
+ ]
 }

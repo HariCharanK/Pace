@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the author's central argument?",
-      "options": [
-        "Nonprofits are obsolete now that AI wealth has been created",
-        "Mission-driven companies may be key institutions alongside philanthropy",
-        "Philanthropy should be abandoned in favor of pure investing",
-        "AI fortunes will never be given away by this generation"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "He argues the strongest mission-driven firms make social good the unit economics, beyond the 'two ledgers' model."
-    },
-    {
-      "q": "What did Carnegie's 'Gospel of Wealth' argue?",
-      "options": [
-        "Wealth should be passed to heirs to build family dynasties",
-        "Direct charity to the poor is the best form of giving",
-        "Companies should avoid giving until after the founder dies",
-        "The rich should give strategically in life through enduring institutions"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "It said 'the man who dies rich dies disgraced' and favored institutions over charity."
-    },
-    {
-      "q": "Who did Rockefeller hire as essentially the first professional philanthropic strategist?",
-      "options": [
-        "Bill Gates",
-        "John Gates",
-        "Nan Ransohoff",
-        "Frederick Gates"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He hired Frederick Gates, no relation to Bill."
-    },
-    {
-      "q": "What is the size and goal of Stripe's Intercept Fund?",
-      "options": [
-        "$500m to eradicate respiratory infections",
-        "$500m to build libraries in rural American towns",
-        "$50m to speed up climate research and carbon removal",
-        "$1b to fund open AI safety research at universities"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Stripe announced a $500m initiative to eradicate respiratory infections."
-    },
-    {
-      "q": "What does the author imply about the check as a vehicle for good?",
-      "options": [
-        "It should be taxed more heavily to fund public goods",
-        "It is not the only way; companies aligned with outcomes count",
-        "It is unnecessary now that companies can solve everything",
-        "It is the best way, so companies should not try to help"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "He says the check is not the only vehicle and company incentives aligned with outcomes should count too."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the author's central argument?",
+   "options": [
+    "Nonprofits are obsolete now that AI wealth has been created",
+    "Mission-driven companies may be key institutions alongside philanthropy",
+    "Philanthropy should be abandoned in favor of pure investing",
+    "AI fortunes will never be given away by this generation"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "He argues the strongest mission-driven firms make social good the unit economics, beyond the 'two ledgers' model."
+  },
+  {
+   "q": "What did Carnegie's 'Gospel of Wealth' argue?",
+   "options": [
+    "Wealth should be passed to heirs to build family dynasties",
+    "Direct charity to the poor is the best form of giving",
+    "Companies should avoid giving until after the founder dies",
+    "The rich should give strategically in life through enduring institutions"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "It said 'the man who dies rich dies disgraced' and favored institutions over charity."
+  },
+  {
+   "q": "Who did Rockefeller hire as essentially the first professional philanthropic strategist?",
+   "options": [
+    "Bill Gates",
+    "John Gates",
+    "Nan Ransohoff",
+    "Frederick Gates"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "He hired Frederick Gates, no relation to Bill."
+  },
+  {
+   "q": "Which kinds of problems does the author say will still rely on gifts and public funding?",
+   "options": [
+    "Problems that no market will reward and need gifts or public funding",
+    "Problems that are already profitable for private businesses to solve",
+    "Problems best addressed by companies whose incentives align with outcomes",
+    "Problems that should be handled only by universities and religious groups"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The passage says many important tasks will always depend on gifts, public funding, and nonprofits for problems markets won't reward."
+  },
+  {
+   "q": "What does the author imply about the check as a vehicle for good?",
+   "options": [
+    "It should be taxed more heavily to fund public goods",
+    "It is not the only way; companies aligned with outcomes count",
+    "It is unnecessary now that companies can solve everything",
+    "It is the best way, so companies should not try to help"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "He says the check is not the only vehicle and company incentives aligned with outcomes should count too."
+  }
+ ]
 }

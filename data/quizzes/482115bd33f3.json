@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "The Fed's revised 2027 schedule, which drops the October vote and December meeting",
-        "The Fed's plan to raise interest rates at its October 2027 meeting",
-        "Warsh's confirmation as chairman and his first months running the Fed",
-        "The history of the dot plot and why Warsh decided to bring it back"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It describes the revised schedule under Warsh's plan to meet less often."
-    },
-    {
-      "q": "What will the Oct. 26-27 meeting be dedicated to?",
-      "options": [
-        "A vote on the near-term policy outlook",
-        "Broad monetary policy strategy issues",
-        "Supervision of large regional banks",
-        "Training on new communication methods"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "It will be dedicated to the discussion of broad monetary policy strategy."
-    },
-    {
-      "q": "When will the Fed next vote on rates after November 2027?",
-      "options": [
-        "December 2027",
-        "Early December",
-        "Jan. 25-26, 2028",
-        "March 2028"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Without a December meeting, the next vote is Jan. 25-26, 2028."
-    },
-    {
-      "q": "By 2028, how many rate-setting meetings will the Fed hold under the plan?",
-      "options": [
-        "Four",
-        "Eight",
-        "Twelve",
-        "Six"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Six rate-setting meetings and two strategy-focused meetings."
-    },
-    {
-      "q": "What is one possible downside of meeting less often?",
-      "options": [
-        "More impromptu meetings, typically reserved for crises",
-        "Higher borrowing costs for households after each missed meeting",
-        "Longer news conferences that crowd out strategic discussion",
-        "A larger dot plot with more projections from each official"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Fewer chances to adjust policy may force impromptu meetings, usually reserved for crises."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "The Fed's revised 2027 schedule, which drops the October vote and December meeting",
+    "The Fed's plan to raise interest rates at its October 2027 meeting",
+    "Warsh's confirmation as chairman and his first months running the Fed",
+    "The history of the dot plot and why Warsh decided to bring it back"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It describes the revised schedule under Warsh's plan to meet less often."
+  },
+  {
+   "q": "What will the Oct. 26-27 meeting be dedicated to?",
+   "options": [
+    "A vote on the near-term policy outlook",
+    "Broad monetary policy strategy issues",
+    "Supervision of large regional banks",
+    "Training on new communication methods"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "It will be dedicated to the discussion of broad monetary policy strategy."
+  },
+  {
+   "q": "When will the Fed next vote on rates after November 2027?",
+   "options": [
+    "December 2027",
+    "March 2028",
+    "January 2028",
+    "May 2028"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Without a December meeting, the next vote is in January 2028."
+  },
+  {
+   "q": "By 2028, how many rate-setting meetings will the Fed hold under the plan?",
+   "options": [
+    "Four",
+    "Eight",
+    "Twelve",
+    "Six"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Six rate-setting meetings and two strategy-focused meetings."
+  },
+  {
+   "q": "What is one possible downside of meeting less often?",
+   "options": [
+    "More impromptu meetings, typically reserved for crises",
+    "Higher borrowing costs for households after each missed meeting",
+    "Longer news conferences that crowd out strategic discussion",
+    "A larger dot plot with more projections from each official"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Fewer chances to adjust policy may force impromptu meetings, usually reserved for crises."
+  }
+ ]
 }

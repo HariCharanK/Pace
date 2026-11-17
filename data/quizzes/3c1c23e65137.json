@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the author's main argument?",
-      "options": [
-        "Pap tests should be abandoned now that mailed kits exist",
-        "Vaccines are unnecessary once women can screen themselves at home",
-        "Rural women are at low risk, so screening can be postponed",
-        "At-home HPV tests help rural women but need vaccines and follow-up care"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "At-home tests help close the gap, but eliminating cervical cancer also needs vaccines, follow-up diagnostics and treatment."
-    },
-    {
-      "q": "How much higher is the death rate from cervical cancer among rural women than urban women?",
-      "options": [
-        "42%",
-        "25%",
-        "3 times",
-        "20%"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Rural women have a 42% higher death rate (and 25% higher incidence)."
-    },
-    {
-      "q": "In the Appalachian study, what were the screening rates for the reminder letter versus the mailed kit?",
-      "options": [
-        "5% and 15%",
-        "15% and 5%",
-        "20% and 40%",
-        "10% and 30%"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Screening was 5% with the reminder and 15% with mailed kits, a threefold increase."
-    },
-    {
-      "q": "How many HPV vaccine shots are needed if given under age 15?",
-      "options": [
-        "Two, one year apart",
-        "Three, over six months",
-        "One, with a booster at 15",
-        "Two, six months apart"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Under 15, two shots six months apart are needed and no booster."
-    },
-    {
-      "q": "What does the author imply about mailed self-collection kits alone?",
-      "options": [
-        "They are less reliable than clinic-collected samples",
-        "They solve every barrier, so clinics are no longer needed",
-        "They have been rejected by European screening programs",
-        "They are not enough, since most women still did not complete screening"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Fewer than 15 of 100 women with mailed kits completed screening, so removing clinic visits doesn't address all barriers."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the author's main argument?",
+   "options": [
+    "Pap tests should be abandoned now that mailed kits exist",
+    "Vaccines are unnecessary once women can screen themselves at home",
+    "Rural women are at low risk, so screening can be postponed",
+    "At-home HPV tests help rural women but need vaccines and follow-up care"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "At-home tests help close the gap, but eliminating cervical cancer also needs vaccines, follow-up diagnostics and treatment."
+  },
+  {
+   "q": "What access problem do rural women often face when trying to get routine cervical screening?",
+   "options": [
+    "Long travel and wait times to clinics",
+    "High cost of home-test kits",
+    "Clinics frequently refuse to screen rural women",
+    "No tests are approved for home use"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The passage says a visit for a cervical exam and Pap test can require half a day or longer in travel and wait times."
+  },
+  {
+   "q": "What effect did mailed HPV self-collection kits have in the Appalachian study?",
+   "options": [
+    "They had no measurable effect compared to reminder letters",
+    "They roughly tripled screening compared to reminder letters",
+    "They doubled screening compared to reminder letters",
+    "They reduced screening compared to reminder letters"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The study found screening rose from about 5% with a reminder to about 15% with mailed kits, a threefold increase."
+  },
+  {
+   "q": "Which measures beyond mailed kits does the author recommend to improve rural women's access to diagnosis and treatment?",
+   "options": [
+    "Focusing only on school-based HPV vaccination programs without improving follow-up services",
+    "Requiring rural patients to travel to urban hospitals for all diagnostic and treatment appointments",
+    "Mobile clinics, more colposcopy-trained clinicians and patient navigators",
+    "Relying solely on telemedicine consultations without local diagnostic or treatment access"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The author suggests mobile clinics, training more colposcopy clinicians and using patient navigators to help overcome barriers."
+  },
+  {
+   "q": "What does the author imply about mailed self-collection kits alone?",
+   "options": [
+    "They are less reliable than clinic-collected samples",
+    "They solve every barrier, so clinics are no longer needed",
+    "They have been rejected by European screening programs",
+    "They are not enough, since most women still did not complete screening"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Fewer than 15 of 100 women with mailed kits completed screening, so removing clinic visits doesn't address all barriers."
+  }
+ ]
 }

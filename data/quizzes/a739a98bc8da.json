@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What does the article report?",
-      "options": [
-        "Measles vaccines are failing because the virus evolves quickly",
-        "Genetic data suggests measles is endemic again in the U.S.",
-        "Measles has been eliminated in Canada and Mexico this year",
-        "A new measles vaccine was approved for use in kindergartners"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "An analysis of genetic data found transmission chains lasting over a year, and a panel will decide on elimination status."
-    },
-    {
-      "q": "How many measles deaths has the U.S. had this year?",
-      "options": [
-        "Twelve",
-        "Three",
-        "Eight",
-        "Five"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Pennsylvania, New York and Wisconsin each reported a death, bringing the year's total to eight."
-    },
-    {
-      "q": "What share of children were immunized before, and what did it fall to?",
-      "options": [
-        "Over 99 percent, down to 95 percent",
-        "Over 85 percent, down to 70 percent",
-        "Over 90 percent, down to 80 percent",
-        "Over 95 percent, down to 92.4 percent"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Over 95 percent were immunized; the rate fell to 92.4 percent in the school year beginning in 2025."
-    },
-    {
-      "q": "What must a committee find for the U.S. to lose elimination status?",
-      "options": [
-        "Vaccination coverage below 90 percent for two straight years",
-        "More than ten deaths in a single calendar year",
-        "Over 10,000 reported cases within any twelve-month period",
-        "Uninterrupted transmission for more than 12 months"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The PAHO committee must determine uninterrupted transmission for more than 12 months."
-    },
-    {
-      "q": "What does the article suggest about why full genome sequencing matters?",
-      "options": [
-        "It shows the vaccine is weakening as the virus evolves",
-        "It replaces the need for traditional case surveillance",
-        "It speeds up production of updated measles vaccines",
-        "It can distinguish endemic spread from travel-linked cases"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Full sequences let scientists distinguish endemic circulation from travel-associated cases."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What does the article report?",
+   "options": [
+    "Measles vaccines are failing because the virus evolves quickly",
+    "Genetic data suggests measles is endemic again in the U.S.",
+    "Measles has been eliminated in Canada and Mexico this year",
+    "A new measles vaccine was approved for use in kindergartners"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "An analysis of genetic data found transmission chains lasting over a year, and a panel will decide on elimination status."
+  },
+  {
+   "q": "What technological change at the end of the article is described?",
+   "options": [
+    "Wider use of rapid antigen tests to diagnose measles infections",
+    "Decoding full measles genetic sequences instead of using snippets",
+    "A new smartphone app that tracks measles symptoms in real time",
+    "Use of satellite data to predict where measles will spread"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The passage explains scientists moved from sequencing snippets to decoding full genetic sequences for measles."
+  },
+  {
+   "q": "What effect did rising vaccine hesitancy have, according to the article?",
+   "options": [
+    "More parents sought exemptions from school vaccination requirements",
+    "Vaccine manufacturers increased production to meet demand",
+    "Hospitals began offering measles vaccines to adults only",
+    "Schools started vaccinating children without parental consent"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The article says rising hesitancy led to sharp increases in parents seeking exemptions from school vaccine requirements."
+  },
+  {
+   "q": "What must a committee find for the U.S. to lose elimination status?",
+   "options": [
+    "Vaccination coverage below 90 percent for two straight years",
+    "More than ten deaths in a single calendar year",
+    "Over 10,000 reported cases within any twelve-month period",
+    "Uninterrupted transmission for more than 12 months"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The PAHO committee must determine uninterrupted transmission for more than 12 months."
+  },
+  {
+   "q": "What does the article suggest about why full genome sequencing matters?",
+   "options": [
+    "It shows the vaccine is weakening as the virus evolves",
+    "It replaces the need for traditional case surveillance",
+    "It speeds up production of updated measles vaccines",
+    "It can distinguish endemic spread from travel-linked cases"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Full sequences let scientists distinguish endemic circulation from travel-associated cases."
+  }
+ ]
 }

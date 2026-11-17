@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the central point of the passage?",
-      "options": [
-        "Cephalopod intelligence has been fully measured and matches that of mammals",
-        "Cephalopods are the most intelligent non-vertebrates, showing learning and tool use",
-        "Nautiluses are far smarter than octopuses, squid and cuttlefish",
-        "Octopuses are the largest invertebrates and have the biggest brains"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "It describes cephalopods as the most intelligent non-vertebrates, with examples of cognition."
-    },
-    {
-      "q": "Where are two-thirds of an octopus's neurons located?",
-      "options": [
-        "In its central brain, behind the eyes",
-        "In the nerve cords of its arms",
-        "In its mantle, around the large nerve fibers",
-        "In its eyes and the optic lobes"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Two-thirds of an octopus's neurons are in the nerve cords of its arms."
-    },
-    {
-      "q": "What did the Caribbean dwarf octopus use to block its lair in lab studies?",
-      "options": [
-        "Sea anemones",
-        "Coconut shells",
-        "Plastic Lego bricks",
-        "Broken bottles"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The Caribbean dwarf octopus was seen blocking its lair with Lego bricks."
-    },
-    {
-      "q": "What did Otto the octopus at the Coburg aquarium do?",
-      "options": [
-        "Shot water at a lamp, causing short circuits",
-        "Unscrewed jar lids to reach crabs hidden inside",
-        "Escaped to another tank to feed and then returned",
-        "Solved the marshmallow test to earn extra food"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Otto juggled hermit crabs, struck the glass with a rock, and short-circuited the lamp with water jets."
-    },
-    {
-      "q": "Why do the authors suggest cephalopod intelligence likely evolved?",
-      "options": [
-        "From life in large, complex social groups",
-        "From escaping predators among the coral reefs",
-        "From the need to find and capture prey",
-        "From the demands of skin camouflage and display"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "Their need to locate and capture prey has likely been the driving force behind their intelligence."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the central point of the passage?",
+   "options": [
+    "Cephalopod intelligence has been fully measured and matches that of mammals",
+    "Cephalopods are the most intelligent non-vertebrates, showing learning and tool use",
+    "Nautiluses are far smarter than octopuses, squid and cuttlefish",
+    "Octopuses are the largest invertebrates and have the biggest brains"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "It describes cephalopods as the most intelligent non-vertebrates, with examples of cognition."
+  },
+  {
+   "q": "Where are two-thirds of an octopus's neurons located?",
+   "options": [
+    "In its central brain, behind the eyes",
+    "In the nerve cords of its arms",
+    "In its mantle, around the large nerve fibers",
+    "In its eyes and the optic lobes"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Two-thirds of an octopus's neurons are in the nerve cords of its arms."
+  },
+  {
+   "q": "What did the Caribbean dwarf octopus use to block its lair in lab studies?",
+   "options": [
+    "Sea anemones attached to the den entrance",
+    "Discarded coconut shells reassembled to form a shelter",
+    "Plastic Lego bricks to block its lair",
+    "Broken bottles and stones piled to constrict the opening"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The Caribbean dwarf octopus was seen blocking its lair with Lego bricks."
+  },
+  {
+   "q": "What did Otto the octopus at the Coburg aquarium do?",
+   "options": [
+    "Shot water at a lamp, causing short circuits",
+    "Unscrewed jar lids to reach crabs hidden inside",
+    "Escaped to another tank to feed and then returned",
+    "Solved the marshmallow test to earn extra food"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Otto juggled hermit crabs, struck the glass with a rock, and short-circuited the lamp with water jets."
+  },
+  {
+   "q": "Why do the authors suggest cephalopod intelligence likely evolved?",
+   "options": [
+    "From life in large, complex social groups",
+    "From escaping predators among the coral reefs",
+    "From the need to find and capture prey",
+    "From the demands of skin camouflage and display"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "Their need to locate and capture prey has likely been the driving force behind their intelligence."
+  }
+ ]
 }

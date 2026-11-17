@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The invention of the graphical user interface at Xerox PARC",
-        "The history of Pixar and its computer-animated feature films",
-        "The career of Steve Jobs, from Apple to NeXT, Pixar and back",
-        "How Steve Wozniak designed the Apple I and Apple II computers"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "The passage summarizes Jobs's life and work at Apple, NeXT and Pixar."
-    },
-    {
-      "q": "What did Jobs do in 1974?",
-      "options": [
-        "Co-founded Apple Computer with Steve Wozniak",
-        "Traveled through India seeking enlightenment",
-        "Bought the computer graphics division of Lucasfilm",
-        "Withdrew from Reed College after one semester"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "In 1974 Jobs traveled through India, seeking enlightenment."
-    },
-    {
-      "q": "Which computer was described as the first mass-produced computer with a GUI?",
-      "options": [
-        "Apple II",
-        "Apple Lisa",
-        "Xerox Alto",
-        "Macintosh 128K"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The Macintosh 128K in 1984 is called the first mass-produced computer with a GUI."
-    },
-    {
-      "q": "Who did Jobs work with closely on products after returning to Apple in 1997?",
-      "options": [
-        "Jony Ive",
-        "John Sculley",
-        "Steve Wozniak",
-        "John Lasseter"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "He worked closely with British designer Jony Ive to develop the line of products."
-    },
-    {
-      "q": "Why did Jobs return to Apple as CEO in 1997?",
-      "options": [
-        "Apple bought NeXT, which brought him back",
-        "He had left Pixar and wanted to retire",
-        "The board elected him after he quit Gap Inc.",
-        "He won a lawsuit against John Sculley"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "The passage says he returned as CEO after Apple acquired NeXT, which he founded after being pushed out."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The invention of the graphical user interface at Xerox PARC",
+    "The history of Pixar and its computer-animated feature films",
+    "The career of Steve Jobs, from Apple to NeXT, Pixar and back",
+    "How Steve Wozniak designed the Apple I and Apple II computers"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "The passage summarizes Jobs's life and work at Apple, NeXT and Pixar."
+  },
+  {
+   "q": "What did Jobs do in 1974?",
+   "options": [
+    "Co-founded Apple Computer with Steve Wozniak",
+    "Traveled through India seeking enlightenment",
+    "Bought the computer graphics division of Lucasfilm",
+    "Withdrew from Reed College after one semester"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "In 1974 Jobs traveled through India, seeking enlightenment."
+  },
+  {
+   "q": "Which computer was described as the first mass-produced computer with a GUI?",
+   "options": [
+    "Apple II mass-produced microcomputer",
+    "Apple Lisa early Apple GUI computer",
+    "Xerox Alto mouse-driven GUI research system",
+    "Macintosh 128K"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The Macintosh 128K in 1984 is called the first mass-produced computer with a GUI."
+  },
+  {
+   "q": "Who did Jobs work with closely on products after returning to Apple in 1997?",
+   "options": [
+    "Jony Ive",
+    "John Sculley",
+    "Steve Wozniak",
+    "John Lasseter"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He worked closely with British designer Jony Ive to develop the line of products."
+  },
+  {
+   "q": "Why did Jobs return to Apple as CEO in 1997?",
+   "options": [
+    "Apple bought NeXT, which brought him back",
+    "He had left Pixar and wanted to retire",
+    "The board elected him after he quit Gap Inc.",
+    "He won a lawsuit against John Sculley"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "The passage says he returned as CEO after Apple acquired NeXT, which he founded after being pushed out."
+  }
+ ]
 }

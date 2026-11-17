@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The extirpation of Yellowstone's wolves, its ecological effects, and the push to reintroduce them",
-        "How the U.S. Army and the Park Service built Yellowstone's predator control programs",
-        "The creation of Yellowstone in 1872 and the growth of its tourism industry",
-        "How the Endangered Species Act changed livestock policy across Montana and Idaho"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It traces wolf killing to 1926, resulting ecological damage, and the campaign to reintroduce them."
-    },
-    {
-      "q": "When were the last official wolves killed in Yellowstone?",
-      "options": [
-        "1883",
-        "1943",
-        "1914",
-        "1926"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The last official killing was in 1926, when two pups near Soda Butte Creek were killed by rangers."
-    },
-    {
-      "q": "According to the passage, which year did gray wolves return to the Lamar Valley?",
-      "options": [
-        "1978",
-        "1995",
-        "1977",
-        "1973"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "In 1995 gray wolves were reintroduced into Yellowstone in the Lamar Valley."
-    },
-    {
-      "q": "What happened to coyotes after wolves were gone?",
-      "options": [
-        "They disappeared, allowing foxes and pronghorn to rebound",
-        "They declined sharply, which let rodent populations explode",
-        "They increased dramatically, hurting pronghorn antelope",
-        "They stayed stable, but hunters killed most of them by 1930"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Without wolves, coyote numbers rose dramatically, adversely affecting pronghorn antelope."
-    },
-    {
-      "q": "Why did the park end elk killing in the late 1960s?",
-      "options": [
-        "Biologists concluded the elk herds had fallen below the range's carrying capacity",
-        "Park rangers were reassigned to wolf recovery work after the 1973 Act",
-        "Tourists objected to the sight of rangers shooting elk near visitor centers",
-        "Congressmen threatened to cut funding after hunters complained of too few elk"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Hunters complained about too few elk and congressmen threatened to stop funding Yellowstone."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The extirpation of Yellowstone's wolves, its ecological effects, and the push to reintroduce them",
+    "How the U.S. Army and the Park Service built Yellowstone's predator control programs",
+    "The creation of Yellowstone in 1872 and the growth of its tourism industry",
+    "How the Endangered Species Act changed livestock policy across Montana and Idaho"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It traces wolf killing to 1926, resulting ecological damage, and the campaign to reintroduce them."
+  },
+  {
+   "q": "When were the last official wolves killed in Yellowstone?",
+   "options": [
+    "1883",
+    "1943",
+    "1914",
+    "1926"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The last official killing was in 1926, when two pups near Soda Butte Creek were killed by rangers."
+  },
+  {
+   "q": "Where were gray wolves reintroduced in Yellowstone?",
+   "options": [
+    "Lamar Valley",
+    "Hayden Valley",
+    "Old Faithful area",
+    "Madison River area"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "In 1995 gray wolves were reintroduced into Yellowstone in the Lamar Valley."
+  },
+  {
+   "q": "What happened to coyotes after wolves were gone?",
+   "options": [
+    "They disappeared, allowing foxes and pronghorn to rebound",
+    "They declined sharply, which let rodent populations explode",
+    "They increased dramatically, hurting pronghorn antelope",
+    "They stayed stable, but hunters killed most of them by 1930"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Without wolves, coyote numbers rose dramatically, adversely affecting pronghorn antelope."
+  },
+  {
+   "q": "Why did the park end elk killing in the late 1960s?",
+   "options": [
+    "Biologists concluded the elk herds had fallen below the range's carrying capacity",
+    "Park rangers were reassigned to wolf recovery work after the 1973 Act",
+    "Tourists objected to the sight of rangers shooting elk near visitor centers",
+    "Congressmen threatened to cut funding after hunters complained of too few elk"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Hunters complained about too few elk and congressmen threatened to stop funding Yellowstone."
+  }
+ ]
 }

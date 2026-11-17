@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the essay's central argument?",
-      "options": [
-        "Cities send messages that strongly shape the ambitions of the people living in them",
-        "Silicon Valley will soon replace New York as the world's capital",
-        "The Internet will make physical location irrelevant to ambition",
-        "Universities are the main reason cities become great"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "The author argues each city sends a message about what to strive for, and that this force is hard to resist."
-    },
-    {
-      "q": "What message does the author say Silicon Valley sends?",
-      "options": [
-        "You should be richer",
-        "You should be more powerful",
-        "You should be smarter",
-        "You should live better"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "The Valley's message is 'you should be more powerful', i.e. how much effect you have on the world."
-    },
-    {
-      "q": "What message did the author find Berkeley sends after living there?",
-      "options": [
-        "You should be hipper",
-        "You should be smarter",
-        "You should live better",
-        "You should do things with style"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Berkeley is pleasant and civilized, and its message is 'you should live better'."
-    },
-    {
-      "q": "In the Forbes 400, the ratio of New York to California residents moved from 1.45 in 1982 to what in 2007?",
-      "options": [
-        "2.10",
-        "1.12",
-        "0.45",
-        "0.83"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The ratio fell to .83 (73:88) in 2007."
-    },
-    {
-      "q": "Why does the author think New York is unlikely to become a startup hub rivaling Silicon Valley?",
-      "options": [
-        "Startup founders there would feel like second class citizens next to what New Yorkers admire more",
-        "New York lacks the venture capital firms needed to fund the early stage of startups",
-        "Engineers in New York are lured by banks into finance jobs that pay far more than startups",
-        "New York's universities rarely license research to startups, unlike those in the Bay Area"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Because New York already admires something else more (money), a startup founder there would feel second class."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the essay's central argument?",
+   "options": [
+    "Cities send messages that strongly shape the ambitions of the people living in them",
+    "Silicon Valley will soon replace New York as the world's capital",
+    "The Internet will make physical location irrelevant to ambition",
+    "Universities are the main reason cities become great"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "The author argues each city sends a message about what to strive for, and that this force is hard to resist."
+  },
+  {
+   "q": "What message does the author say Silicon Valley sends?",
+   "options": [
+    "You should be richer",
+    "You should be more powerful",
+    "You should be smarter",
+    "You should live better"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The Valley's message is 'you should be more powerful', i.e. how much effect you have on the world."
+  },
+  {
+   "q": "What message did the author find Berkeley sends after living there?",
+   "options": [
+    "You should be hipper",
+    "You should be smarter",
+    "You should live better",
+    "You should do things with style"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Berkeley is pleasant and civilized, and its message is 'you should live better'."
+  },
+  {
+   "q": "What message does the author say Paris sends now?",
+   "options": [
+    "You should be smarter",
+    "You should live better",
+    "You should be richer",
+    "Do things with style"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The author says Paris now sends the message to 'do things with style' and that people there genuinely care about art."
+  },
+  {
+   "q": "Why does the author think New York is unlikely to become a startup hub rivaling Silicon Valley?",
+   "options": [
+    "Startup founders there would feel like second class citizens next to what New Yorkers admire more",
+    "New York lacks the venture capital firms needed to fund the early stage of startups",
+    "Engineers in New York are lured by banks into finance jobs that pay far more than startups",
+    "New York's universities rarely license research to startups, unlike those in the Bay Area"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Because New York already admires something else more (money), a startup founder there would feel second class."
+  }
+ ]
 }

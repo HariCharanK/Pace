@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "Why does the author feel bullish on India but bearish on China?",
-      "options": [
-        "India already has a larger economy than China, so it faces less pressure to keep growing",
-        "India has overtaken China in artificial intelligence and now leads in advanced manufacturing exports",
-        "China's growth has stopped entirely, while India is the only large Asian economy still expanding",
-        "India just needs to escape poverty and reach upper middle income, a simpler task than what is expected of China"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "China is asked to eclipse the US and lead in AI; India's job is simpler."
-    },
-    {
-      "q": "India today is at about the stage China reached when?",
-      "options": [
-        "2020",
-        "The late 2000s",
-        "The early 2010s",
-        "The 1990s"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "India is around where China was in the late 2000s in GDP and HDI."
-    },
-    {
-      "q": "By how much did Indian government highway spending rise over the last decade?",
-      "options": [
-        "Tripled",
-        "Doubled",
-        "Fivefold",
-        "Tenfold"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Highway spending increased by a factor of five; railway spending eightfold."
-    },
-    {
-      "q": "What share of India's engineering exports did automobiles account for in FY 2025-26?",
-      "options": [
-        "18%",
-        "12.5%",
-        "16.9%",
-        "21.9%"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Automobiles accounted for 21.9% of engineering exports."
-    },
-    {
-      "q": "What does the author imply about The Economist's explanation of India's growth?",
-      "options": [
-        "He is skeptical because most reforms are still in the future and private investment isn't driving the boom",
-        "He is convinced because poverty data and reforms already done show growth driven by private investment",
-        "He thinks it ignores the pandemic, which distorted India's growth numbers across the past five years",
-        "He dismisses it because India's boom is really driven by exports of services rather than reforms"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "He says he's skeptical, noting structural reforms are mostly future and private investment and FDI are sluggish."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "Why does the author feel bullish on India but bearish on China?",
+   "options": [
+    "India already has a larger economy than China, so it faces less pressure to keep growing",
+    "India has overtaken China in artificial intelligence and now leads in advanced manufacturing exports",
+    "China's growth has stopped entirely, while India is the only large Asian economy still expanding",
+    "India just needs to escape poverty and reach upper middle income, a simpler task than what is expected of China"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "China is asked to eclipse the US and lead in AI; India's job is simpler."
+  },
+  {
+   "q": "India today is at about the stage China reached when?",
+   "options": [
+    "2020",
+    "The late 2000s",
+    "The early 2010s",
+    "The 1990s"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "India is around where China was in the late 2000s in GDP and HDI."
+  },
+  {
+   "q": "By how much did Indian government highway spending rise over the last decade?",
+   "options": [
+    "Tripled",
+    "Doubled",
+    "Fivefold",
+    "Tenfold"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Highway spending increased by a factor of five; railway spending eightfold."
+  },
+  {
+   "q": "Which structural problems does the author say India still needs to correct?",
+   "options": [
+    "Bad rural education, female underemployment, and incomplete urbanization",
+    "High inflation, weak banking, and limited foreign reserves",
+    "Insufficient infrastructure, low manufacturing, and export dependence",
+    "High inequality, stagnant growth, and low female labor participation"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The passage names bad rural education, female underemployment, and incomplete urbanization as issues to fix."
+  },
+  {
+   "q": "What does the author imply about The Economist's explanation of India's growth?",
+   "options": [
+    "He is skeptical because most reforms are still in the future and private investment isn't driving the boom",
+    "He is convinced because poverty data and reforms already done show growth driven by private investment",
+    "He thinks it ignores the pandemic, which distorted India's growth numbers across the past five years",
+    "He dismisses it because India's boom is really driven by exports of services rather than reforms"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "He says he's skeptical, noting structural reforms are mostly future and private investment and FDI are sluggish."
+  }
+ ]
 }

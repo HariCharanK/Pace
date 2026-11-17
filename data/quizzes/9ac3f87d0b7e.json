@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article's main argument?",
-      "options": [
-        "California's wealth tax failed, but other states backed taxing the rich, mostly via income",
-        "Wealth taxes proved easier to pass than income taxes in the 2026 midterms",
-        "Billionaires' spending defeated nearly every tax-the-rich measure across the states",
-        "Voters rejected tax hikes on the rich everywhere, including income and second homes"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "The author says taxing income is proving more successful than taxing wealth."
-    },
-    {
-      "q": "How much did Sergey Brin and other billionaires spend against Proposition 40?",
-      "options": [
-        "About $40 million",
-        "About $100 million",
-        "Nearly $400 million",
-        "Over $1 billion"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "They spent nearly $400 million to defeat it."
-    },
-    {
-      "q": "What is Washington state's new tax rate on household income above $1 million?",
-      "options": [
-        "3%",
-        "5%",
-        "12.3%",
-        "9.9%"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Voters preserved a 9.9% income tax on household income above $1 million."
-    },
-    {
-      "q": "What is Boulder, Colorado's new tax aimed at?",
-      "options": [
-        "Short-term rentals booked through online platforms",
-        "Homes that sit empty more than half the year",
-        "Single-family homes valued at $5 million or more",
-        "Luxury condos and co-ops valued above $1 million"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Voters approved a vacancy tax of roughly $4,000 a year, effective in 2028."
-    },
-    {
-      "q": "Why does the author think income taxes are easier than wealth taxes?",
-      "options": [
-        "Income is already reported on annual filings, while wealth needs valuations",
-        "Wealthy people hold most of their assets in cash that is easy to tax",
-        "Courts in most states have already banned wealth taxes outright",
-        "Federal law bars states from valuing assets held by billionaires"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Income tax relies on annual filings; wealth taxes require valuing businesses, farmland and art."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article's main argument?",
+   "options": [
+    "California's wealth tax failed, but other states backed taxing the rich, mostly via income",
+    "Wealth taxes proved easier to pass than income taxes in the 2026 midterms",
+    "Billionaires' spending defeated nearly every tax-the-rich measure across the states",
+    "Voters rejected tax hikes on the rich everywhere, including income and second homes"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "The author says taxing income is proving more successful than taxing wealth."
+  },
+  {
+   "q": "Which billionaire was named as among those who spent heavily to oppose Proposition 40?",
+   "options": [
+    "Bill Gates",
+    "Warren Buffett",
+    "Sergey Brin",
+    "Mark Zuckerberg"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The passage named Google co-founder Sergey Brin and other billionaires as spending heavily to defeat it."
+  },
+  {
+   "q": "What was notable about Washington state's new millionaire tax?",
+   "options": [
+    "It only taxed capital gains above $1 million",
+    "It was the state's first personal income tax",
+    "It was a temporary levy set to expire in two years",
+    "It exempted households earning under $500,000"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The passage says the 9.9% tax is Washington state's first personal income tax."
+  },
+  {
+   "q": "What is Boulder, Colorado's new tax aimed at?",
+   "options": [
+    "Short-term rentals booked through online platforms",
+    "Homes that sit empty more than half the year",
+    "Single-family homes valued at $5 million or more",
+    "Luxury condos and co-ops valued above $1 million"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Voters approved a vacancy tax of roughly $4,000 a year, effective in 2028."
+  },
+  {
+   "q": "Why does the author think income taxes are easier than wealth taxes?",
+   "options": [
+    "Income is already reported on annual filings, while wealth needs valuations",
+    "Wealthy people hold most of their assets in cash that is easy to tax",
+    "Courts in most states have already banned wealth taxes outright",
+    "Federal law bars states from valuing assets held by billionaires"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Income tax relies on annual filings; wealth taxes require valuing businesses, farmland and art."
+  }
+ ]
 }

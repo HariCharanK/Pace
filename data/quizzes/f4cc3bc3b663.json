@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The history, burials and legends of St. Patrick's Church",
-        "Catholic landownership laws in colonial Nova Scotia",
-        "A stone-masonry guide to Cape Breton's historic churches",
-        "How to plan a seasonal visit around Cape Breton Island"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It covers the church's origins, burials and reported paranormal tales."
-    },
-    {
-      "q": "Why did Captain Wilson buy land in Sydney?",
-      "options": [
-        "To build a market house for the Sydney Garrison",
-        "To bury his infant son in a Catholic ceremony",
-        "To build a small fort for the garrison's soldiers",
-        "To build a school for the local Catholic children"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Sydney had no Catholic cemetery for the couple's infant son."
-    },
-    {
-      "q": "When did the Old Sydney Society begin restoring the building?",
-      "options": [
-        "1798",
-        "1966",
-        "1805",
-        "1823"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Restoration began in 1966, when remains of Wilson and seven others were found."
-    },
-    {
-      "q": "What happens if you ring the red bell three times, per legend?",
-      "options": [
-        "Footsteps are heard on the balcony",
-        "The upstairs door to the belfry opens",
-        "The church lights flicker on and off",
-        "A ghost appears at the belfry window"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "The legend says the upstairs door leading to the belfry opens on its own."
-    },
-    {
-      "q": "Why were all reburied but Wilson given Catholic rites?",
-      "options": [
-        "Wilson had been Anglican",
-        "Wilson was unidentified",
-        "His wife objected",
-        "Wilson refused"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "Catholic rites were performed for all except Wilson, who was Anglican."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The history, burials and legends of St. Patrick's Church",
+    "Catholic landownership laws in colonial Nova Scotia",
+    "A stone-masonry guide to Cape Breton's historic churches",
+    "How to plan a seasonal visit around Cape Breton Island"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It covers the church's origins, burials and reported paranormal tales."
+  },
+  {
+   "q": "Why did Captain Wilson buy land in Sydney?",
+   "options": [
+    "To build a market house for the Sydney Garrison",
+    "To bury his infant son in a Catholic ceremony",
+    "To build a small fort for the garrison's soldiers",
+    "To build a school for the local Catholic children"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Sydney had no Catholic cemetery for the couple's infant son."
+  },
+  {
+   "q": "What did workers uncover during the Old Sydney Society's restoration work?",
+   "options": [
+    "A set of old burial records and maps",
+    "The red bell from the Market House",
+    "Human remains beneath the floorboards",
+    "An intact wooden chapel structure"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Workers found the remains of Captain Wilson and seven other individuals under the floorboards."
+  },
+  {
+   "q": "What happens if you ring the red bell three times, per legend?",
+   "options": [
+    "Footsteps are heard on the balcony",
+    "The upstairs door to the belfry opens",
+    "The church lights flicker on and off",
+    "A ghost appears at the belfry window"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The legend says the upstairs door leading to the belfry opens on its own."
+  },
+  {
+   "q": "Why were all reburied but Wilson given Catholic rites?",
+   "options": [
+    "Wilson had been Anglican",
+    "Wilson was unidentified",
+    "His wife objected",
+    "Wilson refused"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "Catholic rites were performed for all except Wilson, who was Anglican."
+  }
+ ]
 }

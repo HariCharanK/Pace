@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "Why celebrities deny having had cosmetic procedures done",
-        "The rising popularity, risks and realities of eyelid surgery",
-        "How to treat dry eyes and swelling after facial surgery",
-        "The soaring cost of weight-loss drugs and their side effects"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "It covers growing blepharoplasty demand along with its risks, limits and what patients should consider."
-    },
-    {
-      "q": "In 2022, eyelid surgery replaced which procedure as the most popular facial cosmetic surgery?",
-      "options": [
-        "Facelift",
-        "Botox injections",
-        "Brow lift",
-        "Rhinoplasty"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Blepharoplasty replaced rhinoplasty, the nose job, as the most popular facial cosmetic surgery."
-    },
-    {
-      "q": "What does Dr. Kazim ask younger patients to gauge whether they are ready?",
-      "options": [
-        "Whether they have already tried Botox or fillers",
-        "Whether their budget covers possible revision surgery",
-        "How long they have been thinking about the surgery",
-        "Whether they have recently lost weight with medication"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "A long time considering it suggests they weighed the risks and are not acting impulsively."
-    },
-    {
-      "q": "How long did Dr. Patel recommend people wait after significant weight loss before an aesthetic procedure?",
-      "options": [
-        "At least three months",
-        "At least one month",
-        "At least two years",
-        "At least six months"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He recommended waiting at least six months after significant weight loss."
-    },
-    {
-      "q": "What would the article's experts most likely say about before-and-after photos online?",
-      "options": [
-        "They show typical outcomes for the average patient",
-        "They are the best guide to the results you can expect",
-        "They are reliable whenever they come from celebrities",
-        "They may be edited and set unrealistic expectations"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Dr. Basu said online photos can be digitally enhanced or AI-manipulated, leading to unrealistic expectations."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "Why celebrities deny having had cosmetic procedures done",
+    "The rising popularity, risks and realities of eyelid surgery",
+    "How to treat dry eyes and swelling after facial surgery",
+    "The soaring cost of weight-loss drugs and their side effects"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "It covers growing blepharoplasty demand along with its risks, limits and what patients should consider."
+  },
+  {
+   "q": "In 2022, eyelid surgery replaced which procedure as the most popular facial cosmetic surgery?",
+   "options": [
+    "Facelift",
+    "Botox injections",
+    "Brow lift",
+    "Rhinoplasty"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Blepharoplasty replaced rhinoplasty, the nose job, as the most popular facial cosmetic surgery."
+  },
+  {
+   "q": "What does Dr. Kazim ask younger patients to gauge whether they are ready?",
+   "options": [
+    "Whether they have already tried Botox or fillers",
+    "Whether their budget covers possible revision surgery",
+    "How long they have been thinking about the surgery",
+    "Whether they have recently lost weight with medication"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "A long time considering it suggests they weighed the risks and are not acting impulsively."
+  },
+  {
+   "q": "How long did Dr. Patel recommend people wait after significant weight loss before an aesthetic procedure?",
+   "options": [
+    "At least three months",
+    "At least one month",
+    "At least two years",
+    "At least six months"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "He recommended waiting at least six months after significant weight loss."
+  },
+  {
+   "q": "What would the article's experts most likely say about before-and-after photos online?",
+   "options": [
+    "They show typical outcomes for the average patient",
+    "They are the best guide to the results you can expect",
+    "They are reliable whenever they come from celebrities",
+    "They may be edited and set unrealistic expectations"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Dr. Basu said online photos can be digitally enhanced or AI-manipulated, leading to unrealistic expectations."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "How Apple designed the Macintosh after two visits to PARC",
-        "The Xerox Alto, an influential but unsuccessful early GUI computer",
-        "The history of the computer mouse from SRI to the ball mouse",
-        "How Xerox built and sold its Star office system for $100,000"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "The passage covers the Alto's history, influence and architecture, noting it did not succeed commercially but influenced later systems."
-    },
-    {
-      "q": "About how many Alto systems were produced in total?",
-      "options": [
-        "About 30",
-        "About 500",
-        "About 1,000",
-        "About 2,000"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Total production was about 2,000 systems."
-    },
-    {
-      "q": "Who was awarded the 2009 Turing Award for the Alto's design?",
-      "options": [
-        "Butler Lampson",
-        "Charles P. Thacker",
-        "Alan C. Kay",
-        "Douglas Engelbart"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Charles P. Thacker received the 2009 Turing Award for his pioneering design and realization of the Alto."
-    },
-    {
-      "q": "Why was the Alto's Ethernet designed to run at 3 Mbit/s?",
-      "options": [
-        "The microcode engine could not go faster and still run display, disk and refresh",
-        "Xerox wanted it to match the speed of the IBM equipment of the time",
-        "The Alto's three-button mouse could not handle any faster signaling",
-        "The coaxial cables of the era could not reliably carry more than that"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The speed was set because the microcode engine could not go faster and still support video, disk activity and memory refresh."
-    },
-    {
-      "q": "What does the passage suggest about the Alto's impact on Apple?",
-      "options": [
-        "Apple copied its mouse design from the Alto's five-key chord keyset",
-        "Apple bought Xerox's Star design in 1981 and rebranded it as Lisa",
-        "Apple used ideas seen in demonstrations to develop the Lisa and Macintosh",
-        "Apple refused every visit to PARC and designed its GUI alone"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "After Jobs arranged visits to see the Alto in 1979, Apple engineers used the concepts in developing the Lisa and Macintosh."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "How Apple designed the Macintosh after two visits to PARC",
+    "The Xerox Alto, an influential but unsuccessful early GUI computer",
+    "The history of the computer mouse from SRI to the ball mouse",
+    "How Xerox built and sold its Star office system for $100,000"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "The passage covers the Alto's history, influence and architecture, noting it did not succeed commercially but influenced later systems."
+  },
+  {
+   "q": "About how many Alto systems were produced in total?",
+   "options": [
+    "About 30",
+    "About 500",
+    "About 1,000",
+    "About 2,000"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Total production was about 2,000 systems."
+  },
+  {
+   "q": "Who was awarded the 2009 Turing Award for the Alto's design?",
+   "options": [
+    "Butler Lampson",
+    "Charles P. Thacker",
+    "Alan C. Kay",
+    "Douglas Engelbart"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Charles P. Thacker received the 2009 Turing Award for his pioneering design and realization of the Alto."
+  },
+  {
+   "q": "Why was the Alto's Ethernet designed to run at 3 Mbit/s?",
+   "options": [
+    "The microcode engine could not go faster and still run display, disk and refresh",
+    "Xerox wanted it to match the speed of the IBM equipment of the time",
+    "The Alto's three-button mouse could not handle any faster signaling",
+    "The coaxial cables of the era could not reliably carry more than that"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The speed was set because the microcode engine could not go faster and still support video, disk activity and memory refresh."
+  },
+  {
+   "q": "What does the passage suggest about the Alto's impact on Apple?",
+   "options": [
+    "Apple copied its mouse design from the Alto's five-key chord keyset",
+    "Apple bought Xerox's Star design in 1981 and rebranded it as Lisa",
+    "Apple used ideas seen in demonstrations to develop the Lisa and Macintosh",
+    "Apple refused every visit to PARC and designed its GUI alone"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "After Jobs arranged visits to see the Alto in 1979, Apple engineers used the concepts in developing the Lisa and Macintosh."
+  }
+ ]
 }

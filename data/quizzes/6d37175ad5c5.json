@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "Franklin's time working in Pennsylvania's printing offices",
-        "The history of Bunyan's Pilgrim's Progress and its translations",
-        "Franklin's career as a sailor and his first voyage to London",
-        "Franklin's journey to Philadelphia and his hardships on the way"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "Franklin narrates the difficult trip by boat and on foot from New York toward Philadelphia."
-    },
-    {
-      "q": "What book did the drunken Dutchman ask Franklin to dry?",
-      "options": [
-        "Robinson Crusoe",
-        "Pamela",
-        "Pilgrim's Progress",
-        "A Dutch Bible"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "It was Bunyan's Pilgrim's Progress, in Dutch."
-    },
-    {
-      "q": "How long was Franklin on the water crossing to Amboy?",
-      "options": [
-        "Two days",
-        "Ten hours",
-        "Twelve hours",
-        "Thirty hours"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He had been thirty hours on the water without food or drink but filthy rum."
-    },
-    {
-      "q": "How did Franklin treat his fever?",
-      "options": [
-        "Rested in bed for several days",
-        "Took rum and sweated overnight",
-        "Saw a physician at Amboy",
-        "Drank cold water plentifully"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Having read that cold water was good for a fever, he drank it plentifully and sweated it out."
-    },
-    {
-      "q": "Why did people suspect Franklin on his walk to Burlington?",
-      "options": [
-        "He looked so miserable they took him for a runaway servant",
-        "He was seen buying gingerbread without enough money to pay",
-        "He carried a chest that was thought to be stolen goods",
-        "He was a stranger who kept asking about boats to Burlington"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "He looked so miserable that he was suspected of being a runaway servant."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "Franklin's time working in Pennsylvania's printing offices",
+    "The history of Bunyan's Pilgrim's Progress and its translations",
+    "Franklin's career as a sailor and his first voyage to London",
+    "Franklin's journey to Philadelphia and his hardships on the way"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "Franklin narrates the difficult trip by boat and on foot from New York toward Philadelphia."
+  },
+  {
+   "q": "What book did the drunken Dutchman ask Franklin to dry?",
+   "options": [
+    "Robinson Crusoe",
+    "Pamela",
+    "Pilgrim's Progress",
+    "A Dutch Bible"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "It was Bunyan's Pilgrim's Progress, in Dutch."
+  },
+  {
+   "q": "When did Franklin arrive at Philadelphia?",
+   "options": [
+    "Early Sunday morning",
+    "Late Saturday night",
+    "Monday afternoon",
+    "Saturday morning"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He and the company arriv'd about eight or nine o'clock on the Sunday morning and landed at the Market-street wharf."
+  },
+  {
+   "q": "How did Franklin treat his fever?",
+   "options": [
+    "Rested in bed for several days",
+    "Took rum and sweated overnight",
+    "Saw a physician at Amboy",
+    "Drank cold water plentifully"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Having read that cold water was good for a fever, he drank it plentifully and sweated it out."
+  },
+  {
+   "q": "Why did people suspect Franklin on his walk to Burlington?",
+   "options": [
+    "He looked so miserable they took him for a runaway servant",
+    "He was seen buying gingerbread without enough money to pay",
+    "He carried a chest that was thought to be stolen goods",
+    "He was a stranger who kept asking about boats to Burlington"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "He looked so miserable that he was suspected of being a runaway servant."
+  }
+ ]
 }

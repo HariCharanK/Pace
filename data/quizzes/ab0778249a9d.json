@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "How families can reduce their risk of catching seasonal flu viruses",
-        "Why athletes in their prime sometimes die of sudden heart attacks",
-        "How biomarkers are found, including cell villages for vulnerability markers",
-        "How the FDA came to approve the first A1c-based diabetes diagnostic"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "It explains biomarkers and the author's cell village method for finding genetic biomarkers."
-    },
-    {
-      "q": "In which decade did scientists first see unusually high protein levels in diabetics' blood, leading to the A1c test?",
-      "options": [
-        "1940s",
-        "2000s",
-        "1980s",
-        "1960s"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The A1c test's origins date to the 1960s; the FDA approved it in 2013."
-    },
-    {
-      "q": "What is a 'cell village'?",
-      "options": [
-        "A network of clinics that share patient blood test data",
-        "A public database of genetic variants linked to disease",
-        "Stem cell-derived cells from many people pooled in one dish",
-        "A lab facility for growing bacteria under controlled conditions"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The author pools brain cells from dozens to hundreds of people in one dish and uses their genomes as barcodes."
-    },
-    {
-      "q": "What range of Zika infection did they see across 40 people's cells?",
-      "options": [
-        "Between 20% and 80%",
-        "Under 1% to over 99%",
-        "Always about 50%",
-        "Between 10% and 50%"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "For some fewer than 1% of cells were infected, for others more than 99%."
-    },
-    {
-      "q": "What is the author's likely view of traditional cell studies with few donors?",
-      "options": [
-        "They are unnecessary since GWAS suffices",
-        "They are more reliable than cell villages",
-        "They are cheaper and therefore better",
-        "They can't capture natural human diversity"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Small donor numbers cannot capture diversity or explain why an exposure sickens one person but not another."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "How families can reduce their risk of catching seasonal flu viruses",
+    "Why athletes in their prime sometimes die of sudden heart attacks",
+    "How biomarkers are found, including cell villages for vulnerability markers",
+    "How the FDA came to approve the first A1c-based diabetes diagnostic"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "It explains biomarkers and the author's cell village method for finding genetic biomarkers."
+  },
+  {
+   "q": "In which decade did scientists first see unusually high protein levels in diabetics' blood, leading to the A1c test?",
+   "options": [
+    "1940s",
+    "2000s",
+    "1980s",
+    "1960s"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "The A1c test's origins date to the 1960s; the FDA approved it in 2013."
+  },
+  {
+   "q": "What is a 'cell village'?",
+   "options": [
+    "A network of clinics that share patient blood test data",
+    "A public database of genetic variants linked to disease",
+    "Stem cell-derived cells from many people pooled in one dish",
+    "A lab facility for growing bacteria under controlled conditions"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The author pools brain cells from dozens to hundreds of people in one dish and uses their genomes as barcodes."
+  },
+  {
+   "q": "What range of Zika infection did they see across 40 people's cells?",
+   "options": [
+    "Between 20% and 80%",
+    "Under 1% to over 99%",
+    "Always about 50%",
+    "Between 10% and 50%"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "For some fewer than 1% of cells were infected, for others more than 99%."
+  },
+  {
+   "q": "What is the author's likely view of traditional cell studies with few donors?",
+   "options": [
+    "They are unnecessary since GWAS suffices",
+    "They are more reliable than cell villages",
+    "They are cheaper and therefore better",
+    "They can't capture natural human diversity"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Small donor numbers cannot capture diversity or explain why an exposure sickens one person but not another."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article mainly about?",
-      "options": [
-        "What protections exist for crypto customers after the Binance hack",
-        "How Binance's founder Changpeng Zhao went to prison in 2023",
-        "How Robinhood and Coinbase keep customer crypto in cold storage",
-        "How the Bitcoin price fell 30 percent after the Binance breach"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "It explains the hack and notes few consumer protections exist for crypto."
-    },
-    {
-      "q": "How much did the criminals take from Binance?",
-      "options": [
-        "$1 billion",
-        "$4.3 billion",
-        "$800 million",
-        "$6.3 billion"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "Criminals made off with $6.3 billion in digital coins."
-    },
-    {
-      "q": "What is SAFU?",
-      "options": [
-        "A government insurance program",
-        "Binance's own emergency fund for users",
-        "A crypto exchange regulator",
-        "Coinbase's cold storage system"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "The secure asset fund for users is an emergency fund Binance set up itself."
-    },
-    {
-      "q": "What does SIPC generally cover per customer?",
-      "options": [
-        "Up to $250,000, including $100,000 cash",
-        "Up to $1 million, including $500,000 cash",
-        "Up to $500,000, including $250,000 cash",
-        "Up to $100,000 for stocks and crypto alike"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "SIPC covers up to $500,000 with a $250,000 cash limit."
-    },
-    {
-      "q": "What does the article suggest about the chance of a government bailout?",
-      "options": [
-        "It is guaranteed by law through federal deposit insurance",
-        "The CFTC has promised one if Binance cannot repay customers",
-        "Bailouts are barred by the Investor Protection Act of 1970",
-        "None is required, but Trump's crypto stake leaves it possible"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "The CFTC says there is no obligation, but a friendly regulator or politicians might help anyway."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article mainly about?",
+   "options": [
+    "What protections exist for crypto customers after the Binance hack",
+    "How Binance's founder Changpeng Zhao went to prison in 2023",
+    "How Robinhood and Coinbase keep customer crypto in cold storage",
+    "How the Bitcoin price fell 30 percent after the Binance breach"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "It explains the hack and notes few consumer protections exist for crypto."
+  },
+  {
+   "q": "How much did the criminals take from Binance?",
+   "options": [
+    "$1 billion",
+    "$4.3 billion",
+    "$800 million",
+    "$6.3 billion"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "Criminals made off with $6.3 billion in digital coins."
+  },
+  {
+   "q": "What is SAFU?",
+   "options": [
+    "A government insurance program",
+    "Binance's own emergency fund for users",
+    "A crypto exchange regulator",
+    "Coinbase's cold storage system"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The secure asset fund for users is an emergency fund Binance set up itself."
+  },
+  {
+   "q": "What recent action did President Trump take regarding Binance's founder?",
+   "options": [
+    "He ordered a federal bailout of Binance",
+    "He appointed him to a crypto advisory council",
+    "He pardoned him last year",
+    "He signed sanctions restricting Binance's operations"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The passage says Mr. Trump pardoned Zhao last year."
+  },
+  {
+   "q": "What does the article suggest about the chance of a government bailout?",
+   "options": [
+    "It is guaranteed by law through federal deposit insurance",
+    "The CFTC has promised one if Binance cannot repay customers",
+    "Bailouts are barred by the Investor Protection Act of 1970",
+    "None is required, but Trump's crypto stake leaves it possible"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "The CFTC says there is no obligation, but a friendly regulator or politicians might help anyway."
+  }
+ ]
 }

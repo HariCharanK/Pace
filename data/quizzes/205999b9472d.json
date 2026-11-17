@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the author's main argument about the Galleri test?",
-      "options": [
-        "It is a proven breakthrough that should replace current screenings",
-        "It is promising, but unproven at reducing cancer deaths or advanced cancer",
-        "It is so inaccurate that the FDA should reject it outright",
-        "It should be restricted to adults under 50 until more trials finish"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "The author says the test shows promise but has not been shown to lower the risk of death from cancer or prevent advanced cancer."
-    },
-    {
-      "q": "What is the Galleri test's false positive rate?",
-      "options": [
-        "About 0.5%",
-        "About 5%",
-        "About 10%",
-        "About 21%"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Only about 0.5% of people, one in every 200, are incorrectly identified as having cancer."
-    },
-    {
-      "q": "What was the test's detection rate for early-stage cancers over three years of screening?",
-      "options": [
-        "About 60%",
-        "About 52%",
-        "About 31%",
-        "About 21%"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "The detection rate for early-stage cancers was only 21%, meaning almost 80% were missed."
-    },
-    {
-      "q": "What is the out-of-pocket cost of the Galleri test currently?",
-      "options": [
-        "$149",
-        "$495",
-        "$949",
-        "$1,949"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The article states the out-of-pocket cost is currently US$949."
-    },
-    {
-      "q": "What would the author most likely advise someone who decides to get Galleri?",
-      "options": [
-        "Drop mammograms and colonoscopies because Galleri covers over 50 cancers",
-        "Pause all routine cancer screening until the FDA announces its decision",
-        "Rely on Galleri only for lung and pancreas cancers, skipping other screens",
-        "Keep up with recommended screenings for colon, breast, cervical and lung cancers"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "The author stresses staying current with recommended screenings even if you get the Galleri test."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the author's main argument about the Galleri test?",
+   "options": [
+    "It is a proven breakthrough that should replace current screenings",
+    "It is promising, but unproven at reducing cancer deaths or advanced cancer",
+    "It is so inaccurate that the FDA should reject it outright",
+    "It should be restricted to adults under 50 until more trials finish"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "The author says the test shows promise but has not been shown to lower the risk of death from cancer or prevent advanced cancer."
+  },
+  {
+   "q": "What is the Galleri test's false positive rate?",
+   "options": [
+    "About 0.5%",
+    "About 5%",
+    "About 10%",
+    "About 21%"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Only about 0.5% of people, one in every 200, are incorrectly identified as having cancer."
+  },
+  {
+   "q": "What does the Galleri test detect in the blood to indicate possible cancer?",
+   "options": [
+    "Protein markers produced specifically by tumor cells",
+    "Complete circulating tumor cells rather than fragments",
+    "DNA fragments with cancer-associated methylation markers",
+    "Elevated hormone levels linked to tumor growth"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The article explains Galleri looks for DNA fragments with methylation markers in the blood."
+  },
+  {
+   "q": "Which cancers does the author say have recommended screening tests proven to detect early-stage cancer and lower deaths?",
+   "options": [
+    "Colon, breast, cervical and lung cancers",
+    "Colon, breast, prostate and skin cancers",
+    "Breast, cervical, prostate and liver cancers",
+    "Lung, pancreas, ovarian and liver cancers"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The author lists colon, breast, cervical and lung cancer screenings as proven to detect early-stage cancer and lower the risk of dying from cancer."
+  },
+  {
+   "q": "What would the author most likely advise someone who decides to get Galleri?",
+   "options": [
+    "Drop mammograms and colonoscopies because Galleri covers over 50 cancers",
+    "Pause all routine cancer screening until the FDA announces its decision",
+    "Rely on Galleri only for lung and pancreas cancers, skipping other screens",
+    "Keep up with recommended screenings for colon, breast, cervical and lung cancers"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "The author stresses staying current with recommended screenings even if you get the Galleri test."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "A singer writing corridos about women who fought back against attackers",
-        "A Grammy-nominated producer reviving mariachi bands for tourists",
-        "A Oaxaca conference campaigning for Mexico's first woman president",
-        "An Indigenous girls' brass band touring churches for a Netflix show"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "Vivir Quintana writes corridos about women who fought back, driven by her friend's murder."
-    },
-    {
-      "q": "What did Quintana want to be before a music teacher heard her sing at 11?",
-      "options": [
-        "A teacher",
-        "A pianist",
-        "A chemist",
-        "A doctor"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "She dreamed of becoming a chemist."
-    },
-    {
-      "q": "How did the newspaper describe the death of Quintana's friend Sandra Rivera?",
-      "options": [
-        "Students Die After Love Pact",
-        "Abduction Ends in Tragedy",
-        "Couple Missing Three Days",
-        "Teacher Found on Highway"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The headline read 'Students Die After Love Pact', though there was no love pact."
-    },
-    {
-      "q": "How long did it take Quintana to write 'Canción Sin Miedo' after Mon Laferte asked her?",
-      "options": [
-        "One week",
-        "One hour",
-        "Three days",
-        "Nine hours"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "She locked herself in her studio and came out nine hours later."
-    },
-    {
-      "q": "Why does Quintana likely write corridos about women who killed their attackers?",
-      "options": [
-        "She was once imprisoned for defending herself against an attacker",
-        "She wants to challenge the stigma women face for fighting back",
-        "She hopes to win over the drug traffickers who dominate corridos",
-        "She plans to run for Congress on a platform of prison reform"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "She said women who kill are stigmatized as 'murderous women' and she wanted to use music to do something about it."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "A singer writing corridos about women who fought back against attackers",
+    "A Grammy-nominated producer reviving mariachi bands for tourists",
+    "A Oaxaca conference campaigning for Mexico's first woman president",
+    "An Indigenous girls' brass band touring churches for a Netflix show"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "Vivir Quintana writes corridos about women who fought back, driven by her friend's murder."
+  },
+  {
+   "q": "What did Quintana want to be before a music teacher heard her sing at 11?",
+   "options": [
+    "A teacher",
+    "A pianist",
+    "A chemist",
+    "A doctor"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "She dreamed of becoming a chemist."
+  },
+  {
+   "q": "What happened to Yakiri Rubio after she killed her attacker?",
+   "options": [
+    "She was arrested after reporting the attack and later acquitted",
+    "She was arrested, convicted of murder and kept in prison",
+    "She was never charged and was celebrated by the public",
+    "She was arrested, her case was reclassified and she was released"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "She was arrested after defending herself, her case was reclassified as excessive force in self-defense, and she was eventually released and acquitted."
+  },
+  {
+   "q": "What did Quintana tell the Indigenous girls when rehearsing the song 'Dolerás'?",
+   "options": [
+    "To focus on precise technique and avoid showing personal feelings",
+    "To play with emotion and pain to honor those who are no longer with us",
+    "To change the music to be more upbeat for the Netflix scene",
+    "To add improvisation and make the piece less tied to the story"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "She urged the girls to play with emotion and pain to honor those who are no longer with us."
+  },
+  {
+   "q": "Why does Quintana likely write corridos about women who killed their attackers?",
+   "options": [
+    "She was once imprisoned for defending herself against an attacker",
+    "She wants to challenge the stigma women face for fighting back",
+    "She hopes to win over the drug traffickers who dominate corridos",
+    "She plans to run for Congress on a platform of prison reform"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "She said women who kill are stigmatized as 'murderous women' and she wanted to use music to do something about it."
+  }
+ ]
 }

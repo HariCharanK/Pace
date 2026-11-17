@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the central message of Jobs' three stories?",
-      "options": [
-        "Follow your curiosity and heart, love your work, and don't waste limited time",
-        "Drop out of school early, since formal education blocks real creativity",
-        "Build a company quickly, then hand control to professional managers",
-        "Trust experts and doctors, avoid risk, and secure a stable career first"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "The stories on connecting dots, love and loss, and death all urge following your heart and not living someone else's life."
-    },
-    {
-      "q": "How did Jobs get food after dropping out of Reed?",
-      "options": [
-        "He sold hand-drawn calligraphy posters",
-        "He borrowed from his parents each week",
-        "He returned Coke bottles for five-cent deposits",
-        "He worked in the college cafeteria"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He returned Coke bottles for the five-cent deposits and walked seven miles for a weekly meal at the Hare Krishna temple."
-    },
-    {
-      "q": "Why did his biological mother finally sign the adoption papers?",
-      "options": [
-        "His parents promised he would go to college",
-        "She was paid by his adoptive parents",
-        "A court ordered her to sign",
-        "The lawyer and his wife backed out"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "She relented when his parents promised that he would go to college."
-    },
-    {
-      "q": "How old was Jobs when he was fired from Apple?",
-      "options": [
-        "35",
-        "20",
-        "25",
-        "30"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "He says he had just turned 30 when he was out of Apple, a year after the Macintosh was released."
-    },
-    {
-      "q": "What would Jobs most likely say about being fired from Apple?",
-      "options": [
-        "It was ultimately good, freeing him to be creative again",
-        "It was a painful mistake that took years of therapy to overcome",
-        "It showed the board had been right to doubt his management",
-        "It made him lose interest in computers and turn to teaching"
-      ],
-      "answer": 0,
-      "type": "inference",
-      "explain": "He called it the best thing that could have happened, leading to NeXT, Pixar and his return to Apple."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the central message of Jobs' three stories?",
+   "options": [
+    "Follow your curiosity and heart, love your work, and don't waste limited time",
+    "Drop out of school early, since formal education blocks real creativity",
+    "Build a company quickly, then hand control to professional managers",
+    "Trust experts and doctors, avoid risk, and secure a stable career first"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "The stories on connecting dots, love and loss, and death all urge following your heart and not living someone else's life."
+  },
+  {
+   "q": "How did Jobs get food after dropping out of Reed?",
+   "options": [
+    "He sold hand-drawn calligraphy posters",
+    "He borrowed from his parents each week",
+    "He returned Coke bottles for five-cent deposits",
+    "He worked in the college cafeteria"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "He returned Coke bottles for the five-cent deposits and walked seven miles for a weekly meal at the Hare Krishna temple."
+  },
+  {
+   "q": "Why did his biological mother finally sign the adoption papers?",
+   "options": [
+    "His parents promised he would go to college",
+    "She was paid by his adoptive parents",
+    "A court ordered her to sign",
+    "The lawyer and his wife backed out"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "She relented when his parents promised that he would go to college."
+  },
+  {
+   "q": "What happened after Apple hired a manager to run the company with Jobs?",
+   "options": [
+    "The board sided with the other executive and he was fired",
+    "He was pushed out when the board backed the new manager",
+    "He sold his shares and left the company voluntarily",
+    "He stayed on by reconciling differences with the board"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Jobs says their visions diverged, the board sided with the other person, and he was out of Apple."
+  },
+  {
+   "q": "What would Jobs most likely say about being fired from Apple?",
+   "options": [
+    "It was ultimately good, freeing him to be creative again",
+    "It was a painful mistake that took years of therapy to overcome",
+    "It showed the board had been right to doubt his management",
+    "It made him lose interest in computers and turn to teaching"
+   ],
+   "answer": 0,
+   "type": "inference",
+   "explain": "He called it the best thing that could have happened, leading to NeXT, Pixar and his return to Apple."
+  }
+ ]
 }

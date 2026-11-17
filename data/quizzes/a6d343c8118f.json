@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "The history of rinderpest and its eradication in 2011",
-        "The discovery of the first vaccine in the 18th century",
-        "The Plague of Athens and how Thucydides described it",
-        "The history of smallpox and its impact before eradication"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "It traces smallpox epidemics across regions and eras up to eradication in 1980."
-    },
-    {
-      "q": "When did the WHO certify smallpox eradication?",
-      "options": [
-        "1950s",
-        "2011",
-        "May 1980",
-        "1967"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "The WHO certified global eradication in May 1980."
-    },
-    {
-      "q": "What did Rhazes do?",
-      "options": [
-        "First told smallpox apart from measles and chickenpox",
-        "Wrote the Sushruta Samhita describing pustules",
-        "Gave the first eyewitness account in Western Europe",
-        "Created the goddess Sitala as the disease's personification"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The Persian physician Rhazes first differentiated them in the 9th century."
-    },
-    {
-      "q": "What did the Franco-Prussian War lead to?",
-      "options": [
-        "The eradication of smallpox among German civilians in 1875",
-        "Mandatory vaccination of every soldier in the French army",
-        "A smallpox pandemic of 1870-1875 claiming 500,000 lives",
-        "A second Plague of Cyprian across Prussia and Italy"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "Unvaccinated French soldiers spread the disease, causing 500,000 deaths."
-    },
-    {
-      "q": "What does the passage imply about identifying ancient epidemics as smallpox?",
-      "options": [
-        "It is impossible for any epidemic before the 16th century",
-        "It is settled for every plague that Galen described",
-        "It is always confirmed by evidence from Egyptian mummies",
-        "It is often uncertain, since records are not detailed enough"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Some historians believe many epidemics were smallpox, but records are not detailed enough for a definite diagnosis."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "The history of rinderpest and its eradication in 2011",
+    "The discovery of the first vaccine in the 18th century",
+    "The Plague of Athens and how Thucydides described it",
+    "The history of smallpox and its impact before eradication"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "It traces smallpox epidemics across regions and eras up to eradication in 1980."
+  },
+  {
+   "q": "What effect did smallpox have on indigenous populations where it was non-native?",
+   "options": [
+    "They suffered little harm and kept their societies largely intact, avoiding conquest",
+    "They were rapidly and greatly reduced, helping pave the way for conquest and colonization",
+    "They acquired widespread immunity quickly and were able to resist foreign takeover",
+    "They experienced population stability while trade and politics shifted after contact"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The passage says indigenous populations in regions where smallpox was non-native were rapidly and greatly reduced, which helped pave the way for conquest and colonization."
+  },
+  {
+   "q": "What did Rhazes do?",
+   "options": [
+    "First told smallpox apart from measles and chickenpox",
+    "Wrote the Sushruta Samhita describing pustules",
+    "Gave the first eyewitness account in Western Europe",
+    "Created the goddess Sitala as the disease's personification"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The Persian physician Rhazes first differentiated them in the 9th century."
+  },
+  {
+   "q": "What did the Franco-Prussian War lead to?",
+   "options": [
+    "The eradication of smallpox among German civilians in 1875",
+    "Mandatory vaccination of every soldier in the French army",
+    "A smallpox pandemic of 1870-1875 claiming 500,000 lives",
+    "A second Plague of Cyprian across Prussia and Italy"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Unvaccinated French soldiers spread the disease, causing 500,000 deaths."
+  },
+  {
+   "q": "What does the passage imply about identifying ancient epidemics as smallpox?",
+   "options": [
+    "It is impossible for any epidemic before the 16th century",
+    "It is settled for every plague that Galen described",
+    "It is always confirmed by evidence from Egyptian mummies",
+    "It is often uncertain, since records are not detailed enough"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Some historians believe many epidemics were smallpox, but records are not detailed enough for a definite diagnosis."
+  }
+ ]
 }

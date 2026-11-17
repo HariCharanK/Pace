@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What does Parkinson's Law in its best-known sense say?",
-      "options": [
-        "Workers are paid by hours",
-        "Meetings should be short",
-        "Committees always shrink over time",
-        "Work expands to fill the time available"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "The commonly used personal version is that work expands to fill the time available."
-    },
-    {
-      "q": "Where was Parkinson's essay first published?",
-      "options": [
-        "Harvard Business Review",
-        "The Economist",
-        "The Guardian",
-        "The Times"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "It was published in The Economist in 1955."
-    },
-    {
-      "q": "By roughly what percentage per year did Parkinson say bureaucracies grow?",
-      "options": [
-        "1 to 2%",
-        "10 to 15%",
-        "5 to 7%",
-        "2 to 3%"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He noted employment rose 5 to 7% per year regardless of work."
-    },
-    {
-      "q": "What committee size did Parkinson suggest makes a body manifestly inefficient?",
-      "options": [
-        "Between 8.5 and 11.2",
-        "Between 19.9 and 22.4",
-        "Between 5.1 and 7.9",
-        "Between 30.5 and 35.0"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Exceeding a number between 19.9 and 22.4 makes a committee inefficient."
-    },
-    {
-      "q": "What does the Admiralty and Colonial Office example imply?",
-      "options": [
-        "The two offices merged early to reduce staff costs",
-        "Staff shrank in proportion to the fall in colonies",
-        "Staff grew even as ships and colonies declined",
-        "Work grew with the empire, so staff grew too"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "Their staff grew even though ships and colonies were declining, showing growth independent of work."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What does Parkinson's Law in its best-known sense say?",
+   "options": [
+    "Workers are paid by hours",
+    "Meetings should be short",
+    "Committees always shrink over time",
+    "Work expands to fill the time available"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "The commonly used personal version is that work expands to fill the time available."
+  },
+  {
+   "q": "Where was Parkinson's essay first published?",
+   "options": [
+    "Harvard Business Review",
+    "The Economist",
+    "The Guardian",
+    "The Times"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "It was published in The Economist in 1955."
+  },
+  {
+   "q": "Which two forces did Parkinson give to explain bureaucratic staff growth?",
+   "options": [
+    "Officials want to multiply subordinates; officials make work for each other",
+    "Officials want to multiply rivals; officials reduce work for each other",
+    "Officials avoid promoting subordinates; officials streamline each other's tasks",
+    "Officials seek fewer subordinates; officials centralize work to reduce jobs"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "He explained growth by (1) officials wanting to multiply subordinates and (2) officials making work for each other."
+  },
+  {
+   "q": "What minimal size of a state's most powerful body did Parkinson note most often?",
+   "options": [
+    "Three members",
+    "Five members",
+    "Twenty members",
+    "Fifty members"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "Parkinson noted that the minimal size was most often five members."
+  },
+  {
+   "q": "What does the Admiralty and Colonial Office example imply?",
+   "options": [
+    "The two offices merged early to reduce staff costs",
+    "Staff shrank in proportion to the fall in colonies",
+    "Staff grew even as ships and colonies declined",
+    "Work grew with the empire, so staff grew too"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "Their staff grew even though ships and colonies were declining, showing growth independent of work."
+  }
+ ]
 }

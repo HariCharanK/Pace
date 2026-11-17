@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the main point of the article?",
-      "options": [
-        "Hypermobile Ehlers-Danlos syndrome is easy to diagnose with a blood test but has no real treatment",
-        "Social media has led many people to claim symptoms of disorders that experts consider mostly imaginary",
-        "Hypermobile Ehlers-Danlos syndrome is hard to diagnose but treatable, and patients often find answers online",
-        "Hypermobile joints signal a harmless trait, and doctors should stop testing athletes for disorders"
-      ],
-      "answer": 2,
-      "type": "main_idea",
-      "explain": "The article follows Ivey's long road to an hEDS diagnosis, helped by TikTok, and notes treatments that work."
-    },
-    {
-      "q": "How many people were waiting to be evaluated at Dr. Knight's clinic at last count?",
-      "options": [
-        "400",
-        "1,000",
-        "4,000",
-        "40,000"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "At last count there were 4,000 people waiting at Dr. Knight's clinic."
-    },
-    {
-      "q": "What makes hEDS unusual among the 13 E.D.S. subtypes?",
-      "options": [
-        "It is the only one that is not inherited",
-        "It is the only one without a definitive genetic test",
-        "It is the only one that affects the skin",
-        "It is the only one without symptoms in childhood"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "hEDS is the only subtype without a definitive genetic test, so diagnosis relies on exams and ruling out other causes."
-    },
-    {
-      "q": "After treatment, what did Ivey estimate her pain level had dropped to?",
-      "options": [
-        "From 7 to about 3 or 4",
-        "From 9 to about 5",
-        "From 7 to about 1",
-        "From 10 to about 6"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Her pain had been a 7 out of 10 and is now close to a 3 or 4."
-    },
-    {
-      "q": "What view do the experts quoted take on the online hEDS community?",
-      "options": [
-        "It spreads symptoms through social contagion",
-        "It mostly leads to overdiagnosis",
-        "It should replace clinical exams",
-        "It helps people name real, long-standing symptoms"
-      ],
-      "answer": 3,
-      "type": "inference",
-      "explain": "Gensemer says people are finding words for things wrong their whole life, and experts call the contagion idea a misconception."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the main point of the article?",
+   "options": [
+    "Hypermobile Ehlers-Danlos syndrome is easy to diagnose with a blood test but has no real treatment",
+    "Social media has led many people to claim symptoms of disorders that experts consider mostly imaginary",
+    "Hypermobile Ehlers-Danlos syndrome is hard to diagnose but treatable, and patients often find answers online",
+    "Hypermobile joints signal a harmless trait, and doctors should stop testing athletes for disorders"
+   ],
+   "answer": 2,
+   "type": "main_idea",
+   "explain": "The article follows Ivey's long road to an hEDS diagnosis, helped by TikTok, and notes treatments that work."
+  },
+  {
+   "q": "What early symptom did Ms. Ivey have that recurred for months?",
+   "options": [
+    "Vomited every morning for months",
+    "Had daily severe headaches for months",
+    "Experienced frequent joint dislocations for months",
+    "Suffered ongoing fevers and chills for months"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "The passage says she vomited every morning for months, which was one of her unexplained symptoms."
+  },
+  {
+   "q": "What makes hEDS unusual among the 13 E.D.S. subtypes?",
+   "options": [
+    "It is the only one that is not inherited",
+    "It is the only one without a definitive genetic test",
+    "It is the only one that affects the skin",
+    "It is the only one without symptoms in childhood"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "hEDS is the only subtype without a definitive genetic test, so diagnosis relies on exams and ruling out other causes."
+  },
+  {
+   "q": "After treatment, what did Ivey estimate her pain level had dropped to?",
+   "options": [
+    "From 7 to about 3 or 4",
+    "From 9 to about 5",
+    "From 7 to about 1",
+    "From 10 to about 6"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Her pain had been a 7 out of 10 and is now close to a 3 or 4."
+  },
+  {
+   "q": "What view do the experts quoted take on the online hEDS community?",
+   "options": [
+    "It spreads symptoms through social contagion",
+    "It mostly leads to overdiagnosis",
+    "It should replace clinical exams",
+    "It helps people name real, long-standing symptoms"
+   ],
+   "answer": 3,
+   "type": "inference",
+   "explain": "Gensemer says people are finding words for things wrong their whole life, and experts call the contagion idea a misconception."
+  }
+ ]
 }

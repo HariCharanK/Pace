@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "How the Black-Scholes model won its creators a Nobel Prize in 1997",
-        "The founding, leveraged strategies and 1998 near-collapse of hedge fund LTCM",
-        "The history of Salomon Brothers' bond desk and Meriwether's resignation",
-        "The rules of the Investment Company Act of 1940 on mutual funds"
-      ],
-      "answer": 1,
-      "type": "main_idea",
-      "explain": "The passage describes how LTCM was founded, how it traded, how it used leverage, and its 1998 bailout."
-    },
-    {
-      "q": "Why did Meriwether choose to start a hedge fund?",
-      "options": [
-        "To keep its trades secret from Bear Stearns and Merrill Lynch",
-        "To raise money exclusively from celebrities and sports figures",
-        "To avoid regulation that applied to vehicles like mutual funds",
-        "To qualify for direct central bank funding during crises"
-      ],
-      "answer": 2,
-      "type": "detail",
-      "explain": "He chose a hedge fund to avoid the financial regulation imposed on traditional vehicles such as mutual funds."
-    },
-    {
-      "q": "What was LTCM's core trade in Treasury bonds?",
-      "options": [
-        "Buy the newly issued 30-year benchmark and short the older bond",
-        "Buy the old benchmark bond and short the newly issued 30-year benchmark",
-        "Buy Japanese government bonds and short every UK gilt outstanding",
-        "Buy S&P 500 equity options and short Treasuries of similar maturity"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "LTCM bought the old 29.75-year bond and sold short the newly issued 30-year benchmark that traded at a premium."
-    },
-    {
-      "q": "What was LTCM's debt-to-equity ratio at the start of 1998?",
-      "options": [
-        "About 5 to 1",
-        "Over 25 to 1",
-        "About 10 to 1",
-        "Over 100 to 1"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "With $4.7 billion in equity and over $124.5 billion borrowed, the ratio was over 25 to 1."
-    },
-    {
-      "q": "Why did LTCM need so much leverage?",
-      "options": [
-        "Regulators required hedge funds to borrow against client capital",
-        "Its investors demanded large loans as a condition of their stakes",
-        "Price gaps in its trades were tiny, so returns had to be magnified",
-        "Bear Stearns charged high fees that only leverage could cover"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "The passage says valuation discrepancies were only a few basis points, so leverage was needed to earn significant returns."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "How the Black-Scholes model won its creators a Nobel Prize in 1997",
+    "The founding, leveraged strategies and 1998 near-collapse of hedge fund LTCM",
+    "The history of Salomon Brothers' bond desk and Meriwether's resignation",
+    "The rules of the Investment Company Act of 1940 on mutual funds"
+   ],
+   "answer": 1,
+   "type": "main_idea",
+   "explain": "The passage describes how LTCM was founded, how it traded, how it used leverage, and its 1998 bailout."
+  },
+  {
+   "q": "Why did Meriwether choose to start a hedge fund?",
+   "options": [
+    "To keep its trades secret from Bear Stearns and Merrill Lynch",
+    "To raise money exclusively from celebrities and sports figures",
+    "To avoid regulation that applied to vehicles like mutual funds",
+    "To qualify for direct central bank funding during crises"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "He chose a hedge fund to avoid the financial regulation imposed on traditional vehicles such as mutual funds."
+  },
+  {
+   "q": "What was LTCM's core trade in Treasury bonds?",
+   "options": [
+    "Buy the newly issued 30-year benchmark and short the older bond",
+    "Buy the old benchmark bond and short the newly issued 30-year benchmark",
+    "Buy Japanese government bonds and short every UK gilt outstanding",
+    "Buy S&P 500 equity options and short Treasuries of similar maturity"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "LTCM bought the old 29.75-year bond and sold short the newly issued 30-year benchmark that traded at a premium."
+  },
+  {
+   "q": "What was LTCM's debt-to-equity ratio at the start of 1998?",
+   "options": [
+    "About 5 to 1",
+    "Over 25 to 1",
+    "About 10 to 1",
+    "Over 100 to 1"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "With $4.7 billion in equity and over $124.5 billion borrowed, the ratio was over 25 to 1."
+  },
+  {
+   "q": "Why did LTCM need so much leverage?",
+   "options": [
+    "Regulators required hedge funds to borrow against client capital",
+    "Its investors demanded large loans as a condition of their stakes",
+    "Price gaps in its trades were tiny, so returns had to be magnified",
+    "Bear Stearns charged high fees that only leverage could cover"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "The passage says valuation discrepancies were only a few basis points, so leverage was needed to earn significant returns."
+  }
+ ]
 }

@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the article's main point?",
-      "options": [
-        "Holiday travel is pricier in 2026, but flexibility and creativity can cut costs",
-        "Holiday travel demand has collapsed in 2026, forcing airlines to slash fares widely",
-        "Driving to holiday destinations is now far cheaper than flying for nearly everyone",
-        "Airfares have stabilized after the Iran war, but hotels have become costly"
-      ],
-      "answer": 0,
-      "type": "main_idea",
-      "explain": "Prices are up but there are ways to save through persistence, flexibility and creativity."
-    },
-    {
-      "q": "How did Melissa Cuomo's family of 15 save about $30,000?",
-      "options": [
-        "Booking with a travel agent",
-        "Redeeming accumulated airline miles",
-        "Switching to a Caribbean cruise",
-        "Calling JetBlue for group rates"
-      ],
-      "answer": 3,
-      "type": "detail",
-      "explain": "A group rate for 10 or more got tickets just over $1,000 each."
-    },
-    {
-      "q": "About how much was gas for a 400-mile New York to Pittsburgh round trip, per the article?",
-      "options": [
-        "$134",
-        "$225",
-        "$450",
-        "$100"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Gas for the trip would cost about $134 round trip."
-    },
-    {
-      "q": "According to Points Path, when is the best time to book a Christmas trip?",
-      "options": [
-        "About 14 days before departure",
-        "About 56 days before departure",
-        "About 120 days before departure",
-        "The week of Thanksgiving"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "The best time is about 56 days out, with a low-price window of 33 to 67 days."
-    },
-    {
-      "q": "What does Expedia's quote \"Demand is not disappearing; it is redistributing\" suggest?",
-      "options": [
-        "Travelers are staying home",
-        "Fewer people want to travel",
-        "Travelers are shifting to less-obvious destinations",
-        "Airlines will add flights to small cities"
-      ],
-      "answer": 2,
-      "type": "inference",
-      "explain": "Searches grew most for less-obvious places like Quebec City and San Pedro Sula."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the article's main point?",
+   "options": [
+    "Holiday travel is pricier in 2026, but flexibility and creativity can cut costs",
+    "Holiday travel demand has collapsed in 2026, forcing airlines to slash fares widely",
+    "Driving to holiday destinations is now far cheaper than flying for nearly everyone",
+    "Airfares have stabilized after the Iran war, but hotels have become costly"
+   ],
+   "answer": 0,
+   "type": "main_idea",
+   "explain": "Prices are up but there are ways to save through persistence, flexibility and creativity."
+  },
+  {
+   "q": "How did Melissa Cuomo's family of 15 save about $30,000?",
+   "options": [
+    "Booking with a travel agent",
+    "Redeeming accumulated airline miles",
+    "Switching to a Caribbean cruise",
+    "Calling JetBlue for group rates"
+   ],
+   "answer": 3,
+   "type": "detail",
+   "explain": "A group rate for 10 or more got tickets just over $1,000 each."
+  },
+  {
+   "q": "Which option was the cheapest recent round-trip between New York and Pittsburgh?",
+   "options": [
+    "A nonstop flight taking about an hour and 40 minutes, recently priced around $450",
+    "An Amtrak train taking about nine and a half hours, recently priced around $225",
+    "A FlixBus ride taking roughly nine hours, with round-trip tickets starting around $100",
+    "Driving in an average car taking about six and a half hours, with gas costing around $134"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The FlixBus round-trip ticket was cited at about $100, cheaper than train or flight."
+  },
+  {
+   "q": "According to Points Path, when is the best time to book a Christmas trip?",
+   "options": [
+    "About 14 days before departure",
+    "About 56 days before departure",
+    "About 120 days before departure",
+    "The week of Thanksgiving"
+   ],
+   "answer": 1,
+   "type": "detail",
+   "explain": "The best time is about 56 days out, with a low-price window of 33 to 67 days."
+  },
+  {
+   "q": "What does Expedia's quote \"Demand is not disappearing; it is redistributing\" suggest?",
+   "options": [
+    "Travelers are staying home",
+    "Fewer people want to travel",
+    "Travelers are shifting to less-obvious destinations",
+    "Airlines will add flights to small cities"
+   ],
+   "answer": 2,
+   "type": "inference",
+   "explain": "Searches grew most for less-obvious places like Quebec City and San Pedro Sula."
+  }
+ ]
 }

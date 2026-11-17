@@ -1,65 +1,65 @@
 {
-  "model": "claude (precomputed)",
-  "questions": [
-    {
-      "q": "What is the passage mainly about?",
-      "options": [
-        "Why tech companies are abandoning A.I. data centers after local election losses",
-        "How Texas and Ohio governors plan to ban data centers from all farmland",
-        "How neoclouds are replacing Amazon and Google in data center construction",
-        "Why voter opposition will likely slow, but not stop, data center building"
-      ],
-      "answer": 3,
-      "type": "main_idea",
-      "explain": "Despite strong voter opposition, analysts expect only modest cancellations and continued construction."
-    },
-    {
-      "q": "In how many of 41 local ballot initiatives did citizens vote to limit or prevent data centers?",
-      "options": [
-        "40",
-        "41",
-        "36",
-        "29"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "The passage says citizens voted to limit or prevent data centers in 40 out of 41 local initiatives."
-    },
-    {
-      "q": "What did Bernstein estimate as the more realistic share of future data centers to be canceled?",
-      "options": [
-        "9 percent",
-        "2 to 4 percent",
-        "15 percent",
-        "28 percent"
-      ],
-      "answer": 1,
-      "type": "detail",
-      "explain": "Bernstein said more realistically only 2 to 4 percent of future data centers would be canceled."
-    },
-    {
-      "q": "What did Microsoft's summer polls find about people who oppose data centers?",
-      "options": [
-        "About 70 percent could accept them with protections such as tax revenue",
-        "About 15 percent would accept them only if built by union workers",
-        "About 70 percent wanted them banned from farmland and industrial sites",
-        "About half would accept them if electricity rates were frozen for residents"
-      ],
-      "answer": 0,
-      "type": "detail",
-      "explain": "Roughly 70 percent said they could accept the buildings with protections, while nothing would satisfy about 15 percent."
-    },
-    {
-      "q": "Why are neoclouds seen as more vulnerable than the biggest tech firms?",
-      "options": [
-        "They are barred from building in any state with a moratorium",
-        "They have taken on more debt than the industry giants",
-        "They rely more heavily on union labor than their larger rivals",
-        "They do not train A.I. models for large paying customers"
-      ],
-      "answer": 1,
-      "type": "inference",
-      "explain": "The passage says neoclouds have taken on more debt than giants, who have the resources to navigate the changes."
-    }
-  ]
+ "model": "claude (precomputed) + gpt-5-mini revision + gpt-5-mini revision + gpt-5-mini revision",
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "Why tech companies are abandoning A.I. data centers after local election losses",
+    "How Texas and Ohio governors plan to ban data centers from all farmland",
+    "How neoclouds are replacing Amazon and Google in data center construction",
+    "Why voter opposition will likely slow, but not stop, data center building"
+   ],
+   "answer": 3,
+   "type": "main_idea",
+   "explain": "Despite strong voter opposition, analysts expect only modest cancellations and continued construction."
+  },
+  {
+   "q": "How did many tech companies try to placate critics early on?",
+   "options": [
+    "They canceled selected projects publicly, sold planned sites and announced hiring pauses for construction crews",
+    "They shifted development plans to more rural counties, favored farmland locations and curtailed local outreach efforts",
+    "They walked back secrecy arrangements, offered greater benefits to local communities and said they would pay more for electricity",
+    "They appealed to state governments for subsidies and tax breaks, and lobbied for laws to bypass local opposition"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "The passage says companies walked back secrecy arrangements, offered greater community benefits and agreed to pay more for electricity."
+  },
+  {
+   "q": "What did the Democratic governor-elect of Texas propose regarding new data centers?",
+   "options": [
+    "An outright ban on all new data centers across the state, with orders to stop projects already under construction",
+    "A requirement that all new data centers be built only on farmland and never on former industrial sites",
+    "A moratorium until the legislature set protections like reducing subsidies and using union labor",
+    "A plan to speed up permits and expand incentives to attract more data center investment statewide"
+   ],
+   "answer": 2,
+   "type": "detail",
+   "explain": "Her campaign centered on a moratorium on new data centers until the legislature passed protections on issues including reducing subsidies and requiring union labor."
+  },
+  {
+   "q": "What did Microsoft's summer polls find about people who oppose data centers?",
+   "options": [
+    "About 70 percent could accept them with protections such as tax revenue",
+    "About 15 percent would accept them only if built by union workers",
+    "About 70 percent wanted them banned from farmland and industrial sites",
+    "About half would accept them if electricity rates were frozen for residents"
+   ],
+   "answer": 0,
+   "type": "detail",
+   "explain": "Roughly 70 percent said they could accept the buildings with protections, while nothing would satisfy about 15 percent."
+  },
+  {
+   "q": "Why are neoclouds seen as more vulnerable than the biggest tech firms?",
+   "options": [
+    "They are barred from building in any state with a moratorium",
+    "They have taken on more debt than the industry giants",
+    "They rely more heavily on union labor than their larger rivals",
+    "They do not train A.I. models for large paying customers"
+   ],
+   "answer": 1,
+   "type": "inference",
+   "explain": "The passage says neoclouds have taken on more debt than giants, who have the resources to navigate the changes."
+  }
+ ]
 }
